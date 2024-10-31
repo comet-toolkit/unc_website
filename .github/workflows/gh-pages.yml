@@ -5,6 +5,10 @@ on:
     branches:
       - main  # or specify another branch if needed
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   Deploy:
     runs-on: ubuntu-latest
