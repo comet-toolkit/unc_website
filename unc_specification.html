@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Uncertainty metadata Conventions (UNC) Specifications &#8212; Uncertainty Metadata Conventions Specifications  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unc_specification';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Uncertainty metadata Conventions (UNC)" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Uncertainty Metadata Conventions Specifications  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Specification</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/unc_specification.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Uncertainty metadata Conventions (UNC) Specifications</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewers">Reviewers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophy">Philosophy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#format-for-examples">Format for Examples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-dataset-structures">Measurement Dataset Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data Types</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-attributes">Uncertainty Attributes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-uncertainty-components">Assigning Uncertainty Components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-pdf-shape">Uncertainty PDF Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structure">Error-Correlation Structure</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="uncertainty-metadata-conventions-unc-specifications">
+<h1>Uncertainty metadata Conventions (UNC) Specifications<a class="headerlink" href="#uncertainty-metadata-conventions-unc-specifications" title="Link to this heading">#</a></h1>
+<section id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Link to this heading">#</a></h2>
+<section id="lead-authors">
+<h3>Lead Authors<a class="headerlink" href="#lead-authors" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Sam Hunt, NPL</p></li>
+<li><p>Pieter De Vis, NPL</p></li>
+</ul>
+</section>
+<section id="reviewers">
+<h3>Reviewers<a class="headerlink" href="#reviewers" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Zhav</p></li>
+<li><p>?</p></li>
+</ul>
+</section>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<section id="goals">
+<h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">#</a></h3>
+<p>Compact method for storing uncertainty/error-covariance information for datasets of measurement data.</p>
+</section>
+<section id="philosophy">
+<h3>Philosophy<a class="headerlink" href="#philosophy" title="Link to this heading">#</a></h3>
+<p>Key points:</p>
+<ul class="simple">
+<li><p>Alignment to GUM/VIM</p></li>
+<li><p>Follow netCDF model</p></li>
+<li><p>Alignment with CF Conventions</p></li>
+</ul>
+</section>
+<section id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Link to this heading">#</a></h3>
+<p>Terms to define:</p>
+<ul class="simple">
+<li><p>Uncertainty (inc. components)</p></li>
+<li><p>Error-correlation</p></li>
+<li><p>Error-covariance</p></li>
+<li><p>fractional uncertainty</p></li>
+</ul>
+</section>
+<section id="format-for-examples">
+<h3>Format for Examples<a class="headerlink" href="#format-for-examples" title="Link to this heading">#</a></h3>
+<p>CDL syntax</p>
+<p>The ascii format used to describe the contents of a netCDF file is called CDL (network Common Data form Language). This format represents arrays using the indexing conventions of the C programming language, i.e., index values start at 0, and in multidimensional arrays, when indexing over the elements of the array, it is the last declared dimension that is the fastest varying in terms of file storage order. The netCDF utilities ncdump and ncgen use this format (see NUG section on CDL syntax). All examples in this document use CDL syntax.</p>
+</section>
+</section>
+<section id="measurement-dataset-structures">
+<h2>Measurement Dataset Structures<a class="headerlink" href="#measurement-dataset-structures" title="Link to this heading">#</a></h2>
+<p>The core object is a dataset.</p>
+<p>The components of a netCDF file are described in section 2 of the NUG [NUG]. In this section we describe conventions associated with filenames and the basic components of a netCDF file. We also introduce new attributes for describing the contents of a file.</p>
+<section id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h3>
+<p>Datasets are composed of variables, which are multidimensional data arrays.</p>
+<p>These variables will be consider <em>observation variables</em> and have <em>uncertainty variables</em> associated with them.</p>
+<p>A dataset may also contain variables that are neither <em>observation variables</em> or <em>uncertainty variables</em>.</p>
+<p><strong>Observation Variables</strong></p>
+<p><em>Observation variables</em> represent a multidimensional array of measurements.</p>
+<p><strong>Uncertainty Variables</strong></p>
+<p><em>Uncertainty variables</em> represent a component of uncertainty associated with an <em>observation variable</em>. An <em>observation variable</em> may have multiple <em>uncertainty variables</em> associated with them.</p>
+<p><em>Uncertainty variables</em> must have the same shape as the <em>observation variable</em> they are associated with.</p>
+</section>
+<section id="dimensions">
+<h3>Dimensions<a class="headerlink" href="#dimensions" title="Link to this heading">#</a></h3>
+<p>A variable may have any number of named dimensions, including zero – e.g., <code class="code docutils literal notranslate"><span class="pre">&quot;x&quot;</span></code>, <code class="code docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code>, <code class="code docutils literal notranslate"><span class="pre">&quot;time&quot;</span></code>. Dimensions may be of any size, including unity.</p>
+</section>
+<section id="data-types">
+<h3>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h3>
+<p><em>observation variables</em> and have <em>uncertainty variables</em>  must be floats.</p>
+<p>Note: these variables may be encoded as e.g. integers for efficient storage on disc.</p>
+</section>
+<section id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
+<p>Global/variable attributes.</p>
+<p>This standard defines a set of attributes to:</p>
+<ul class="simple">
+<li><p>link <em>observation variables</em> with their associated <em>uncertainty variables</em></p></li>
+<li><p>define the error-correlation properties of a given <em>uncertainty variables</em> in a compact way.</p></li>
+</ul>
+<p>A file may also contain non-standard attributes.</p>
+</section>
+</section>
+<section id="uncertainty-attributes">
+<h2>Uncertainty Attributes<a class="headerlink" href="#uncertainty-attributes" title="Link to this heading">#</a></h2>
+<section id="assigning-uncertainty-components">
+<h3>Assigning Uncertainty Components<a class="headerlink" href="#assigning-uncertainty-components" title="Link to this heading">#</a></h3>
+<p><em>Uncertainty variables</em> are associated with an <em>observation variable</em> through the <em>observation variable</em>’s <code class="code docutils literal notranslate"><span class="pre">&quot;unc_comps&quot;</span></code> attribute. The attribute should contain a list of the names of the <em>uncertainty variables</em> associated with an <em>observation variable</em>..</p>
+<p>The following example of a dataset, in CDL syntax, shows a <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code> variable defined along 3 dimensions - <code class="code docutils literal notranslate"><span class="pre">time</span></code>, <code class="code docutils literal notranslate"><span class="pre">lat</span></code>, and <code class="code docutils literal notranslate"><span class="pre">lon</span></code>. <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code> has two uncertainty components associated with it - <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> and <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">unc_comps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;u_calibration&quot;</span><span class="p">,</span> <span class="s2">&quot;u_noise&quot;</span><span class="p">];</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="units">
+<h3>Units<a class="headerlink" href="#units" title="Link to this heading">#</a></h3>
+<p>The variable attribute <code class="code docutils literal notranslate"><span class="pre">&quot;units&quot;</span></code> is required for variables that are dimensional. <code class="code docutils literal notranslate"><span class="pre">&quot;units&quot;</span></code> should be defined as a string.</p>
+<p><em>Observation variables</em> are assumed dimensionless if the variable attribute <code class="code docutils literal notranslate"><span class="pre">&quot;units&quot;</span></code> is not defined.</p>
+<p><em>uncertainty variables</em> must have the same <code class="code docutils literal notranslate"><span class="pre">&quot;units&quot;</span></code> as the <em>observation variables</em> they are associated with. If <code class="code docutils literal notranslate"><span class="pre">&quot;units&quot;</span></code> is not defined, the <em>uncertainty variable</em> is assumed fractional.</p>
+<p>The following example of a dataset again shows a <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code> variable associated with two uncertainty components - <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> and <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code>. Here, <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> is defined with units <code class="code docutils literal notranslate"><span class="pre">K</span></code>, matching <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code>. <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code> has no defined units and so is a fractional uncertainty</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">unc_comps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;u_calibration&quot;</span><span class="p">,</span> <span class="s2">&quot;u_noise&quot;</span><span class="p">];</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="uncertainty-pdf-shape">
+<h3>Uncertainty PDF Shape<a class="headerlink" href="#uncertainty-pdf-shape" title="Link to this heading">#</a></h3>
+<p>The probability density function (PDF) shape associated with the uncertainty estimate values in an <em>uncertainty variables</em> is defined with variable attribute <code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code>.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code> can have one of the following values:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">&quot;gaussian&quot;</span></code> - for uncertainties represented by a Gaussian PDF</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">&quot;rectangular&quot;</span></code> - for uncertainties represented by a uniform PDF</p></li>
+<li><p>…</p></li>
+</ul>
+<p>If <code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code> is not defined for an <em>uncertainty variable</em> it is assumed to be <code class="code docutils literal notranslate"><span class="pre">&quot;gaussian&quot;</span></code>.</p>
+<p>The following example of a dataset again shows a <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code> variable associated with two uncertainty components - <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> and <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code>. Here, <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> is defined to be represented by a rectangular PDF. <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code> has no defined <code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code> and so is assumed Gaussian.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">unc_comps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;u_calibration&quot;</span><span class="p">,</span> <span class="s2">&quot;u_noise&quot;</span><span class="p">];</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">pdf_shape</span><span class="o">=</span><span class="s2">&quot;rectangular&quot;</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="error-correlation-structure">
+<h3>Error-Correlation Structure<a class="headerlink" href="#error-correlation-structure" title="Link to this heading">#</a></h3>
+<p>For <em>observation variables</em> with N elements, the associated error-covariance matrix per uncertainty component has $N^2$ elements. Where the <em>observation variables</em> are large, it an quickly become impractical to store this data.</p>
+<p>However, in many cases the associated error-correlation matrix can simply be parameterised in a compact form. With this data and</p>
+<p>This standard defines a set of attributes to achieve this.</p>
+<p>Effectively for each dimension in a <em>uncertainty variable</em>, <code class="code docutils literal notranslate"><span class="pre">dim_i</span></code>, or set of dimensions, [<code class="code docutils literal notranslate"><span class="pre">dim_i</span></code>, <code class="code docutils literal notranslate"><span class="pre">dim_j</span></code>, …], a error-correlation paramaterisation is defined.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Error-correlation attributes</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 13.6%" />
+<col style="width: 13.6%" />
+<col style="width: 45.5%" />
+<col style="width: 27.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>err_corr_dimi_name</p></td>
+<td><p>str</p></td>
+<td><p>Dimension name</p></td>
+<td><p>err_corr_dim1_name=”time”</p></td>
+</tr>
+<tr class="row-odd"><td><p>err_corr_dimi_form</p></td>
+<td><p>str</p></td>
+<td><p>Parameterisation name</p></td>
+<td><p>err_corr_dim1_form=”random”</p></td>
+</tr>
+<tr class="row-even"><td><p>err_corr_dimi_params</p></td>
+<td><p>list[Any]</p></td>
+<td><p>Parameterisation parameters</p></td>
+<td><p>err_corr_dim1_params=[1,2,3]</p></td>
+</tr>
+<tr class="row-odd"><td><p>err_corr_dimi_units</p></td>
+<td><p>list[str]</p></td>
+<td><p>Parameterisation parameter units</p></td>
+<td><p>err_corr_dim1_params=[“second”, “m”, “K”]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Existing parmaterisations:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text">Error-correlation parameterisations</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameterisation Form</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>random</p></td>
+<td><p>[]</p></td>
+<td><p>No error-correlation between elements in observation variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>systematic</p></td>
+<td><p>[]</p></td>
+<td><p>Full error-correlation between elements in observation variable.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following example of a dataset again shows a <code class="code docutils literal notranslate"><span class="pre">&quot;temperature&quot;</span></code> variable associated with two uncertainty components - <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> and <code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code>.</p>
+<p>Here, <code class="code docutils literal notranslate"><span class="pre">&quot;u_calibration&quot;</span></code> is defined to have a systematic error-correlation in the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions, and random in <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension (perhaps, there is a recalibration between the measurements at each time step!).</p>
+<p><code class="code docutils literal notranslate"><span class="pre">&quot;u_noise&quot;</span></code> have a error-correlation defined random in all dimensions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">unc_comps</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;u_calibration&quot;</span><span class="p">,</span> <span class="s2">&quot;u_noise&quot;</span><span class="p">];</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">&quot;K&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">pdf_shape</span><span class="o">=</span><span class="s2">&quot;rectangular&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_form</span><span class="o">=</span><span class="s2">&quot;systematic&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_params</span><span class="o">=</span><span class="p">[];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_units</span><span class="o">=</span><span class="p">[];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_name</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_form</span><span class="o">=</span><span class="s2">&quot;random&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_params</span><span class="o">=</span><span class="p">[];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_units</span><span class="o">=</span><span class="p">[];</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_form</span><span class="o">=</span><span class="s2">&quot;random&quot;</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_params</span><span class="o">=</span><span class="p">[];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_units</span><span class="o">=</span><span class="p">[];</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Uncertainty metadata Conventions (UNC)</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewers">Reviewers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophy">Philosophy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#format-for-examples">Format for Examples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement-dataset-structures">Measurement Dataset Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data Types</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-attributes">Uncertainty Attributes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-uncertainty-components">Assigning Uncertainty Components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-pdf-shape">Uncertainty PDF Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structure">Error-Correlation Structure</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sam Hunt
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Sam Hunt.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
