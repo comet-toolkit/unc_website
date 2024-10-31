@@ -1,0 +1,37 @@
+name: Deploy Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or specify another branch if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install sphinx sphinx_book_theme sphinxcontrib-rst2pdf
+
+      - name: Build HTML documentation
+        run: |
+          sphinx-build -b html docs/ docs/_build/html
+
+      - name: Build PDF Documentation
+        run: |
+          sphinx-build -b pdf docs/ docs/_build/pdf
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
