@@ -6,7 +6,7 @@ on:
       - main  # or specify another branch if needed
 
 jobs:
-  deploy:
+  Deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_book_theme sphinxcontrib-rst2pdf
+          pip install sphinx sphinx_book_theme rst2pdf
 
       - name: Build HTML documentation
         run: |

@@ -24,7 +24,7 @@ default_role = "code"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['rst2pdf.pdfbuilder']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -36,7 +36,7 @@ templates_path = ["_templates"]
 source_suffix = ".rst"
 
 # The master toctree document.
-master_doc = "unc_specification"
+master_doc = "index"
 
 # General information about the project.
 project = project_title
@@ -117,12 +117,14 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass
 # [howto, manual, or own class]).
-latex_documents = [
-    (
-        master_doc,
-        "unc_specification.tex",
-        project_title,
-        "Sam Hunt",
-        "manual",
-    ),
-]
+# latex_documents = [
+#     (
+#         master_doc,
+#         "unc_specification.tex",
+#         project_title,
+#         "Sam Hunt",
+#         "manual",
+#     ),
+# ]
+
+pdf_documents = [('unc_specification', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
