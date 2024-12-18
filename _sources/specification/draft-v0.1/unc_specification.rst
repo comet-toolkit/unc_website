@@ -140,7 +140,7 @@ Attributes
 
 Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the entire dataset (e.g., title, institution, history). Variable attributes define specific properties of the variable  (e.g., units, valid ranges). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by following standardised conventions.
 
-This standard defines a set of global/variable attributes to:
+This standard defines a set of variable attributes to:
 
 * link *observation variables* with their associated *uncertainty variables*
 * define the error-correlation properties of a given *uncertainty variables* in a compact way.
@@ -153,9 +153,9 @@ Uncertainty Attributes
 Assigning Uncertainty Components
 --------------------------------
 
-*Uncertainty variables* are associated with an *observation variable* through the *observation variable*'s `"unc_comps"` attribute. The attribute should contain a list of the names of the *uncertainty variables* associated with an *observation variable*..
+*Uncertainty variables* are associated with their *observation variable* through the *observation variable*'s `"unc_comps"` attribute. This attribute contains a list of the names of all of the *uncertainty variables* associated with an *observation variable*.
 
-The following example of a dataset, in CDL syntax, shows a `"temperature"` variable defined along 3 dimensions - `time`, `lat`, and `lon`. `"temperature"` has two uncertainty components associated with it - `"u_calibration"` and `"u_noise"`.
+The following example of a dataset, in CDL syntax, shows a `temperature` variable defined along 3 dimensions - `time`, `lat`, and `lon`. `temperature` has two uncertainty components associated with it - `u_calibration` and `u_noise`.
 
 .. code-block::
 
@@ -168,13 +168,13 @@ The following example of a dataset, in CDL syntax, shows a `"temperature"` varia
 Units
 -----
 
-The variable attribute `"units"` is required for variables that are dimensional. `"units"` should be defined as a string.
+The physical units associated with *observation variables* and *uncertainty variables* should be defined by the `"units"` variable attribute as a string.
 
 *Observation variables* are assumed dimensionless if the variable attribute `"units"` is not defined.
 
 *uncertainty variables* must have the same `"units"` as the *observation variables* they are associated with. If `"units"` is not defined, the *uncertainty variable* is assumed fractional.
 
-The following example of a dataset again shows a `"temperature"` variable associated with two uncertainty components - `"u_calibration"` and `"u_noise"`. Here, `"u_calibration"` is defined with units `K`, matching `"temperature"`. `"u_noise"` has no defined units and so is a fractional uncertainty
+The following example of a dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined with units `K`, matching `temperature`. `u_noise` has no defined units and so is a fractional uncertainty
 
 .. code-block::
 
@@ -189,7 +189,7 @@ The following example of a dataset again shows a `"temperature"` variable associ
 Uncertainty PDF Shape
 ---------------------
 
-The probability density function (PDF) shape associated with the uncertainty estimate values in an *uncertainty variables* is defined with variable attribute `"pdf_shape"`.
+The probability density function (PDF) shape associated with the uncertainty estimate values in an *uncertainty variable* is defined with the variable attribute `"pdf_shape"`.
 
 `"pdf_shape"` can have one of the following values:
 
@@ -199,7 +199,7 @@ The probability density function (PDF) shape associated with the uncertainty est
 
 If `"pdf_shape"` is not defined for an *uncertainty variable* it is assumed to be `"gaussian"`.
 
-The following example of a dataset again shows a `"temperature"` variable associated with two uncertainty components - `"u_calibration"` and `"u_noise"`. Here, `"u_calibration"` is defined to be represented by a rectangular PDF. `"u_noise"` has no defined `"pdf_shape"` and so is assumed Gaussian.
+The following example of a dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined to be represented by a rectangular PDF. `u_noise` has no defined `"pdf_shape"` and so is assumed Gaussian.
 
 .. code-block::
 
@@ -216,13 +216,13 @@ The following example of a dataset again shows a `"temperature"` variable associ
 Error-Correlation Structure
 ---------------------------
 
-For *observation variables* with N elements, the associated error-covariance matrix per uncertainty component has $N^2$ elements. Where the *observation variables* are large, it an quickly become impractical to store this data.
+For *observation variables* with :math:`N` elements, the associated error-covariance matrix per *uncertainty variables* has :math:`N^2` elements. Where the *observation variables* are large, it an quickly become impractical to store this data.
 
-However, in many cases the associated error-correlation matrix can simply be parameterised in a compact form. With this data and
+However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded). This standard defines a set of *uncertainty variable* variable attributes to store this parameterisation.
 
-This standard defines a set of attributes to achieve this.
+To allow maximum flexibility, different parameterisations can be defined along each *uncertainty variable* dimension, `dim_i` (or sets of dimensions, [`dim_i`, `dim_j`, ...]). For example, an error could be systematic in longitude and latitude at each time step, but random between time steps.
 
-Effectively for each dimension in a *uncertainty variable*, `dim_i`, or set of dimensions, [`dim_i`, `dim_j`, ...], a error-correlation paramaterisation is defined.
+Parameterisations have the form...
 
 .. list-table:: Error-correlation attributes
    :widths: 15 15 50 30
