@@ -40,8 +40,7 @@ master_doc = "index"
 
 # General information about the project.
 project = project_title
-copyright = "Sam Hunt"
-author = "Sam Hunt"
+author = "CoMet Toolkit Team"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
