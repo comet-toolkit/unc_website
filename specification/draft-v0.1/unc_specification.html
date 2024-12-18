@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Uncertainty metadata Conventions (UNC) Specifications &#8212; Uncertainty Metadata Conventions Specifications  documentation</title>
+    <title>Uncertainty Metadata Conventions (UNC) &#8212; Uncertainty Metadata Conventions Specifications  documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,26 +27,29 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'unc_specification';</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Uncertainty metadata Conventions (UNC)" href="index.html" />
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'specification/draft-v0.1/unc_specification';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Governance" href="../../governance.html" />
+    <link rel="prev" title="Uncertainty Metadata Conventions (UNC)" href="../specification_landing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -68,7 +71,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="search.html"
+      action="../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -87,6 +90,9 @@
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">This site is a pre-release draft</div>
+</aside>
 
   
     <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
@@ -117,14 +123,20 @@
     
   
 
-<a class="navbar-brand logo" href="index.html">
+<a class="navbar-brand logo" href="../../index.html">
   
   
   
   
   
+    
+    
+      
+    
+    
+    <img src="../../_static/comet_logo_icon_light.svg" class="logo__image only-light" alt="Uncertainty Metadata Conventions Specifications  documentation - Home"/>
+    <img src="../../_static/comet_logo_icon_dark.svg" class="logo__image only-dark pst-js-only" alt="Uncertainty Metadata Conventions Specifications  documentation - Home"/>
   
-    <p class="title logo__title">Uncertainty Metadata Conventions Specifications  documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -137,7 +149,12 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Specification</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../specification_landing.html">Unc Specification</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Draft v0.1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../comet.html">CoMet Toolkit</a></li>
 </ul>
 
     </div>
@@ -146,9 +163,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -181,6 +203,21 @@
 <div class="article-header-buttons">
 
 
+<a href="https://github.com/comet-toolkit/unc_website" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
 
 
 
@@ -192,7 +229,7 @@
       
       
       
-      <li><a href="_sources/unc_specification.rst" target="_blank"
+      <li><a href="../../_sources/specification/draft-v0.1/unc_specification.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,7 +305,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Uncertainty metadata Conventions (UNC) Specifications</h1>
+    <h1>Uncertainty Metadata Conventions (UNC)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -280,7 +317,6 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewers">Reviewers</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
@@ -315,8 +351,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="uncertainty-metadata-conventions-unc-specifications">
-<h1>Uncertainty metadata Conventions (UNC) Specifications<a class="headerlink" href="#uncertainty-metadata-conventions-unc-specifications" title="Link to this heading">#</a></h1>
+  <section id="uncertainty-metadata-conventions-unc">
+<h1>Uncertainty Metadata Conventions (UNC)<a class="headerlink" href="#uncertainty-metadata-conventions-unc" title="Link to this heading">#</a></h1>
 <section id="authors">
 <h2>Authors<a class="headerlink" href="#authors" title="Link to this heading">#</a></h2>
 <section id="lead-authors">
@@ -326,34 +362,55 @@
 <li><p>Pieter De Vis, NPL</p></li>
 </ul>
 </section>
-<section id="reviewers">
-<h3>Reviewers<a class="headerlink" href="#reviewers" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Zhav</p></li>
-<li><p>?</p></li>
-</ul>
-</section>
 </section>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <section id="goals">
 <h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">#</a></h3>
-<p>Compact method for storing uncertainty/error-covariance information for datasets of measurement data.</p>
+<p>Measurement datasets are becoming larger, more complex, and are increasingly used to support critical applications such as manufacturing, health, and environmental monitoring. Reliable interpretation of these measurements requires accompanying uncertainty and error-covariance information - however, this is often overlooked. Where available, such information lacks standardisation and could, in principle, be highly complex and large.</p>
+<p>The goal of this specification is to provide a standardised metadata format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.</p>
 </section>
 <section id="philosophy">
 <h3>Philosophy<a class="headerlink" href="#philosophy" title="Link to this heading">#</a></h3>
-<p>Key points:</p>
+<p>This specification is intended to contribute to and build upon an existing ecosystem of standards and best practices. In particular the following are adhered to, to the extent possible:</p>
 <ul class="simple">
-<li><p>Alignment to GUM/VIM</p></li>
-<li><p>Follow netCDF model</p></li>
-<li><p>Alignment with CF Conventions</p></li>
+<li><p>The understanding of uncertainty concepts defined in the JGCM <a class="reference external" href="https://www.bipm.org/en/committees/jc/jcgm/publications">GUM</a> (Guide to the expression of uncertainty in measurement) suite of documents.</p></li>
+<li><p>The definition of uncertainty-related terminology defined in the JGCM <a class="reference external" href="https://jcgm.bipm.org/vim/en/index.html">VIM</a> (International Vocabulary for Metrology).</p></li>
+<li><p>The <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> data model for creating self-describing, array-oriented scientific datasets.</p></li>
+<li><p>Alignment with the <a class="reference external" href="cf">Climate and Forecast (CF) conventions</a> on metadata for weather and climate data.</p></li>
+</ul>
+<p>The work builds on previous work on the standardisation uncertainty information for climate data developed within the H2020 <a class="reference external" href="https://research.reading.ac.uk/fiduceo/">FIDUCEO</a> project.</p>
+<p>Within this context, this specification also attempts to adhere to the following principles:</p>
+<ul>
+<li><p><strong>Scalability of Complexity</strong></p>
+<p>The complexity of the metadata should align with the use case:</p>
+<ul class="simple">
+<li><p><em>Simple use cases</em> should be achievable with a <em>simple implementation</em>.</p></li>
+<li><p><em>Complex use cases</em> should be <em>possible without unnecessary restrictions</em>.</p></li>
+</ul>
+</li>
+<li><p><strong>Minimisation of Redundancy</strong></p>
+<p>The metadata specification should <em>avoid duplication</em> of information to prevent potential inconsistencies.</p>
+</li>
+<li><p><strong>Human and Machine Readability</strong></p>
+<p>Metadata must be:</p>
+<ul class="simple">
+<li><p><em>Comprehensible</em> for humans.</p></li>
+<li><p><em>Parsable</em> by machines.</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="terminology">
 <h3>Terminology<a class="headerlink" href="#terminology" title="Link to this heading">#</a></h3>
-<p>Terms to define:</p>
+<p>For terminology related to measurements and associated uncertainties, definitions within the <a class="reference external" href="https://jcgm.bipm.org/vim/en/index.html">VIM</a> (International Vocabulary for Metrology) are adopted to the extent possible. This includes the following important terms:</p>
 <ul class="simple">
-<li><p>Uncertainty (inc. components)</p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.16.html">Error</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.26.html">Uncertainty</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.38.html">Coverage factor</a></p></li>
+</ul>
+<p>The following terms are derived from X:</p>
+<ul class="simple">
 <li><p>Error-correlation</p></li>
 <li><p>Error-covariance</p></li>
 <li><p>fractional uncertainty</p></li>
@@ -458,8 +515,8 @@
 <p>However, in many cases the associated error-correlation matrix can simply be parameterised in a compact form. With this data and</p>
 <p>This standard defines a set of attributes to achieve this.</p>
 <p>Effectively for each dimension in a <em>uncertainty variable</em>, <code class="code docutils literal notranslate"><span class="pre">dim_i</span></code>, or set of dimensions, [<code class="code docutils literal notranslate"><span class="pre">dim_i</span></code>, <code class="code docutils literal notranslate"><span class="pre">dim_j</span></code>, …], a error-correlation paramaterisation is defined.</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-text">Error-correlation attributes</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text">Error-correlation attributes</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 13.6%" />
 <col style="width: 13.6%" />
@@ -498,8 +555,8 @@
 </table>
 </div>
 <p>Existing parmaterisations:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id2">
-<caption><span class="caption-text">Error-correlation parameterisations</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-text">Error-correlation parameterisations</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 25.0%" />
 <col style="width: 25.0%" />
@@ -548,6 +605,7 @@
     <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_units</span><span class="o">=</span><span class="p">[];</span>
 </pre></div>
 </div>
+<p># Links</p>
 </section>
 </section>
 </section>
@@ -559,21 +617,6 @@
               
               
               
-              
-                <footer class="prev-next-footer d-print-none">
-                  
-<div class="prev-next-area">
-    <a class="left-prev"
-       href="index.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Uncertainty metadata Conventions (UNC)</p>
-      </div>
-    </a>
-</div>
-                </footer>
               
             </div>
             
@@ -591,7 +634,6 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewers">Reviewers</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
@@ -663,8 +705,8 @@ By Sam Hunt
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
