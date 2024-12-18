@@ -29,7 +29,7 @@ This specification is intended to contribute to and build upon an existing ecosy
 * The understanding of uncertainty concepts defined in the JGCM `GUM`_ (Guide to the expression of uncertainty in measurement) suite of documents.
 * The definition of uncertainty-related terminology defined in the JGCM `VIM`_ (International Vocabulary for Metrology).
 * The `NetCDF`_ data model for creating self-describing, array-oriented scientific datasets.
-* Alignment with the `Climate and Forecast (CF) conventions <cf>`_ on metadata for weather and climate data.
+* The `Climate and Forecast (CF) conventions <cf>`_ on metadata for weather and climate data.
 
 The work builds on previous work on the standardisation uncertainty information for climate data developed within the H2020 `FIDUCEO`_ project.
 
@@ -72,38 +72,56 @@ The following terms are derived from X:
 Format for Examples
 -------------------
 
-CDL syntax
+The ASCII format used to describe the contents of a NetCDF dataset is called `CDL`_ (NetCDF Common Data form Language). This follows C-style indexing where indices start at 0, and the last declared dimension varies fastest in storage order. For example, in a 2D array `data(time, lat)`, the `lat` dimension changes faster than `time` during indexing.
 
-The ascii format used to describe the contents of a netCDF file is called CDL (network Common Data form Language). This format represents arrays using the indexing conventions of the C programming language, i.e., index values start at 0, and in multidimensional arrays, when indexing over the elements of the array, it is the last declared dimension that is the fastest varying in terms of file storage order. The netCDF utilities ncdump and ncgen use this format (see NUG section on CDL syntax). All examples in this document use CDL syntax.
+Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in CDL is given below. Here a dataset of `temperature` with its metadata (units and description) is defined along `time`, `lat` and `lon` dimensions.
+
+.. code-block::
+
+    netcdf short_example {
+      dimensions:
+        time = 2 ;
+        lat = 2 ;
+        lon = 2 ;
+
+      variables:
+        float temperature(time, lat, lon) ;
+          temperature:units = "K" ;
+          temperature:long_name = "Temperature" ;
+
+      data:
+        temperature =
+          290.1, 291.2,
+          292.3, 293.4,
+          294.5, 295.6,
+          296.7, 297.8 ;
+    }
 
 
 Measurement Dataset Structures
 ==============================
 
-The core object is a dataset.
-
-The components of a netCDF file are described in section 2 of the NUG [NUG]. In this section we describe conventions associated with filenames and the basic components of a netCDF file. We also introduce new attributes for describing the contents of a file.
+As mentioned above, the `NetCDF`_ data model for creating self-describing, array-oriented scientific datasets is adopted. The components of NetCDF datasets are described in Section 2 of the `NUG`_ (NetCDF Users Guide). In this section, we introduce the core components of this data model relevant to this standard.
 
 Variables
 ---------
 
 Datasets are composed of variables, which are multidimensional data arrays.
 
-These variables will be consider *observation variables* and have *uncertainty variables* associated with them.
+This standard defines the following categories of variables:
+
+* **Observation Variables**
+
+  *Observation variables* represent a multidimensional array of measurements.
+
+
+* **Uncertainty Variables**
+
+  *Uncertainty variables* represent a component of uncertainty associated with an *observation variable*. An *observation variable* may have multiple *uncertainty variables* associated with them.
+
+  *Uncertainty variables* must have the same dimensions as the *observation variable* they are associated with.
 
 A dataset may also contain variables that are neither *observation variables* or *uncertainty variables*.
-
-**Observation Variables**
-
-*Observation variables* represent a multidimensional array of measurements.
-
-
-**Uncertainty Variables**
-
-*Uncertainty variables* represent a component of uncertainty associated with an *observation variable*. An *observation variable* may have multiple *uncertainty variables* associated with them.
-
-*Uncertainty variables* must have the same shape as the *observation variable* they are associated with.
-
 
 Dimensions
 ----------
@@ -113,21 +131,21 @@ A variable may have any number of named dimensions, including zero -- e.g., `"x"
 Data Types
 ----------
 
-*observation variables* and have *uncertainty variables*  must be floats.
+*Observation variables* and *uncertainty variables* must be `floats`.
 
 Note: these variables may be encoded as e.g. integers for efficient storage on disc.
 
 Attributes
 ----------
 
-Global/variable attributes.
+Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the entire dataset (e.g., title, institution, history). Variable attributes define specific properties of the variable  (e.g., units, valid ranges). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by following standardised conventions.
 
-This standard defines a set of attributes to:
+This standard defines a set of global/variable attributes to:
 
 * link *observation variables* with their associated *uncertainty variables*
 * define the error-correlation properties of a given *uncertainty variables* in a compact way.
 
-A file may also contain non-standard attributes.
+A dataset may also contain non-standard attributes.
 
 Uncertainty Attributes
 ======================
@@ -280,9 +298,10 @@ Here, `"u_calibration"` is defined to have a systematic error-correlation in the
 
 
 
-# Links
+.. Links
 
 .. _VIM: https://jcgm.bipm.org/vim/en/index.html
+.. _CDL: https://docs.unidata.ucar.edu/nug/2.0-draft/cdl.html
 .. _Uncertainty: https://jcgm.bipm.org/vim/en/2.26.html
 .. _Error: https://jcgm.bipm.org/vim/en/2.16.html
 .. _Coverage factor: https://jcgm.bipm.org/vim/en/2.38.html
@@ -290,3 +309,4 @@ Here, `"u_calibration"` is defined to have a systematic error-correlation in the
 .. _NetCDF: https://www.unidata.ucar.edu/software/netcdf/
 .. _Climate and Forecast (CF) conventions: https://cfconventions.org
 .. _FIDUCEO: https://research.reading.ac.uk/fiduceo/
+.. _NUG: https://docs.unidata.ucar.edu/nug/current/

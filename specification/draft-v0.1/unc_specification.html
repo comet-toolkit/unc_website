@@ -377,7 +377,7 @@
 <li><p>The understanding of uncertainty concepts defined in the JGCM <a class="reference external" href="https://www.bipm.org/en/committees/jc/jcgm/publications">GUM</a> (Guide to the expression of uncertainty in measurement) suite of documents.</p></li>
 <li><p>The definition of uncertainty-related terminology defined in the JGCM <a class="reference external" href="https://jcgm.bipm.org/vim/en/index.html">VIM</a> (International Vocabulary for Metrology).</p></li>
 <li><p>The <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> data model for creating self-describing, array-oriented scientific datasets.</p></li>
-<li><p>Alignment with the <a class="reference external" href="cf">Climate and Forecast (CF) conventions</a> on metadata for weather and climate data.</p></li>
+<li><p>The <a class="reference external" href="cf">Climate and Forecast (CF) conventions</a> on metadata for weather and climate data.</p></li>
 </ul>
 <p>The work builds on previous work on the standardisation uncertainty information for climate data developed within the H2020 <a class="reference external" href="https://research.reading.ac.uk/fiduceo/">FIDUCEO</a> project.</p>
 <p>Within this context, this specification also attempts to adhere to the following principles:</p>
@@ -418,24 +418,47 @@
 </section>
 <section id="format-for-examples">
 <h3>Format for Examples<a class="headerlink" href="#format-for-examples" title="Link to this heading">#</a></h3>
-<p>CDL syntax</p>
-<p>The ascii format used to describe the contents of a netCDF file is called CDL (network Common Data form Language). This format represents arrays using the indexing conventions of the C programming language, i.e., index values start at 0, and in multidimensional arrays, when indexing over the elements of the array, it is the last declared dimension that is the fastest varying in terms of file storage order. The netCDF utilities ncdump and ncgen use this format (see NUG section on CDL syntax). All examples in this document use CDL syntax.</p>
+<p>The ASCII format used to describe the contents of a NetCDF dataset is called <a class="reference external" href="https://docs.unidata.ucar.edu/nug/2.0-draft/cdl.html">CDL</a> (NetCDF Common Data form Language). This follows C-style indexing where indices start at 0, and the last declared dimension varies fastest in storage order. For example, in a 2D array <code class="code docutils literal notranslate"><span class="pre">data(time,</span> <span class="pre">lat)</span></code>, the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> dimension changes faster than <code class="code docutils literal notranslate"><span class="pre">time</span></code> during indexing.</p>
+<p>Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in CDL is given below. Here a dataset of <code class="code docutils literal notranslate"><span class="pre">temperature</span></code> with its metadata (units and description) is defined along <code class="code docutils literal notranslate"><span class="pre">time</span></code>, <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">netcdf</span> <span class="n">short_example</span> <span class="p">{</span>
+  <span class="n">dimensions</span><span class="p">:</span>
+    <span class="n">time</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+
+  <span class="n">variables</span><span class="p">:</span>
+    <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+      <span class="n">temperature</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;K&quot;</span> <span class="p">;</span>
+      <span class="n">temperature</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">&quot;Temperature&quot;</span> <span class="p">;</span>
+
+  <span class="n">data</span><span class="p">:</span>
+    <span class="n">temperature</span> <span class="o">=</span>
+      <span class="mf">290.1</span><span class="p">,</span> <span class="mf">291.2</span><span class="p">,</span>
+      <span class="mf">292.3</span><span class="p">,</span> <span class="mf">293.4</span><span class="p">,</span>
+      <span class="mf">294.5</span><span class="p">,</span> <span class="mf">295.6</span><span class="p">,</span>
+      <span class="mf">296.7</span><span class="p">,</span> <span class="mf">297.8</span> <span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="measurement-dataset-structures">
 <h2>Measurement Dataset Structures<a class="headerlink" href="#measurement-dataset-structures" title="Link to this heading">#</a></h2>
-<p>The core object is a dataset.</p>
-<p>The components of a netCDF file are described in section 2 of the NUG [NUG]. In this section we describe conventions associated with filenames and the basic components of a netCDF file. We also introduce new attributes for describing the contents of a file.</p>
+<p>As mentioned above, the <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> data model for creating self-describing, array-oriented scientific datasets is adopted. The components of NetCDF datasets are described in Section 2 of the <a class="reference external" href="https://docs.unidata.ucar.edu/nug/current/">NUG</a> (NetCDF Users Guide). In this section, we introduce the core components of this data model relevant to this standard.</p>
 <section id="variables">
 <h3>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h3>
 <p>Datasets are composed of variables, which are multidimensional data arrays.</p>
-<p>These variables will be consider <em>observation variables</em> and have <em>uncertainty variables</em> associated with them.</p>
-<p>A dataset may also contain variables that are neither <em>observation variables</em> or <em>uncertainty variables</em>.</p>
-<p><strong>Observation Variables</strong></p>
+<p>This standard defines the following categories of variables:</p>
+<ul>
+<li><p><strong>Observation Variables</strong></p>
 <p><em>Observation variables</em> represent a multidimensional array of measurements.</p>
-<p><strong>Uncertainty Variables</strong></p>
+</li>
+<li><p><strong>Uncertainty Variables</strong></p>
 <p><em>Uncertainty variables</em> represent a component of uncertainty associated with an <em>observation variable</em>. An <em>observation variable</em> may have multiple <em>uncertainty variables</em> associated with them.</p>
-<p><em>Uncertainty variables</em> must have the same shape as the <em>observation variable</em> they are associated with.</p>
+<p><em>Uncertainty variables</em> must have the same dimensions as the <em>observation variable</em> they are associated with.</p>
+</li>
+</ul>
+<p>A dataset may also contain variables that are neither <em>observation variables</em> or <em>uncertainty variables</em>.</p>
 </section>
 <section id="dimensions">
 <h3>Dimensions<a class="headerlink" href="#dimensions" title="Link to this heading">#</a></h3>
@@ -443,18 +466,18 @@
 </section>
 <section id="data-types">
 <h3>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h3>
-<p><em>observation variables</em> and have <em>uncertainty variables</em>  must be floats.</p>
+<p><em>Observation variables</em> and <em>uncertainty variables</em> must be <code class="code docutils literal notranslate"><span class="pre">floats</span></code>.</p>
 <p>Note: these variables may be encoded as e.g. integers for efficient storage on disc.</p>
 </section>
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
-<p>Global/variable attributes.</p>
-<p>This standard defines a set of attributes to:</p>
+<p>Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the entire dataset (e.g., title, institution, history). Variable attributes define specific properties of the variable  (e.g., units, valid ranges). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by following standardised conventions.</p>
+<p>This standard defines a set of global/variable attributes to:</p>
 <ul class="simple">
 <li><p>link <em>observation variables</em> with their associated <em>uncertainty variables</em></p></li>
 <li><p>define the error-correlation properties of a given <em>uncertainty variables</em> in a compact way.</p></li>
 </ul>
-<p>A file may also contain non-standard attributes.</p>
+<p>A dataset may also contain non-standard attributes.</p>
 </section>
 </section>
 <section id="uncertainty-attributes">
@@ -605,7 +628,6 @@
     <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_units</span><span class="o">=</span><span class="p">[];</span>
 </pre></div>
 </div>
-<p># Links</p>
 </section>
 </section>
 </section>
@@ -671,20 +693,13 @@
   <div class="footer-item">
     
 <p class="component-author">
-By Sam Hunt
+By CoMet Toolkit Team
 </p>
 
   </div>
   
   <div class="footer-item">
     
-
-  <p class="copyright">
-    
-      © Copyright Sam Hunt.
-      <br/>
-    
-  </p>
 
   </div>
   
