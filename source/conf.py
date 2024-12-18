@@ -24,7 +24,7 @@ default_role = "code"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['rst2pdf.pdfbuilder']
+extensions = ['rst2pdf.pdfbuilder', "sphinx_design"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -57,7 +57,7 @@ author = "Sam Hunt"
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -81,10 +81,17 @@ html_theme = "sphinx_book_theme"
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
 # documentation.
-#
-# html_theme_options = {}
 
-# html_logo = "figs/comet_logo.png"
+html_theme_options = {
+    "announcement": "This site is a pre-release draft",
+    "repository_url": "https://github.com/comet-toolkit/unc_website",
+    "use_repository_button": True,
+    "show_prev_next": False,
+    "logo": {
+      "image_light": "_static/comet_logo_icon_light.svg",
+      "image_dark": "_static/comet_logo_icon_dark.svg",
+   }
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

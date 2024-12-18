@@ -1,6 +1,6 @@
-*****************************************************
-Uncertainty metadata Conventions (UNC) Specifications
-*****************************************************
+**************************************
+Uncertainty Metadata Conventions (UNC)
+**************************************
 
 Authors
 ============
@@ -11,36 +11,60 @@ Lead Authors
 * Sam Hunt, NPL
 * Pieter De Vis, NPL
 
-Reviewers
----------
-
-* Zhav
-* ?
-
-
 Introduction
 ============
 
 Goals
 -----
 
-Compact method for storing uncertainty/error-covariance information for datasets of measurement data.
+Measurement datasets are becoming larger, more complex, and are increasingly used to support critical applications such as manufacturing, health, and environmental monitoring. Reliable interpretation of these measurements requires accompanying uncertainty and error-covariance information - however, this is often overlooked. Where available, such information lacks standardisation and could, in principle, be highly complex and large.
+
+The goal of this specification is to provide a standardised metadata format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.
 
 Philosophy
 ----------
 
-Key points:
+This specification is intended to contribute to and build upon an existing ecosystem of standards and best practices. In particular the following are adhered to, to the extent possible:
 
-* Alignment to GUM/VIM
-* Follow netCDF model
-* Alignment with CF Conventions
+* The understanding of uncertainty concepts defined in the JGCM `GUM`_ (Guide to the expression of uncertainty in measurement) suite of documents.
+* The definition of uncertainty-related terminology defined in the JGCM `VIM`_ (International Vocabulary for Metrology).
+* The `NetCDF`_ data model for creating self-describing, array-oriented scientific datasets.
+* Alignment with the `Climate and Forecast (CF) conventions <cf>`_ on metadata for weather and climate data.
+
+The work builds on previous work on the standardisation uncertainty information for climate data developed within the H2020 `FIDUCEO`_ project.
+
+Within this context, this specification also attempts to adhere to the following principles:
+
+* **Scalability of Complexity**
+
+  The complexity of the metadata should align with the use case:
+
+  - *Simple use cases* should be achievable with a *simple implementation*.
+  - *Complex use cases* should be *possible without unnecessary restrictions*.
+
+* **Minimisation of Redundancy**
+
+  The metadata specification should *avoid duplication* of information to prevent potential inconsistencies.
+
+* **Human and Machine Readability**
+
+  Metadata must be:
+
+  - *Comprehensible* for humans.
+  - *Parsable* by machines.
+
 
 Terminology
 -----------
 
-Terms to define:
+For terminology related to measurements and associated uncertainties, definitions within the `VIM`_ (International Vocabulary for Metrology) are adopted to the extent possible. This includes the following important terms:
 
-* Uncertainty (inc. components)
+* `Error`_
+* `Uncertainty`_
+* `Coverage factor`_
+
+The following terms are derived from X:
+
 * Error-correlation
 * Error-covariance
 * fractional uncertainty
@@ -254,3 +278,15 @@ Here, `"u_calibration"` is defined to have a systematic error-correlation in the
         u_calibration:err_corr_dim1_params=[];
         u_calibration:err_corr_dim1_units=[];
 
+
+
+# Links
+
+.. _VIM: https://jcgm.bipm.org/vim/en/index.html
+.. _Uncertainty: https://jcgm.bipm.org/vim/en/2.26.html
+.. _Error: https://jcgm.bipm.org/vim/en/2.16.html
+.. _Coverage factor: https://jcgm.bipm.org/vim/en/2.38.html
+.. _GUM: https://www.bipm.org/en/committees/jc/jcgm/publications
+.. _NetCDF: https://www.unidata.ucar.edu/software/netcdf/
+.. _Climate and Forecast (CF) conventions: https://cfconventions.org
+.. _FIDUCEO: https://research.reading.ac.uk/fiduceo/

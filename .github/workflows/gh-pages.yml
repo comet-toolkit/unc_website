@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_book_theme rst2pdf
+          pip install sphinx sphinx_book_theme sphinx_design rst2pdf
 
       - name: Build HTML documentation
         run: |
