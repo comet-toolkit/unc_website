@@ -45,7 +45,6 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'specification/draft-v0.1/unc_specification';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -339,6 +338,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-pdf-shape">Uncertainty PDF Shape</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structure">Error-Correlation Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-a-error-correlation-parameterisations">Appendix A: Error-Correlation Parameterisations</a></li>
 </ul>
 </li>
 </ul>
@@ -467,6 +467,10 @@
 </section>
 <section id="data-types">
 <h3>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do we want to permit different types?</p>
+</div>
 <p><em>Observation variables</em> and <em>uncertainty variables</em> must be <code class="code docutils literal notranslate"><span class="pre">floats</span></code>.</p>
 <p>Note: these variables may be encoded as e.g. integers for efficient storage on disc.</p>
 </section>
@@ -520,6 +524,10 @@
 <li><p><code class="code docutils literal notranslate"><span class="pre">&quot;rectangular&quot;</span></code> - for uncertainties represented by a uniform PDF</p></li>
 <li><p>…</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>What PDF shapes should we allow? Is there a list somewhere else we can refer to?</p>
+</div>
 <p>If <code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code> is not defined for an <em>uncertainty variable</em> it is assumed to be <code class="code docutils literal notranslate"><span class="pre">&quot;gaussian&quot;</span></code>.</p>
 <p>The following example of a dataset again shows a <code class="code docutils literal notranslate"><span class="pre">temperature</span></code> variable associated with two uncertainty components - <code class="code docutils literal notranslate"><span class="pre">u_calibration</span></code> and <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code>. Here, <code class="code docutils literal notranslate"><span class="pre">u_calibration</span></code> is defined to be represented by a rectangular PDF. <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code> has no defined <code class="code docutils literal notranslate"><span class="pre">&quot;pdf_shape&quot;</span></code> and so is assumed Gaussian.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
@@ -535,12 +543,19 @@
 </section>
 <section id="error-correlation-structure">
 <h3>Error-Correlation Structure<a class="headerlink" href="#error-correlation-structure" title="Link to this heading">#</a></h3>
-<p>For <em>observation variables</em> with <span class="math notranslate nohighlight">\(N\)</span> elements, the associated error-covariance matrix per <em>uncertainty variables</em> has <span class="math notranslate nohighlight">\(N^2\)</span> elements. Where the <em>observation variables</em> are large, it an quickly become impractical to store this data.</p>
-<p>However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded). This standard defines a set of <em>uncertainty variable</em> variable attributes to store this parameterisation.</p>
-<p>To allow maximum flexibility, different parameterisations can be defined along each <em>uncertainty variable</em> dimension, <code class="code docutils literal notranslate"><span class="pre">dim_i</span></code> (or sets of dimensions, [<code class="code docutils literal notranslate"><span class="pre">dim_i</span></code>, <code class="code docutils literal notranslate"><span class="pre">dim_j</span></code>, …]). For example, an error could be systematic in longitude and latitude at each time step, but random between time steps.</p>
-<p>Parameterisations have the form…</p>
+<p>To provide the complete uncertainty information associated with an <em>observation variable</em>, the cross-element error-covariance matrix is required. In practice, the error-covariance matrix is <a class="reference external" href="https://doi.org/10.3390/rs11050474">often determined from</a> a combination of the per element uncertainties (i.e., the <em>uncertainty variable</em> described above) and the cross-element error-correlation matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete description of dataset error-covariance.</p>
+<p>For <em>observation variables</em> with <code class="code docutils literal notranslate"><span class="pre">N</span></code> elements, the associated error-correlation matrix per <em>uncertainty variable</em> has the square of <code class="code docutils literal notranslate"><span class="pre">N</span></code> elements. Where <em>observation variables</em> are large, it quickly becomes impractical to store this data. However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded).</p>
+<p>Such a parameterisation is here defined by 3 values, as follows:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">form</span></code> - the parameterisation name, which defines the functional form of the parameterisation (e.g., “random” for identity matrix)</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">params</span></code> - a list of parameters associated with the parameterisation (e.g., the bandwidth for a banded matrix)</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">units</span></code> - the physical units associated with each parameter in <code class="code docutils literal notranslate"><span class="pre">params</span></code> list (<code class="code docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> where none required)</p></li>
+</ul>
+<p>This standard defines a set of <em>uncertainty variable</em> variable attributes to store these error-correlation parameterisation values.</p>
+<p>To allow maximum flexibility, different parameterisations can be defined along each <em>uncertainty variable</em> dimension, <code class="code docutils literal notranslate"><span class="pre">dim_x</span></code>, or sets of dimensions, <code class="code docutils literal notranslate"><span class="pre">[dim_x,</span> <span class="pre">dim_y,</span> <span class="pre">...]</span></code>. For example, an error could be fully correlated in longitude and latitude at each time step, but uncorrelated between time steps.</p>
+<p>The following <em>uncertainty variable</em> variable attributes are defined to store this parameterisation information, per dimension or set of dimensions (each labelled by <code class="code docutils literal notranslate"><span class="pre">i</span></code>, which runs from 1 to the required number of dimensions / sets of dimensions):</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id2">
-<caption><span class="caption-text">Error-correlation attributes</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<caption><span class="caption-text">Error-correlation <em>uncertainty variable</em> variable attributes</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 13.6%" />
 <col style="width: 13.6%" />
@@ -555,51 +570,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>err_corr_dimi_name</p></td>
-<td><p>str</p></td>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_name</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">str</span></code></p></td>
 <td><p>Dimension name</p></td>
-<td><p>err_corr_dim1_name=”time”</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dim1_name=&quot;time&quot;</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>err_corr_dimi_form</p></td>
-<td><p>str</p></td>
-<td><p>Parameterisation name</p></td>
-<td><p>err_corr_dim1_form=”random”</p></td>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_form</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">str</span></code></p></td>
+<td><p>Parameterisation <code class="code docutils literal notranslate"><span class="pre">form</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dim1_form=&quot;random&quot;</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>err_corr_dimi_params</p></td>
-<td><p>list[Any]</p></td>
-<td><p>Parameterisation parameters</p></td>
-<td><p>err_corr_dim1_params=[1,2,3]</p></td>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_params</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">list[str</span> <span class="pre">|</span> <span class="pre">float</span> <span class="pre">|</span> <span class="pre">int]</span></code></p></td>
+<td><p>Parameterisation <code class="code docutils literal notranslate"><span class="pre">params</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dim1_params=[1,2,3]</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>err_corr_dimi_units</p></td>
-<td><p>list[str]</p></td>
-<td><p>Parameterisation parameter units</p></td>
-<td><p>err_corr_dim1_params=[“second”, “m”, “K”]</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Existing parmaterisations:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id3">
-<caption><span class="caption-text">Error-correlation parameterisations</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 25.0%" />
-<col style="width: 50.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Parameterisation Form</p></th>
-<th class="head"><p>Parameters</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>random</p></td>
-<td><p>[]</p></td>
-<td><p>No error-correlation between elements in observation variable.</p></td>
-</tr>
-<tr class="row-odd"><td><p>systematic</p></td>
-<td><p>[]</p></td>
-<td><p>Full error-correlation between elements in observation variable.</p></td>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_units</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">list[str]</span></code></p></td>
+<td><p>Parameterisation <code class="code docutils literal notranslate"><span class="pre">units</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dim1_params=[&quot;second&quot;,</span> <span class="pre">&quot;K&quot;]</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -628,6 +617,35 @@
     <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_params</span><span class="o">=</span><span class="p">[];</span>
     <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_units</span><span class="o">=</span><span class="p">[];</span>
 </pre></div>
+</div>
+</section>
+<section id="appendix-a-error-correlation-parameterisations">
+<h3>Appendix A: Error-Correlation Parameterisations<a class="headerlink" href="#appendix-a-error-correlation-parameterisations" title="Link to this heading">#</a></h3>
+<p>Existing parmaterisations:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-text">Error-correlation parameterisations</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameterisation Form</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>random</p></td>
+<td><p>[]</p></td>
+<td><p>No error-correlation between elements in observation variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>systematic</p></td>
+<td><p>[]</p></td>
+<td><p>Full error-correlation between elements in observation variable.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 </section>
@@ -678,6 +696,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-pdf-shape">Uncertainty PDF Shape</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structure">Error-Correlation Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-a-error-correlation-parameterisations">Appendix A: Error-Correlation Parameterisations</a></li>
 </ul>
 </li>
 </ul>
