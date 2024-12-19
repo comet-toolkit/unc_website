@@ -131,6 +131,10 @@ A variable may have any number of named dimensions, including zero -- e.g., `"x"
 Data Types
 ----------
 
+.. note::
+
+   Do we want to permit different types?
+
 *Observation variables* and *uncertainty variables* must be `floats`.
 
 Note: these variables may be encoded as e.g. integers for efficient storage on disc.
@@ -197,6 +201,10 @@ The probability density function (PDF) shape associated with the uncertainty est
 * `"rectangular"` - for uncertainties represented by a uniform PDF
 * ...
 
+.. note::
+
+    What PDF shapes should we allow? Is there a list somewhere else we can refer to?
+
 If `"pdf_shape"` is not defined for an *uncertainty variable* it is assumed to be `"gaussian"`.
 
 The following example of a dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined to be represented by a rectangular PDF. `u_noise` has no defined `"pdf_shape"` and so is assumed Gaussian.
@@ -216,15 +224,23 @@ The following example of a dataset again shows a `temperature` variable associat
 Error-Correlation Structure
 ---------------------------
 
-For *observation variables* with :math:`N` elements, the associated error-covariance matrix per *uncertainty variables* has :math:`N^2` elements. Where the *observation variables* are large, it an quickly become impractical to store this data.
+To provide the complete uncertainty information associated with an *observation variable*, the cross-element error-covariance matrix is required. In practice, the error-covariance matrix is `often determined from <https://doi.org/10.3390/rs11050474>`_ a combination of the per element uncertainties (i.e., the *uncertainty variable* described above) and the cross-element error-correlation matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete description of dataset error-covariance.
 
-However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded). This standard defines a set of *uncertainty variable* variable attributes to store this parameterisation.
+For *observation variables* with `N` elements, the associated error-correlation matrix per *uncertainty variable* has the square of `N` elements. Where *observation variables* are large, it quickly becomes impractical to store this data. However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded).
 
-To allow maximum flexibility, different parameterisations can be defined along each *uncertainty variable* dimension, `dim_i` (or sets of dimensions, [`dim_i`, `dim_j`, ...]). For example, an error could be systematic in longitude and latitude at each time step, but random between time steps.
+Such a parameterisation is here defined by 3 values, as follows:
 
-Parameterisations have the form...
+* `form` - the parameterisation name, which defines the functional form of the parameterisation (e.g., "random" for identity matrix)
+* `params` - a list of parameters associated with the parameterisation (e.g., the bandwidth for a banded matrix)
+* `units` - the physical units associated with each parameter in `params` list (`""` where none required)
 
-.. list-table:: Error-correlation attributes
+This standard defines a set of *uncertainty variable* variable attributes to store these error-correlation parameterisation values.
+
+To allow maximum flexibility, different parameterisations can be defined along each *uncertainty variable* dimension, `dim_x`, or sets of dimensions, `[dim_x, dim_y, ...]`. For example, an error could be fully correlated in longitude and latitude at each time step, but uncorrelated between time steps.
+
+The following *uncertainty variable* variable attributes are defined to store this parameterisation information, per dimension or set of dimensions (each labelled by `i`, which runs from 1 to the required number of dimensions / sets of dimensions):
+
+.. list-table:: Error-correlation *uncertainty variable* variable attributes
    :widths: 15 15 50 30
    :header-rows: 1
 
@@ -232,40 +248,22 @@ Parameterisations have the form...
      - Type
      - Description
      - Example
-   * - err_corr_dimi_name
-     - str
+   * - `err_corr_dimi_name`
+     - `str`
      - Dimension name
-     - err_corr_dim1_name="time"
-   * - err_corr_dimi_form
-     - str
-     - Parameterisation name
-     - err_corr_dim1_form="random"
-   * - err_corr_dimi_params
-     - list[Any]
-     - Parameterisation parameters
-     - err_corr_dim1_params=[1,2,3]
-   * - err_corr_dimi_units
-     - list[str]
-     - Parameterisation parameter units
-     - err_corr_dim1_params=["second", "m", "K"]
-
-
-Existing parmaterisations:
-
-.. list-table:: Error-correlation parameterisations
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - Parameterisation Form
-     - Parameters
-     - Description
-   * - random
-     - []
-     - No error-correlation between elements in observation variable.
-   * - systematic
-     - []
-     - Full error-correlation between elements in observation variable.
-
+     - `err_corr_dim1_name="time"`
+   * - `err_corr_dimi_form`
+     - `str`
+     - Parameterisation `form`
+     - `err_corr_dim1_form="random"`
+   * - `err_corr_dimi_params`
+     - `list[str | float | int]`
+     - Parameterisation `params`
+     - `err_corr_dim1_params=[1,2,3]`
+   * - `err_corr_dimi_units`
+     - `list[str]`
+     - Parameterisation `units`
+     - `err_corr_dim1_params=["second", "K"]`
 
 The following example of a dataset again shows a `"temperature"` variable associated with two uncertainty components - `"u_calibration"` and `"u_noise"`.
 
@@ -296,6 +294,25 @@ Here, `"u_calibration"` is defined to have a systematic error-correlation in the
         u_calibration:err_corr_dim1_params=[];
         u_calibration:err_corr_dim1_units=[];
 
+
+Appendix A: Error-Correlation Parameterisations
+-----------------------------------------------
+
+Existing parmaterisations:
+
+.. list-table:: Error-correlation parameterisations
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Parameterisation Form
+     - Parameters
+     - Description
+   * - random
+     - []
+     - No error-correlation between elements in observation variable.
+   * - systematic
+     - []
+     - Full error-correlation between elements in observation variable.
 
 
 .. Links
