@@ -16,7 +16,7 @@ This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiati
         For the latest version of this standard
 
     .. grid-item-card::  Other Versions
-        :link: specification/specification_landing
+        :link: specification/spec_toc
         :link-type: doc
 
         For all versions of this standard
@@ -47,7 +47,7 @@ The development has been funded by:
    :maxdepth: 1
    :hidden:
 
-   Unc Specification <specification/specification_landing>
+   Unc Specification <specification/spec_toc>
    Governance <governance>
    CoMet Toolkit <comet>
 
