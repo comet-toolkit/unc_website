@@ -13,4 +13,4 @@ Web Versions
 PDF Versions
 ------------
 
-`draft-v0.1 <https://comet-toolkit.github.io/unc_website/_static/draft-v0.1/unc_specification.pdf>`_
+`draft-v0.1 <https://comet-toolkit.github.io/unc_website/_static/spec_pdfs/draft-v0.1/unc_specification_draft-v0.1.pdf>`_
