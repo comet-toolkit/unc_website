@@ -19,7 +19,7 @@ This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiati
         :link: specification/spec_toc
         :link-type: doc
 
-        For all versions of this standard
+        For all versions of this standard - including web and PDF
 
     .. grid-item-card::  Governance
         :link: governance
