@@ -1,19 +1,24 @@
 """unc_website.source.make_spec_version_toc - module containing function to build TOC page for different specification versions"""
-
-from os import listdir
-from os.path import isdir
+import os.path
+from os import listdir, makedirs
+from os.path import isdir, dirname, abspath
 from os.path import join as pjoin
-
+import subprocess
+import shutil
+from pathlib import Path
 
 __author__ = "Sam Hunt <sam.hunt@npl.co.uk>"
 __all__ = ["make_spec_version_toc"]
 
+# Directories
+SOURCE_DIR = abspath(dirname(__file__))
 
 # Spec TOC filename
 SPEC_FNAME = "spec_toc.rst"
 
 # URL of folder where PDFs are stored
-PDF_URL = "https://comet-toolkit.github.io/unc_website/_static"
+PDF_PATH = "build/html/_static/spec_pdfs"
+PDF_URL = "https://comet-toolkit.github.io/unc_website/_static/spec_pdfs"
 
 # Static page content elements
 HEADER = ("======================================\n"
@@ -36,7 +41,7 @@ def make_spec_version_toc(spec_dir: str):
     :param spec_dir: directory containing specification versions
     """
 
-    toc_path = pjoin(spec_dir, SPEC_FNAME)
+    toc_path = pjoin(SOURCE_DIR, spec_dir, SPEC_FNAME)
     page_content = ""
 
     # add header
@@ -45,7 +50,7 @@ def make_spec_version_toc(spec_dir: str):
     # each version of the spec is a separate folder in the spec_dir
     spec_vers = [f for f in listdir(spec_dir) if isdir(pjoin(spec_dir, f))]
     spec_vers_toc_paths = [f"{f}/unc_specification" for f in spec_vers]
-    spec_vers_urls = [f"{PDF_URL}/{f}/unc_specification.pdf" for f in spec_vers]
+    spec_vers_urls = [f"{PDF_URL}/{f}/unc_specification_{f}.pdf" for f in spec_vers]
 
     # add web version TOC
     page_content += WEB_VERS_SUBHEADER
@@ -64,5 +69,36 @@ def make_spec_version_toc(spec_dir: str):
         f.write(page_content)
 
 
+def build_spec_pdfs(spec_dir: str):
+
+    abs_spec_dir = pjoin(SOURCE_DIR, spec_dir)
+
+    spec_vers = [f for f in listdir(abs_spec_dir) if isdir(pjoin(abs_spec_dir, f))]
+    spec_ver_dirs = [pjoin(abs_spec_dir, f) for f in spec_vers if isdir(pjoin(abs_spec_dir, f))]
+
+    conf_file_path = pjoin(SOURCE_DIR, "conf.py")
+
+    for spec_ver, spec_ver_dir in zip(spec_vers, spec_ver_dirs):
+
+        ver_conf_file_path = pjoin(spec_ver_dir, "conf.py")
+        shutil.copyfile(conf_file_path, ver_conf_file_path)
+
+        tmp_index_path = pjoin(spec_ver_dir, "index.rst")
+
+        Path(tmp_index_path).touch()
+
+        with open(ver_conf_file_path, "a") as f:
+
+            f.write(f"version = '{spec_ver}'\n")
+            f.write("pdf_documents = [('unc_specification', f'unc_specification_{version}', f'{project_title}', f'{author}'),]")
+
+        makedirs(pjoin(PDF_PATH, spec_ver), exist_ok=True)
+
+        subprocess.run(["sphinx-build", "-b", "pdf", spec_ver_dir, pjoin(PDF_PATH, spec_ver)])
+
+        os.remove(tmp_index_path)
+        os.remove(ver_conf_file_path)
+
+
 if __name__ == "__main__":
-    make_spec_version_toc("source/specification")
+    build_spec_pdfs("specification")

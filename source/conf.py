@@ -13,10 +13,8 @@
 import sys
 import os
 
-sys.path.append(os.path.dirname(__file__))
-from make_spec_version_toc import make_spec_version_toc
+build_type = sys.argv[2]
 
-SPEC_DIR = "specification"
 project_title = "Uncertainty Metadata Conventions Specifications"
 
 # -- General configuration ---------------------------------------------
@@ -139,7 +137,10 @@ latex_elements = {
 #     ),
 # ]
 
-pdf_documents = [('unc_specification', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
-
 # create specification TOC table
-make_spec_version_toc(SPEC_DIR)
+if build_type == "html":
+    sys.path.append(os.path.dirname(__file__))
+    from make_spec_versions import make_spec_version_toc
+
+    SPEC_DIR = "specification"
+    make_spec_version_toc(SPEC_DIR)
