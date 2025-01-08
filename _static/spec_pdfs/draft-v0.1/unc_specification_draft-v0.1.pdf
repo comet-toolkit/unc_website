@@ -2,7 +2,7 @@
 %“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 46 0 R /F4 52 0 R /F5 65 0 R
+/F1 2 0 R /F2 3 0 R /F3 54 0 R /F4 60 0 R /F5 75 0 R
 >>
 endobj
 2 0 obj
@@ -17,7 +17,7 @@ endobj
 endobj
 4 0 obj
 <<
-/Contents 91 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+/Contents 106 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -27,7 +27,7 @@ endobj
 endobj
 5 0 obj
 <<
-/Contents 92 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+/Contents 107 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -37,200 +37,241 @@ endobj
 endobj
 6 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 40.01575 755.8394 206.2502 766.0394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 40.01575 755.8394 239.7827 766.0394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 550.5338 756.4769 555.2598 766.6769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 550.5338 756.4769 555.2598 766.6769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 60.01575 739.6394 89.30675 749.8394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 60.01575 739.6394 89.30675 749.8394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 9 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 550.5338 740.2769 555.2598 750.4769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 550.5338 740.2769 555.2598 750.4769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 10 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 711.8394 0 ] /Rect [ 80.01575 723.4394 130.5737 733.6394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 711.8394 0 ] /Rect [ 80.01575 723.4394 130.5737 733.6394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 711.8394 0 ] /Rect [ 550.5338 724.0769 555.2598 734.2769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 711.8394 0 ] /Rect [ 550.5338 724.0769 555.2598 734.2769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 637.0394 0 ] /Rect [ 60.01575 707.2394 104.4282 717.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 637.0394 0 ] /Rect [ 60.01575 707.2394 104.4282 717.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 637.0394 0 ] /Rect [ 550.5338 707.8769 555.2598 718.0769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 637.0394 0 ] /Rect [ 550.5338 707.8769 555.2598 718.0769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 14 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 601.8394 0 ] /Rect [ 80.01575 691.0394 102.2177 701.2394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 601.8394 0 ] /Rect [ 80.01575 691.0394 102.2177 701.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 601.8394 0 ] /Rect [ 550.5338 691.6769 555.2598 701.8769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 601.8394 0 ] /Rect [ 550.5338 691.6769 555.2598 701.8769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 16 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 461.0394 0 ] /Rect [ 80.01575 674.8394 121.5892 685.0394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 461.0394 0 ] /Rect [ 80.01575 674.8394 121.5892 685.0394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 17 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 53 0 R /XYZ 40.01575 461.0394 0 ] /Rect [ 550.5338 675.4769 555.2598 685.6769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 461.0394 0 ] /Rect [ 550.5338 675.4769 555.2598 685.6769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 18 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 80.01575 658.6394 126.7742 668.8394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 80.01575 658.6394 126.7742 668.8394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 19 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 550.5338 659.2769 555.2598 669.4769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 550.5338 659.2769 555.2598 669.4769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 20 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 598.2394 0 ] /Rect [ 80.01575 642.4394 158.8957 652.6394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 541.4394 0 ] /Rect [ 80.01575 642.4394 158.8957 652.6394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 21 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 598.2394 0 ] /Rect [ 550.5338 643.0769 555.2598 653.2769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 541.4394 0 ] /Rect [ 550.5338 643.0769 555.2598 653.2769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 22 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 246.6394 0 ] /Rect [ 60.01575 626.2394 184.7277 636.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 219.8394 0 ] /Rect [ 60.01575 626.2394 184.7277 636.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 23 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 246.6394 0 ] /Rect [ 550.5338 626.8769 555.2598 637.0769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 219.8394 0 ] /Rect [ 550.5338 626.8769 555.2598 637.0769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 24 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 169.4394 0 ] /Rect [ 80.01575 610.0394 115.4437 620.2394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 142.6394 0 ] /Rect [ 80.01575 610.0394 115.4437 620.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 25 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 40.01575 169.4394 0 ] /Rect [ 550.5338 610.6769 555.2598 620.8769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 70 0 R /XYZ 40.01575 142.6394 0 ] /Rect [ 550.5338 610.6769 555.2598 620.8769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 26 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 711.0394 0 ] /Rect [ 80.01575 593.8394 124.4112 604.0394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 594.2394 0 ] /Rect [ 80.01575 593.8394 124.4112 604.0394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 27 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 711.0394 0 ] /Rect [ 550.5338 594.4769 555.2598 604.6769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 594.2394 0 ] /Rect [ 550.5338 594.4769 555.2598 604.6769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 28 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 648.2394 0 ] /Rect [ 80.01575 577.6394 123.4762 587.8394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 531.4394 0 ] /Rect [ 80.01575 577.6394 123.4762 587.8394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 29 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 648.2394 0 ] /Rect [ 550.5338 578.2769 555.2598 588.4769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 531.4394 0 ] /Rect [ 550.5338 578.2769 555.2598 588.4769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 30 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 498.6394 0 ] /Rect [ 80.01575 561.4394 115.9197 571.6394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 381.8394 0 ] /Rect [ 80.01575 561.4394 115.9197 571.6394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 31 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 498.6394 0 ] /Rect [ 550.5338 562.0769 555.2598 572.2769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 381.8394 0 ] /Rect [ 550.5338 562.0769 555.2598 572.2769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 32 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 339.8394 0 ] /Rect [ 60.01575 545.2394 141.2672 555.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 223.0394 0 ] /Rect [ 60.01575 545.2394 141.2672 555.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 33 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 339.8394 0 ] /Rect [ 550.5338 545.8769 555.2598 556.0769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 223.0394 0 ] /Rect [ 550.5338 545.8769 555.2598 556.0769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 34 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 304.6394 0 ] /Rect [ 80.01575 529.0394 212.7602 539.2394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 187.8394 0 ] /Rect [ 80.01575 529.0394 212.7602 539.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 35 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 304.6394 0 ] /Rect [ 550.5338 529.6769 555.2598 539.8769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 71 0 R /XYZ 40.01575 187.8394 0 ] /Rect [ 550.5338 529.6769 555.2598 539.8769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 36 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 121.0394 0 ] /Rect [ 80.01575 512.8394 99.37875 523.0394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 72 0 R /XYZ 40.01575 728.2394 0 ] /Rect [ 80.01575 512.8394 99.37875 523.0394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 37 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 62 0 R /XYZ 40.01575 121.0394 0 ] /Rect [ 550.5338 513.4769 555.2598 523.6769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 72 0 R /XYZ 40.01575 728.2394 0 ] /Rect [ 550.5338 513.4769 555.2598 523.6769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 38 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 64 0 R /XYZ 40.01575 614.2394 0 ] /Rect [ 80.01575 496.6394 169.2997 506.8394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 72 0 R /XYZ 40.01575 484.6394 0 ] /Rect [ 80.01575 496.6394 169.2997 506.8394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 39 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 64 0 R /XYZ 40.01575 614.2394 0 ] /Rect [ 550.5338 497.2769 555.2598 507.4769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 72 0 R /XYZ 40.01575 484.6394 0 ] /Rect [ 550.5338 497.2769 555.2598 507.4769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 40 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 64 0 R /XYZ 40.01575 241.8394 0 ] /Rect [ 80.01575 480.4394 180.1457 490.6394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 80.01575 480.4394 180.1457 490.6394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 41 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 64 0 R /XYZ 40.01575 241.8394 0 ] /Rect [ 550.5338 481.0769 555.2598 491.2769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 550.5338 481.0769 555.2598 491.2769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 42 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 66 0 R /XYZ 40.01575 89.83937 0 ] /Rect [ 80.01575 464.2394 262.3492 474.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 688.2394 0 ] /Rect [ 100.0157 464.2394 264.3802 474.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 43 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 66 0 R /XYZ 40.01575 89.83937 0 ] /Rect [ 550.5338 464.8769 555.2598 475.0769 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 688.2394 0 ] /Rect [ 550.5338 464.8769 555.2598 475.0769 ] /Subtype /Link /Type /Annot
 >>
 endobj
 44 0 obj
 <<
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 200.6394 0 ] /Rect [ 100.0157 448.0394 259.1952 458.2394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+45 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 76 0 R /XYZ 40.01575 200.6394 0 ] /Rect [ 550.5338 448.6769 555.2598 458.8769 ] /Subtype /Link /Type /Annot
+>>
+endobj
+46 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 77 0 R /XYZ 40.01575 324.2394 0 ] /Rect [ 60.01575 431.8394 242.3492 442.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+47 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 77 0 R /XYZ 40.01575 324.2394 0 ] /Rect [ 550.5338 432.4769 555.2598 442.6769 ] /Subtype /Link /Type /Annot
+>>
+endobj
+48 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 77 0 R /XYZ 40.01575 193.0394 0 ] /Rect [ 80.01575 415.6394 248.1882 425.8394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+49 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 77 0 R /XYZ 40.01575 193.0394 0 ] /Rect [ 550.5338 416.2769 555.2598 426.4769 ] /Subtype /Link /Type /Annot
+>>
+endobj
+50 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 78 0 R /XYZ 40.01575 695.0394 0 ] /Rect [ 80.01575 399.4394 206.1557 409.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+51 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 78 0 R /XYZ 40.01575 695.0394 0 ] /Rect [ 550.5338 400.0769 555.2598 410.2769 ] /Subtype /Link /Type /Annot
+>>
+endobj
+52 0 obj
+<<
 /Annots [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 
   16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 
   26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 
-  36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R ] /Contents 93 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+  36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R 45 0 R 
+  46 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R ] /Contents 108 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -238,9 +279,9 @@ endobj
 >> /Type /Page
 >>
 endobj
-45 0 obj
+53 0 obj
 <<
-/Contents 94 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+/Contents 109 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -248,113 +289,54 @@ endobj
   /Type /Page
 >>
 endobj
-46 0 obj
+54 0 obj
 <<
 /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
-47 0 obj
+55 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.bipm.org/en/committees/jc/jcgm/publications)
 >> /Border [ 0 0 0 ] /Rect [ 348.7157 393.2394 370.9906 405.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
-48 0 obj
+56 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/index.html)
 >> /Border [ 0 0 0 ] /Rect [ 370.9257 363.2394 417.3288 375.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
-49 0 obj
+57 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.unidata.ucar.edu/software/netcdf/)
 >> /Border [ 0 0 0 ] /Rect [ 83.02575 333.2394 119.1357 345.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
-50 0 obj
+58 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (file:///home/runner/work/unc_website/unc_website/cf)
 >> /Border [ 0 0 0 ] /Rect [ 83.02575 315.2394 256.9657 327.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
-51 0 obj
+59 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://research.reading.ac.uk/fiduceo/)
 >> /Border [ 0 0 0 ] /Rect [ 88.93575 288.2394 133.9357 300.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
-52 0 obj
+60 0 obj
 <<
 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
 >>
 endobj
-53 0 obj
-<<
-/Annots [ 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R ] /Contents 95 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
->>
-endobj
-54 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/index.html)
->> /Border [ 0 0 0 ] /Rect [ 450.7457 752.2394 491.987 764.2394 ] /Subtype /Link /Type /Annot
->>
-endobj
-55 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.16.html)
->> /Border [ 0 0 0 ] /Rect [ 63.01575 719.9894 85.23575 731.9894 ] /Subtype /Link /Type /Annot
->>
-endobj
-56 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.26.html)
->> /Border [ 0 0 0 ] /Rect [ 63.01575 701.9894 113.5857 713.9894 ] /Subtype /Link /Type /Annot
->>
-endobj
-57 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.38.html)
->> /Border [ 0 0 0 ] /Rect [ 63.01575 683.9894 134.1557 695.9894 ] /Subtype /Link /Type /Annot
->>
-endobj
-58 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://docs.unidata.ucar.edu/nug/2.0-draft/cdl.html)
->> /Border [ 0 0 0 ] /Rect [ 386.2857 563.4394 419.3012 575.4394 ] /Subtype /Link /Type /Annot
->>
-endobj
-59 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://www.unidata.ucar.edu/software/netcdf/)
->> /Border [ 0 0 0 ] /Rect [ 153.4157 209.4394 199.9701 221.4394 ] /Subtype /Link /Type /Annot
->>
-endobj
-60 0 obj
-<<
-/A <<
-/S /URI /Type /Action /URI (https://docs.unidata.ucar.edu/nug/current/)
->> /Border [ 0 0 0 ] /Rect [ 395.7557 197.4394 418.802 209.4394 ] /Subtype /Link /Type /Annot
->>
-endobj
 61 0 obj
 <<
-/Annots [ 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R ] /Contents 96 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+/Annots [ 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R ] /Contents 110 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -364,24 +346,63 @@ endobj
 endobj
 62 0 obj
 <<
-/Contents 97 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+/A <<
+/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/index.html)
+>> /Border [ 0 0 0 ] /Rect [ 450.7457 752.2394 491.987 764.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 63 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://doi.org/10.3390/rs11050474)
->> /Border [ 0 0 0 ] /Rect [ 381.7657 195.0394 479.205 207.0394 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.16.html)
+>> /Border [ 0 0 0 ] /Rect [ 63.01575 719.9894 85.23575 731.9894 ] /Subtype /Link /Type /Annot
 >>
 endobj
 64 0 obj
 <<
-/Annots [ 63 0 R ] /Contents 98 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
+/A <<
+/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.26.html)
+>> /Border [ 0 0 0 ] /Rect [ 63.01575 701.9894 113.5857 713.9894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+65 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://jcgm.bipm.org/vim/en/2.38.html)
+>> /Border [ 0 0 0 ] /Rect [ 63.01575 683.9894 134.1557 695.9894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+66 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://iopscience.iop.org/article/10.1088/1681-7575/ab1705/pdf)
+>> /Border [ 0 0 0 ] /Rect [ 265.6657 668.2394 446.8457 680.2394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+67 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.unidata.ucar.edu/nug/2.0-draft/cdl.html)
+>> /Border [ 0 0 0 ] /Rect [ 435.7457 506.6394 468.1494 518.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+68 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.unidata.ucar.edu/software/netcdf/)
+>> /Border [ 0 0 0 ] /Rect [ 153.4157 182.6394 199.9701 194.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+69 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.unidata.ucar.edu/nug/current/)
+>> /Border [ 0 0 0 ] /Rect [ 395.7557 170.6394 418.802 182.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+70 0 obj
+<<
+/Annots [ 62 0 R 63 0 R 64 0 R 65 0 R 66 0 R 67 0 R 68 0 R 69 0 R ] /Contents 111 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -389,154 +410,219 @@ endobj
 >> /Type /Page
 >>
 endobj
-65 0 obj
-<<
-/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
->>
-endobj
-66 0 obj
-<<
-/Contents 99 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
-endobj
-67 0 obj
-<<
-/Contents 100 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 90 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
-endobj
-68 0 obj
-<<
-/Outlines 70 0 R /PageLabels 101 0 R /PageMode /UseNone /Pages 90 0 R /Type /Catalog
->>
-endobj
-69 0 obj
-<<
-/Author () /CreationDate (D:20241219164153+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20241219164153+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (\(unspecified\)) /Title () /Trapped /False
->>
-endobj
-70 0 obj
-<<
-/Count 24 /First 71 0 R /Last 71 0 R /Type /Outlines
->>
-endobj
 71 0 obj
 <<
-/Count 18 /Dest [ 53 0 R /XYZ 40.01575 787.0394 0 ] /First 72 0 R /Last 84 0 R /Parent 70 0 R /Title (Uncertainty Metadata Conventions \(UNC\))
+/Contents 112 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 72 0 obj
 <<
-/Count 1 /Dest [ 53 0 R /XYZ 40.01575 747.0394 0 ] /First 73 0 R /Last 73 0 R /Next 74 0 R /Parent 71 0 R 
-  /Title (Authors)
+/Contents 113 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 73 0 obj
 <<
-/Dest [ 53 0 R /XYZ 40.01575 711.8394 0 ] /Parent 72 0 R /Title (Lead Authors)
+/A <<
+/S /URI /Type /Action /URI (https://doi.org/10.3390/rs11050474)
+>> /Border [ 0 0 0 ] /Rect [ 382.8757 740.2394 479.4497 752.2394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 74 0 obj
 <<
-/Count 4 /Dest [ 53 0 R /XYZ 40.01575 637.0394 0 ] /First 75 0 R /Last 78 0 R /Next 79 0 R /Parent 71 0 R 
-  /Prev 72 0 R /Title (Introduction)
+/Border [ 0 0 0 ] /Contents () /Dest [ 77 0 R /XYZ 40.01575 327.4394 0 ] /Rect [ 40.01575 517.8394 91.45402 529.8394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 75 0 obj
 <<
-/Dest [ 53 0 R /XYZ 40.01575 601.8394 0 ] /Next 76 0 R /Parent 74 0 R /Title (Goals)
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
 >>
 endobj
 76 0 obj
 <<
-/Dest [ 53 0 R /XYZ 40.01575 461.0394 0 ] /Next 77 0 R /Parent 74 0 R /Prev 75 0 R /Title (Philosophy)
+/Annots [ 73 0 R 74 0 R ] /Contents 114 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
 >>
 endobj
 77 0 obj
 <<
-/Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /Next 78 0 R /Parent 74 0 R /Prev 76 0 R /Title (Terminology)
+/Contents 115 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 78 0 obj
 <<
-/Dest [ 61 0 R /XYZ 40.01575 598.2394 0 ] /Parent 74 0 R /Prev 77 0 R /Title (Format for Examples)
+/Contents 116 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 105 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 79 0 obj
 <<
-/Count 4 /Dest [ 61 0 R /XYZ 40.01575 246.6394 0 ] /First 80 0 R /Last 83 0 R /Next 84 0 R /Parent 71 0 R 
-  /Prev 74 0 R /Title (Measurement Dataset Structures)
+/Outlines 81 0 R /PageLabels 117 0 R /PageMode /UseNone /Pages 105 0 R /Type /Catalog
 >>
 endobj
 80 0 obj
 <<
-/Dest [ 61 0 R /XYZ 40.01575 169.4394 0 ] /Next 81 0 R /Parent 79 0 R /Title (Variables)
+/Author () /CreationDate (D:20250108150547+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250108150547+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
 81 0 obj
 <<
-/Dest [ 62 0 R /XYZ 40.01575 711.0394 0 ] /Next 82 0 R /Parent 79 0 R /Prev 80 0 R /Title (Dimensions)
+/Count 30 /First 82 0 R /Last 82 0 R /Type /Outlines
 >>
 endobj
 82 0 obj
 <<
-/Dest [ 62 0 R /XYZ 40.01575 648.2394 0 ] /Next 83 0 R /Parent 79 0 R /Prev 81 0 R /Title (Data Types)
+/Count 22 /Dest [ 61 0 R /XYZ 40.01575 787.0394 0 ] /First 83 0 R /Last 102 0 R /Parent 81 0 R /Title (Uncertainty Metadata Naming Conventions \(UNC\))
 >>
 endobj
 83 0 obj
 <<
-/Dest [ 62 0 R /XYZ 40.01575 498.6394 0 ] /Parent 79 0 R /Prev 82 0 R /Title (Attributes)
+/Count 1 /Dest [ 61 0 R /XYZ 40.01575 747.0394 0 ] /First 84 0 R /Last 84 0 R /Next 85 0 R /Parent 82 0 R 
+  /Title (Authors)
 >>
 endobj
 84 0 obj
 <<
-/Count 5 /Dest [ 62 0 R /XYZ 40.01575 339.8394 0 ] /First 85 0 R /Last 89 0 R /Parent 71 0 R /Prev 79 0 R 
-  /Title (Uncertainty Attributes)
+/Dest [ 61 0 R /XYZ 40.01575 711.8394 0 ] /Parent 83 0 R /Title (Lead Authors)
 >>
 endobj
 85 0 obj
 <<
-/Dest [ 62 0 R /XYZ 40.01575 304.6394 0 ] /Next 86 0 R /Parent 84 0 R /Title (Assigning Uncertainty Components)
+/Count 4 /Dest [ 61 0 R /XYZ 40.01575 637.0394 0 ] /First 86 0 R /Last 89 0 R /Next 90 0 R /Parent 82 0 R 
+  /Prev 83 0 R /Title (Introduction)
 >>
 endobj
 86 0 obj
 <<
-/Dest [ 62 0 R /XYZ 40.01575 121.0394 0 ] /Next 87 0 R /Parent 84 0 R /Prev 85 0 R /Title (Units)
+/Dest [ 61 0 R /XYZ 40.01575 601.8394 0 ] /Next 87 0 R /Parent 85 0 R /Title (Goals)
 >>
 endobj
 87 0 obj
 <<
-/Dest [ 64 0 R /XYZ 40.01575 614.2394 0 ] /Next 88 0 R /Parent 84 0 R /Prev 86 0 R /Title (Uncertainty PDF Shape)
+/Dest [ 61 0 R /XYZ 40.01575 461.0394 0 ] /Next 88 0 R /Parent 85 0 R /Prev 86 0 R /Title (Philosophy)
 >>
 endobj
 88 0 obj
 <<
-/Dest [ 64 0 R /XYZ 40.01575 241.8394 0 ] /Next 89 0 R /Parent 84 0 R /Prev 87 0 R /Title (Error-Correlation Structure)
+/Dest [ 70 0 R /XYZ 40.01575 787.0394 0 ] /Next 89 0 R /Parent 85 0 R /Prev 87 0 R /Title (Terminology)
 >>
 endobj
 89 0 obj
 <<
-/Dest [ 66 0 R /XYZ 40.01575 89.83937 0 ] /Parent 84 0 R /Prev 88 0 R /Title (Appendix A: Error-Correlation Parameterisations)
+/Dest [ 70 0 R /XYZ 40.01575 541.4394 0 ] /Parent 85 0 R /Prev 88 0 R /Title (Format for Examples)
 >>
 endobj
 90 0 obj
 <<
-/Count 10 /Kids [ 4 0 R 5 0 R 44 0 R 45 0 R 53 0 R 61 0 R 62 0 R 64 0 R 66 0 R 67 0 R ] /Type /Pages
+/Count 4 /Dest [ 70 0 R /XYZ 40.01575 219.8394 0 ] /First 91 0 R /Last 94 0 R /Next 95 0 R /Parent 82 0 R 
+  /Prev 85 0 R /Title (Measurement Dataset Structures)
 >>
 endobj
 91 0 obj
 <<
-/Length 926
+/Dest [ 70 0 R /XYZ 40.01575 142.6394 0 ] /Next 92 0 R /Parent 90 0 R /Title (Variables)
+>>
+endobj
+92 0 obj
+<<
+/Dest [ 71 0 R /XYZ 40.01575 594.2394 0 ] /Next 93 0 R /Parent 90 0 R /Prev 91 0 R /Title (Dimensions)
+>>
+endobj
+93 0 obj
+<<
+/Dest [ 71 0 R /XYZ 40.01575 531.4394 0 ] /Next 94 0 R /Parent 90 0 R /Prev 92 0 R /Title (Data Types)
+>>
+endobj
+94 0 obj
+<<
+/Dest [ 71 0 R /XYZ 40.01575 381.8394 0 ] /Parent 90 0 R /Prev 93 0 R /Title (Attributes)
+>>
+endobj
+95 0 obj
+<<
+/Count 6 /Dest [ 71 0 R /XYZ 40.01575 223.0394 0 ] /First 96 0 R /Last 99 0 R /Next 102 0 R /Parent 82 0 R 
+  /Prev 90 0 R /Title (Uncertainty Attributes)
+>>
+endobj
+96 0 obj
+<<
+/Dest [ 71 0 R /XYZ 40.01575 187.8394 0 ] /Next 97 0 R /Parent 95 0 R /Title (Assigning Uncertainty Components)
+>>
+endobj
+97 0 obj
+<<
+/Dest [ 72 0 R /XYZ 40.01575 728.2394 0 ] /Next 98 0 R /Parent 95 0 R /Prev 96 0 R /Title (Units)
+>>
+endobj
+98 0 obj
+<<
+/Dest [ 72 0 R /XYZ 40.01575 484.6394 0 ] /Next 99 0 R /Parent 95 0 R /Prev 97 0 R /Title (Uncertainty PDF Shape)
+>>
+endobj
+99 0 obj
+<<
+/Count 2 /Dest [ 76 0 R /XYZ 40.01575 787.0394 0 ] /First 100 0 R /Last 101 0 R /Parent 95 0 R /Prev 98 0 R 
+  /Title (Error-Correlation Structure)
+>>
+endobj
+100 0 obj
+<<
+/Dest [ 76 0 R /XYZ 40.01575 688.2394 0 ] /Next 101 0 R /Parent 99 0 R /Title (Parameterisating Error-Correlation Matrices)
+>>
+endobj
+101 0 obj
+<<
+/Dest [ 76 0 R /XYZ 40.01575 200.6394 0 ] /Parent 99 0 R /Prev 100 0 R /Title (Storing Error-Correlation Parameterisation)
+>>
+endobj
+102 0 obj
+<<
+/Count 2 /Dest [ 77 0 R /XYZ 40.01575 324.2394 0 ] /First 103 0 R /Last 104 0 R /Parent 82 0 R /Prev 95 0 R 
+  /Title (Appendix A: Error-Correlation Parameterisations)
+>>
+endobj
+103 0 obj
+<<
+/Dest [ 77 0 R /XYZ 40.01575 193.0394 0 ] /Next 104 0 R /Parent 102 0 R /Title (Parameterisations based on Matrix Structure)
+>>
+endobj
+104 0 obj
+<<
+/Dest [ 78 0 R /XYZ 40.01575 695.0394 0 ] /Parent 102 0 R /Prev 103 0 R /Title (Parameterisations based on Data)
+>>
+endobj
+105 0 obj
+<<
+/Count 11 /Kids [ 4 0 R 5 0 R 52 0 R 53 0 R 61 0 R 70 0 R 71 0 R 72 0 R 76 0 R 77 0 R 
+  78 0 R ] /Type /Pages
+>>
+endobj
+106 0 obj
+<<
+/Length 925
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -583,7 +669,7 @@ q
 1 0 0 1 40.01575 474.1606 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 204.93 0 Td (December 19, 2024) Tj T* -204.93 0 Td ET
+BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 211.26 0 Td (January 08, 2025) Tj T* -211.26 0 Td ET
 Q
 Q
 q
@@ -595,7 +681,7 @@ Q
  
 endstream
 endobj
-92 0 obj
+107 0 obj
 <<
 /Length 75
 >>
@@ -607,9 +693,9 @@ Q
  
 endstream
 endobj
-93 0 obj
+108 0 obj
 <<
-/Length 4704
+/Length 5714
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -626,27 +712,79 @@ BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Contents) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 461.2394 cm
+1 0 0 1 40.01575 396.4394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 0 294.6 cm
+1 0 0 1 0 359.4 cm
 q
-BT 1 0 0 1 0 1.7 Tm 10.2 TL /F2 8.5 Tf 0 .4 .6 rg (Uncertainty Metadata Conventions \(UNC\)) Tj T* ET
+BT 1 0 0 1 0 1.7 Tm 10.2 TL /F2 8.5 Tf 0 .4 .6 rg (Uncertainty Metadata Naming Conventions \(UNC\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 443.2441 294.6 cm
+1 0 0 1 443.2441 359.4 cm
 q
 0 .4 .6 rg
 BT 1 0 0 1 0 1.7 Tm /F2 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
 Q
 Q
 q
-1 0 0 1 0 278.4 cm
+1 0 0 1 0 343.2 cm
 q
 BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Authors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 343.2 cm
+q
+0 .4 .6 rg
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 327 cm
+q
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Lead Authors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 327 cm
+q
+0 .4 .6 rg
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 310.8 cm
+q
+BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 310.8 cm
+q
+0 .4 .6 rg
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 294.6 cm
+q
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Goals) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 294.6 cm
+q
+0 .4 .6 rg
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 278.4 cm
+q
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Philosophy) Tj T* ET
 Q
 Q
 q
@@ -659,111 +797,111 @@ Q
 q
 1 0 0 1 0 262.2 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Lead Authors) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Terminology) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 262.2 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 246 cm
 q
-BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Introduction) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Format for Examples) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 246 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 229.8 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Goals) Tj T* ET
+BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Measurement Dataset Structures) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 229.8 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 213.6 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Philosophy) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Variables) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 213.6 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (1) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 197.4 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Terminology) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Dimensions) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 197.4 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 181.2 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Format for Examples) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Data Types) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 181.2 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 165 cm
 q
-BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Measurement Dataset Structures) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Attributes) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 165 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 148.8 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Variables) Tj T* ET
+BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Uncertainty Attributes) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 148.8 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (2) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 132.6 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Dimensions) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Assigning Uncertainty Components) Tj T* ET
 Q
 Q
 q
@@ -776,105 +914,105 @@ Q
 q
 1 0 0 1 0 116.4 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Data Types) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Units) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 116.4 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (4) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 100.2 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Attributes) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Uncertainty PDF Shape) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 100.2 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (4) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 84 cm
 q
-BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Uncertainty Attributes) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Error-Correlation Structure) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 84 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (5) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 67.8 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Assigning Uncertainty Components) Tj T* ET
+BT 1 0 0 1 60 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Parameterisating Error-Correlation Matrices) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 67.8 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (5) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 51.6 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Units) Tj T* ET
+BT 1 0 0 1 60 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Storing Error-Correlation Parameterisation) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 51.6 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (3) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (5) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 35.4 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Uncertainty PDF Shape) Tj T* ET
+BT 1 0 0 1 20 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Appendix A: Error-Correlation Parameterisations) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 35.4 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (4) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (6) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 19.2 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Error-Correlation Structure) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Parameterisations based on Matrix Structure) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 19.2 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (4) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (6) Tj T* -67.274 0 Td ET
 Q
 Q
 q
 1 0 0 1 0 3 cm
 q
-BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Appendix A: Error-Correlation Parameterisations) Tj T* ET
+BT 1 0 0 1 40 1.7 Tm 10.2 TL /F1 8.5 Tf 0 .4 .6 rg (Parameterisations based on Data) Tj T* ET
 Q
 Q
 q
 1 0 0 1 443.2441 3 cm
 q
 0 .4 .6 rg
-BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (5) Tj T* -67.274 0 Td ET
+BT 1 0 0 1 0 1.7 Tm /F1 8.5 Tf 10.2 TL 67.274 0 Td (7) Tj T* -67.274 0 Td ET
 Q
 Q
 q
@@ -882,15 +1020,15 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 461.2394 cm
+1 0 0 1 40.01575 396.4394 cm
 Q
 q
-1 0 0 1 40.01575 461.2394 cm
+1 0 0 1 40.01575 396.4394 cm
 Q
  
 endstream
 endobj
-94 0 obj
+109 0 obj
 <<
 /Length 75
 >>
@@ -902,9 +1040,9 @@ Q
  
 endstream
 endobj
-95 0 obj
+110 0 obj
 <<
-/Length 8747
+/Length 8810
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -917,7 +1055,7 @@ q
 n -10 0 525.2441 30 re B*
 Q
 q
-BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Uncertainty Metadata Conventions \(UNC\)) Tj T* ET
+BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Uncertainty Metadata Naming Conventions \(UNC\)) Tj T* ET
 Q
 Q
 q
@@ -1037,7 +1175,7 @@ q
 1 0 0 1 40.01575 477.0394 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL 3.81694 Tw (The goal of this specification is to provide a standardised metadata format for storing the accompanying) Tj T* 0 Tw 3.541281 Tw (uncertainty/error-covariance information with measurement datasets. This format is intended to support fully) Tj T* 0 Tw .224273 Tw (capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by) Tj T* 0 Tw (parameterising error-covariance with a simple set of metadata.) Tj T* ET
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL 2.821721 Tw (The goal of this Uncertainty metadata Naming Conventions \(UNC\) specification is to provide a standardised) Tj T* 0 Tw .393409 Tw (metadata format for storing the accompanying uncertainty/error-covariance information with measurement datasets.) Tj T* 0 Tw 2.336273 Tw (This format is intended to support fully capturing the content of the error-covariance matrices associated with) Tj T* 0 Tw (measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.) Tj T* ET
 Q
 Q
 q
@@ -1398,7 +1536,7 @@ q
 1 0 0 1 34.01575 807.2126 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Uncertainty Metadata Conventions \(UNC\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Uncertainty Metadata Naming Conventions \(UNC\)) Tj T* ET
 Q
 Q
 q
@@ -1411,9 +1549,9 @@ Q
  
 endstream
 endobj
-96 0 obj
+111 0 obj
 <<
-/Length 6879
+/Length 6873
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1522,8 +1660,7 @@ Q
 q
 1 0 0 1 40.01575 668.2394 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The following terms are derived from X:) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Definitions of the following terms are adopted from ) Tj 0 .4 .6 rg (work undertaken in the H2020 FIDUCEO) Tj 0 0 0 rg (:) Tj T* ET
 Q
 Q
 q
@@ -1582,36 +1719,50 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 626.2394 cm
+1 0 0 1 40.01575 632.2394 cm
 Q
 q
-1 0 0 1 40.01575 614.2394 cm
+1 0 0 1 40.01575 620.2394 cm
+Q
 q
+1 0 0 1 40.01575 563.4394 cm
+q
+.933333 .933333 .933333 rg
+n 0 56.8 515.2441 -56.8 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 38.8 Tm  T* ET
 q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
+1 0 0 1 8 32 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (fractional uncertainty) Tj T* ET
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Note) Tj T* ET
 Q
 Q
 q
+1 0 0 1 8 8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Are there any other widely adopted definitions we can use for these terms?) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 56.8 m 515.2441 56.8 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 56.8 l S
+n 515.2441 0 m 515.2441 56.8 l S
 Q
 Q
 Q
 q
-1 0 0 1 40.01575 614.2394 cm
+1 0 0 1 40.01575 557.4394 cm
 Q
 q
-1 0 0 1 40.01575 581.4394 cm
+1 0 0 1 40.01575 524.6394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1623,33 +1774,27 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Format for Exam
 Q
 Q
 q
-1 0 0 1 40.01575 527.4394 cm
+1 0 0 1 40.01575 458.6394 cm
 q
-BT 1 0 0 1 0 38 Tm .929672 Tw 12 TL /F1 10 Tf 0 0 0 rg (The ASCII format used to describe the contents of a NetCDF dataset is called ) Tj 0 .4 .6 rg (CDL) Tj 0 0 0 rg ( \(NetCDF Common Data form) Tj T* 0 Tw .655535 Tw (Language\). This follows C-style indexing where indices start at 0, and the last declared dimension varies fastest in) Tj T* 0 Tw .147888 Tw (storage order. For example, in a 2D array ) Tj /F3 10 Tf (data\(time,) Tj ( ) Tj (lat\)) Tj /F1 10 Tf (, the ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf ( dimension changes faster than ) Tj /F3 10 Tf (time) Tj /F1 10 Tf ( during) Tj T* 0 Tw (indexing.) Tj T* ET
+BT 1 0 0 1 0 50 Tm .775227 Tw 12 TL /F1 10 Tf 0 0 0 rg (The plain text \(ASCII\) format used to describe the contents of a NetCDF dataset is called ) Tj 0 .4 .6 rg (CDL) Tj 0 0 0 rg ( \(NetCDF Common) Tj T* 0 Tw 2.027888 Tw (Data Language\). Snippets of CDL are used to present examples in this specification. A minimal example of a) Tj T* 0 Tw 2.382273 Tw (measurement dataset in CDL is given below. Here the dataset contains a single ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable with) Tj T* 0 Tw .211721 Tw (accompanying metadata \() Tj /F3 10 Tf (units) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (description) Tj /F1 10 Tf (\), which is defined along ) Tj /F3 10 Tf (time) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (lon) Tj /F1 10 Tf ( dimensions \(each) Tj T* 0 Tw (of which is length 2\). Dimension sizes and data are omitted in specification examples for brevity.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 485.4394 cm
-q
-BT 1 0 0 1 0 26 Tm .094116 Tw 12 TL /F1 10 Tf 0 0 0 rg (Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in) Tj T* 0 Tw 1.578476 Tw (CDL is given below. Here a dataset of ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( with its metadata \(units and description\) is defined along) Tj T* 0 Tw /F3 10 Tf (time) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (lon) Tj /F1 10 Tf ( dimensions.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 262.6394 cm
+1 0 0 1 40.01575 235.8394 cm
 q
 q
 q
 1 0 0 1 4.4 .4 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 206 Tm /F3 10 Tf 12 TL (netcdf short_example {) Tj T* (  dimensions:) Tj T* (    time = 2 ;) Tj T* (    lat = 2 ;) Tj T* (    lon = 2 ;) Tj T*  T* (  variables:) Tj T* (    float temperature\(time, lat, lon\) ;) Tj T* (      temperature:units = "K" ;) Tj T* (      temperature:long_name = "Temperature" ;) Tj T*  T* (  data:) Tj T* (    temperature =) Tj T* (      290.1, 291.2,) Tj T* (      292.3, 293.4,) Tj T* (      294.5, 295.6,) Tj T* (      296.7, 297.8 ;) Tj T* (}) Tj T* ET
+BT 1 0 0 1 0 206 Tm /F3 10 Tf 12 TL (netcdf short_example {) Tj T* (  dimensions:) Tj T* (    time = 2 ;) Tj T* (    lat = 2 ;) Tj T* (    lon = 2 ;) Tj T*  T* (  variables:) Tj T* (    float temperature\(time, lat, lon\) ;) Tj T* (      temperature:units = "K" ;) Tj T* (      temperature:description = "measured temperature" ;) Tj T*  T* (  data:) Tj T* (    temperature =) Tj T* (      290.1, 291.2,) Tj T* (      292.3, 293.4,) Tj T* (      294.5, 295.6,) Tj T* (      296.7, 297.8 ;) Tj T* (}) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 40.01575 227.4394 cm
+1 0 0 1 40.01575 200.6394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1661,13 +1806,13 @@ BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Measurement Dat
 Q
 Q
 q
-1 0 0 1 40.01575 185.4394 cm
+1 0 0 1 40.01575 158.6394 cm
 q
-BT 1 0 0 1 0 26 Tm 2.611084 Tw 12 TL /F1 10 Tf 0 0 0 rg (As mentioned above, the ) Tj 0 .4 .6 rg (NetCDF) Tj 0 0 0 rg ( data model for creating self-describing, array-oriented scientific datasets is) Tj T* 0 Tw .063561 Tw (adopted. The components of NetCDF datasets are described in Section 2 of the ) Tj 0 .4 .6 rg (NUG) Tj 0 0 0 rg ( \(NetCDF Users Guide\). In this) Tj T* 0 Tw (section, we introduce the core components of this data model relevant to this standard.) Tj T* ET
+BT 1 0 0 1 0 26 Tm 2.611084 Tw 12 TL /F1 10 Tf 0 0 0 rg (As mentioned above, the ) Tj 0 .4 .6 rg (NetCDF) Tj 0 0 0 rg ( data model for creating self-describing, array-oriented scientific datasets is) Tj T* 0 Tw .063561 Tw (adopted. The components of NetCDF datasets are described in Section 2 of the ) Tj 0 .4 .6 rg (NUG) Tj 0 0 0 rg ( \(NetCDF Users Guide\). In this) Tj T* 0 Tw (section, we introduce the core components of this data model relevant to this specification.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 152.6394 cm
+1 0 0 1 40.01575 125.8394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1679,59 +1824,27 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Variables) Tj T
 Q
 Q
 q
-1 0 0 1 40.01575 134.6394 cm
+1 0 0 1 40.01575 107.8394 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Datasets are composed of variables, which are multidimensional data arrays.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 116.6394 cm
+1 0 0 1 40.01575 89.83937 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This standard defines the following categories of variables:) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This specification defines the following categories of variables:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 110.6394 cm
+1 0 0 1 40.01575 83.83937 cm
 Q
 q
-1 0 0 1 40.01575 110.6394 cm
+1 0 0 1 40.01575 83.83937 cm
 Q
 q
-1 0 0 1 40.01575 80.63937 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 15 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 15 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Observation Variables) Tj T* ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (Observation variables) Tj /F1 10 Tf ( represent a multidimensional array of measurements.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 40.01575 74.63937 cm
-Q
-q
-1 0 0 1 40.01575 62.63937 cm
+1 0 0 1 40.01575 71.83937 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -1746,12 +1859,31 @@ q
 1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Uncertainty Variables) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Observation Variables) Tj T* ET
 Q
 Q
 q
 Q
 Q
+Q
+q
+1 0 0 1 40.01575 59.83937 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 -1 Tm  T* ET
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (Observation variables) Tj /F1 10 Tf ( represent a multidimensional array of measurements.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 54.85039 cm
 Q
 q
 1 0 0 1 34.01575 807.2126 cm
@@ -1770,18 +1902,31 @@ Q
  
 endstream
 endobj
-97 0 obj
+112 0 obj
 <<
-/Length 7584
+/Length 7610
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 745.0394 cm
+1 0 0 1 40.01575 727.0394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 6 29 Tm  T* ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Uncertainty Variables) Tj T* ET
+Q
+Q
 q
 1 0 0 1 23 15 cm
 q
@@ -1799,16 +1944,56 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 745.0394 cm
+1 0 0 1 40.01575 727.0394 cm
 Q
 q
-1 0 0 1 40.01575 727.0394 cm
+1 0 0 1 40.01575 715.0394 cm
+Q
+q
+1 0 0 1 40.01575 634.2394 cm
+q
+.933333 .933333 .933333 rg
+n 0 80.8 515.2441 -80.8 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 62.8 Tm  T* ET
+q
+1 0 0 1 8 56 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Note) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.282006 Tw (Should we allow uncertainty variables to be smaller that observation variables? i.e. that have a subset of the) Tj T* 0 Tw 1.60294 Tw (dimensions to save space where there are repeated values? \(in practice, compression would reduce this as) Tj T* 0 Tw (well\205\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 80.8 m 515.2441 80.8 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 80.8 l S
+n 515.2441 0 m 515.2441 80.8 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 628.2394 cm
+Q
+q
+1 0 0 1 40.01575 610.2394 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (A dataset may also contain variables that are neither ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( or ) Tj /F4 10 Tf (uncertainty variables) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 694.2394 cm
+1 0 0 1 40.01575 577.4394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1820,13 +2005,13 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Dimensions) Tj 
 Q
 Q
 q
-1 0 0 1 40.01575 664.2394 cm
+1 0 0 1 40.01575 547.4394 cm
 q
-BT 1 0 0 1 0 14 Tm .474358 Tw 12 TL /F1 10 Tf 0 0 0 rg (A variable may have any number of named dimensions, including zero \226 e.g., ) Tj /F3 10 Tf ("x") Tj /F1 10 Tf (, ) Tj /F3 10 Tf ("y") Tj /F1 10 Tf (, ) Tj /F3 10 Tf ("time") Tj /F1 10 Tf (. Dimensions may) Tj T* 0 Tw (be of any size, including unity.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .474358 Tw 12 TL /F1 10 Tf 0 0 0 rg (A variable may have any number of named dimensions, including zero \226 e.g., ) Tj /F3 10 Tf ("x") Tj /F1 10 Tf (, ) Tj /F3 10 Tf ("y") Tj /F1 10 Tf (, ) Tj /F3 10 Tf ("time") Tj /F1 10 Tf (. Dimensions may) Tj T* 0 Tw (be of any size, including 1.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 631.4394 cm
+1 0 0 1 40.01575 514.6394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1838,10 +2023,10 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Data Types) Tj 
 Q
 Q
 q
-1 0 0 1 40.01575 613.4394 cm
+1 0 0 1 40.01575 496.6394 cm
 Q
 q
-1 0 0 1 40.01575 556.6394 cm
+1 0 0 1 40.01575 439.8394 cm
 q
 .933333 .933333 .933333 rg
 n 0 56.8 515.2441 -56.8 re f*
@@ -1859,7 +2044,7 @@ q
 1 0 0 1 8 8 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Do we want to permit different types?) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Can we permit different types?) Tj T* ET
 Q
 Q
 q
@@ -1875,23 +2060,23 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 550.6394 cm
+1 0 0 1 40.01575 433.8394 cm
 Q
 q
-1 0 0 1 40.01575 532.6394 cm
+1 0 0 1 40.01575 415.8394 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (Observation variables) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (uncertainty variables) Tj /F1 10 Tf ( must be ) Tj /F3 10 Tf (floats) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 514.6394 cm
+1 0 0 1 40.01575 397.8394 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Note: these variables may be encoded as e.g. integers for efficient storage on disc.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 481.8394 cm
+1 0 0 1 40.01575 365.0394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1903,27 +2088,27 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Attributes) Tj 
 Q
 Q
 q
-1 0 0 1 40.01575 427.8394 cm
+1 0 0 1 40.01575 311.0394 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .515292 Tw (Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the) Tj T* 0 Tw .482273 Tw (entire dataset \(e.g., title, institution, history\). Variable attributes define specific properties of the variable \(e.g., units,) Tj T* 0 Tw .436721 Tw (valid ranges\). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by) Tj T* 0 Tw (following standardised conventions.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 409.8394 cm
+1 0 0 1 40.01575 293.0394 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This standard defines a set of variable attributes to:) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This specification defines a set of variable attributes to:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 403.8394 cm
+1 0 0 1 40.01575 287.0394 cm
 Q
 q
-1 0 0 1 40.01575 403.8394 cm
+1 0 0 1 40.01575 287.0394 cm
 Q
 q
-1 0 0 1 40.01575 391.8394 cm
+1 0 0 1 40.01575 275.0394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -1945,10 +2130,10 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 385.8394 cm
+1 0 0 1 40.01575 269.0394 cm
 Q
 q
-1 0 0 1 40.01575 373.8394 cm
+1 0 0 1 40.01575 257.0394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -1970,17 +2155,17 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 373.8394 cm
+1 0 0 1 40.01575 257.0394 cm
 Q
 q
-1 0 0 1 40.01575 355.8394 cm
+1 0 0 1 40.01575 239.0394 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A dataset may also contain non-standard attributes.) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A dataset may also contain other unrelated attributes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 320.6394 cm
+1 0 0 1 40.01575 203.8394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -1992,7 +2177,7 @@ BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Uncertainty Att
 Q
 Q
 q
-1 0 0 1 40.01575 287.8394 cm
+1 0 0 1 40.01575 171.0394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -2004,53 +2189,29 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Assigning Uncer
 Q
 Q
 q
-1 0 0 1 40.01575 245.8394 cm
+1 0 0 1 40.01575 129.0394 cm
 q
 BT 1 0 0 1 0 26 Tm 6.015827 Tw 12 TL /F4 10 Tf 0 0 0 rg (Uncertainty variables) Tj /F1 10 Tf ( are associated with their ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf ( through the ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (\222s) Tj T* 0 Tw .335535 Tw /F3 10 Tf ("unc_comps") Tj /F1 10 Tf ( attribute. This attribute contains a list of the names of all of the ) Tj /F4 10 Tf (uncertainty variables) Tj /F1 10 Tf ( associated with) Tj T* 0 Tw (an ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 203.8394 cm
+1 0 0 1 40.01575 87.03937 cm
 q
 BT 1 0 0 1 0 26 Tm .79377 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example of a dataset, in CDL syntax, shows a ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable defined along 3 dimensions -) Tj T* 0 Tw 1.546721 Tw /F3 10 Tf (time) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf (, and ) Tj /F3 10 Tf (lon) Tj /F1 10 Tf (. ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( has two uncertainty components associated with it - ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( and) Tj T* 0 Tw /F3 10 Tf (u_noise) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 137.0394 cm
+1 0 0 1 40.01575 56.23937 cm
 q
 q
 q
 1 0 0 1 4.4 .4 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\) ;) Tj T* (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\) ;) Tj T* ET
 Q
 Q
 Q
-Q
-Q
-q
-1 0 0 1 40.01575 104.2394 cm
-q
-.8 .8 .8 RG
-.3 w
-.94902 .94902 .94902 rg
-n -10 0 525.2441 22.8 re B*
-Q
-q
-BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Units) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 74.23937 cm
-q
-BT 1 0 0 1 0 14 Tm 2.93815 Tw 12 TL /F1 10 Tf 0 0 0 rg (The physical units associated with ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (uncertainty variables) Tj /F1 10 Tf ( should be defined by the) Tj T* 0 Tw /F3 10 Tf ("units") Tj /F1 10 Tf ( variable attribute as a string.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 56.23937 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (Observation variables) Tj /F1 10 Tf ( are assumed dimensionless if the variable attribute ) Tj /F3 10 Tf ("units") Tj /F1 10 Tf ( is not defined.) Tj T* ET
 Q
 Q
 q
@@ -2070,26 +2231,64 @@ Q
  
 endstream
 endobj
-98 0 obj
+113 0 obj
 <<
-/Length 7847
+/Length 6483
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 763.0394 cm
+1 0 0 1 40.01575 744.2394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F3 10 Tf 12 TL (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 711.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Units) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 681.4394 cm
+q
+BT 1 0 0 1 0 14 Tm 2.93815 Tw 12 TL /F1 10 Tf 0 0 0 rg (The physical units associated with ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (uncertainty variables) Tj /F1 10 Tf ( should be defined by the) Tj T* 0 Tw /F3 10 Tf ("units") Tj /F1 10 Tf ( variable attribute as a string.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 663.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (Observation variables) Tj /F1 10 Tf ( are assumed dimensionless if the variable attribute ) Tj /F3 10 Tf ("units") Tj /F1 10 Tf ( is not defined.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 633.4394 cm
 q
 BT 1 0 0 1 0 14 Tm 2.499606 Tw 12 TL /F4 10 Tf 0 0 0 rg (uncertainty variables) Tj /F1 10 Tf ( must have the same ) Tj /F3 10 Tf ("units") Tj /F1 10 Tf ( as the ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( they are associated with. If) Tj T* 0 Tw /F3 10 Tf ("units") Tj /F1 10 Tf ( is not defined, the ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( is assumed fractional.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 721.0394 cm
+1 0 0 1 40.01575 591.4394 cm
 q
-BT 1 0 0 1 0 26 Tm 3.306007 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example of a dataset again shows a ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable associated with two uncertainty) Tj T* 0 Tw 4.492008 Tw (components - ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf (. Here, ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( is defined with units ) Tj /F3 10 Tf (K) Tj /F1 10 Tf (, matching) Tj T* 0 Tw /F3 10 Tf (temperature) Tj /F1 10 Tf (. ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf ( has no defined units and so is a fractional uncertainty) Tj T* ET
+BT 1 0 0 1 0 26 Tm .170292 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example dataset again shows a ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable associated with two uncertainty components -) Tj T* 0 Tw .077008 Tw /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf (. Here, ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( is defined with units ) Tj /F3 10 Tf (K) Tj /F1 10 Tf (, matching ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf (. ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf  T* 0 Tw (has no defined units and so assumed is a fractional uncertainty.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 630.2394 cm
+1 0 0 1 40.01575 500.6394 cm
 q
 q
 q
@@ -2103,7 +2302,7 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 597.4394 cm
+1 0 0 1 40.01575 467.8394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -2115,25 +2314,25 @@ BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Uncertainty PDF
 Q
 Q
 q
-1 0 0 1 40.01575 567.4394 cm
+1 0 0 1 40.01575 437.8394 cm
 q
 BT 1 0 0 1 0 14 Tm 2.145292 Tw 12 TL /F1 10 Tf 0 0 0 rg (The probability density function \(PDF\) shape associated with the uncertainty estimate values in an ) Tj /F4 10 Tf (uncertainty) Tj T* 0 Tw (variable) Tj /F1 10 Tf ( is defined with the variable attribute ) Tj /F3 10 Tf ("pdf_shape") Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 549.4394 cm
+1 0 0 1 40.01575 419.8394 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ("pdf_shape") Tj /F1 10 Tf ( can have one of the following values:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 543.4394 cm
+1 0 0 1 40.01575 413.8394 cm
 Q
 q
-1 0 0 1 40.01575 543.4394 cm
+1 0 0 1 40.01575 413.8394 cm
 Q
 q
-1 0 0 1 40.01575 531.4394 cm
+1 0 0 1 40.01575 401.8394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2155,10 +2354,10 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 525.4394 cm
+1 0 0 1 40.01575 395.8394 cm
 Q
 q
-1 0 0 1 40.01575 513.4394 cm
+1 0 0 1 40.01575 383.8394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2180,10 +2379,10 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 507.4394 cm
+1 0 0 1 40.01575 377.8394 cm
 Q
 q
-1 0 0 1 40.01575 495.4394 cm
+1 0 0 1 40.01575 365.8394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2206,13 +2405,13 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 495.4394 cm
+1 0 0 1 40.01575 365.8394 cm
 Q
 q
-1 0 0 1 40.01575 483.4394 cm
+1 0 0 1 40.01575 353.8394 cm
 Q
 q
-1 0 0 1 40.01575 426.6394 cm
+1 0 0 1 40.01575 297.0394 cm
 q
 .933333 .933333 .933333 rg
 n 0 56.8 515.2441 -56.8 re f*
@@ -2246,22 +2445,22 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 420.6394 cm
+1 0 0 1 40.01575 291.0394 cm
 Q
 q
-1 0 0 1 40.01575 402.6394 cm
+1 0 0 1 40.01575 273.0394 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (If ) Tj /F3 10 Tf ("pdf_shape") Tj /F1 10 Tf ( is not defined for an ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( it is assumed to be ) Tj /F3 10 Tf ("gaussian") Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 360.6394 cm
+1 0 0 1 40.01575 231.0394 cm
 q
-BT 1 0 0 1 0 26 Tm 3.306007 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example of a dataset again shows a ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable associated with two uncertainty) Tj T* 0 Tw 3.879546 Tw (components - ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf (. Here, ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( is defined to be represented by a) Tj T* 0 Tw (rectangular PDF. ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf ( has no defined ) Tj /F3 10 Tf ("pdf_shape") Tj /F1 10 Tf ( and so is assumed Gaussian.) Tj T* ET
+BT 1 0 0 1 0 26 Tm .170292 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example dataset again shows a ) Tj /F3 10 Tf (temperature) Tj /F1 10 Tf ( variable associated with two uncertainty components -) Tj T* 0 Tw 2.7257 Tw /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf (. Here, ) Tj /F3 10 Tf (u_calibration) Tj /F1 10 Tf ( is defined to be represented by a rectangular PDF.) Tj T* 0 Tw /F3 10 Tf (u_noise) Tj /F1 10 Tf ( has no defined ) Tj /F3 10 Tf ("pdf_shape") Tj /F1 10 Tf ( and so is assumed Gaussian.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 257.8394 cm
+1 0 0 1 40.01575 128.2394 cm
 q
 q
 q
@@ -2273,68 +2472,6 @@ Q
 Q
 Q
 Q
-Q
-q
-1 0 0 1 40.01575 225.0394 cm
-q
-.8 .8 .8 RG
-.3 w
-.94902 .94902 .94902 rg
-n -10 0 525.2441 22.8 re B*
-Q
-q
-BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Error-Correlation Structure) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 159.0394 cm
-q
-BT 1 0 0 1 0 50 Tm 3.476175 Tw 12 TL /F1 10 Tf 0 0 0 rg (To provide the complete uncertainty information associated with an ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (, the cross-element) Tj T* 0 Tw -0.031727 Tw (error-covariance matrix is required. In practice, the error-covariance matrix is ) Tj 0 .4 .6 rg (often determined from) Tj 0 0 0 rg ( a combination of) Tj T* 0 Tw .216469 Tw (the per element uncertainties \(i.e., the ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( described above\) and the cross-element error-correlation) Tj T* 0 Tw .225606 Tw (matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete) Tj T* 0 Tw (description of dataset error-covariance.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 105.0394 cm
-q
-BT 1 0 0 1 0 38 Tm 1.004578 Tw 12 TL /F1 10 Tf 0 0 0 rg (For ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( with ) Tj /F3 10 Tf (N) Tj /F1 10 Tf ( elements, the associated error-correlation matrix per ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( has the) Tj T* 0 Tw 1.850881 Tw (square of ) Tj /F3 10 Tf (N) Tj /F1 10 Tf ( elements. Where ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( are large, it quickly becomes impractical to store this data.) Tj T* 0 Tw .977131 Tw (However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact) Tj T* 0 Tw (form \(e.g., identity, full, banded\).) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 87.03937 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Such a parameterisation is here defined by 3 values, as follows:) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 81.03937 cm
-Q
-q
-1 0 0 1 40.01575 81.03937 cm
-Q
-q
-1 0 0 1 40.01575 57.03937 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .05494 Tw 12 TL /F3 10 Tf 0 0 0 rg (form) Tj /F1 10 Tf ( - the parameterisation name, which defines the functional form of the parameterisation \(e.g., \223random\224 for) Tj T* 0 Tw (identity matrix\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 40.01575 54.85039 cm
 Q
 q
 1 0 0 1 34.01575 807.2126 cm
@@ -2353,14 +2490,88 @@ Q
  
 endstream
 endobj
-99 0 obj
+114 0 obj
 <<
-/Length 8634
+/Length 9858
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 775.0394 cm
+1 0 0 1 40.01575 770.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Error-Correlation Structure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 704.2394 cm
+q
+BT 1 0 0 1 0 50 Tm 3.476175 Tw 12 TL /F1 10 Tf 0 0 0 rg (To provide the complete uncertainty information associated with an ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (, the cross-element) Tj T* 0 Tw -0.113279 Tw (error-covariance matrix is required. In practice, error-covariance matrices are ) Tj 0 .4 .6 rg (often determined from) Tj 0 0 0 rg ( a combination of) Tj T* 0 Tw .216469 Tw (the per element uncertainties \(i.e., the ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( described above\) and the cross-element error-correlation) Tj T* 0 Tw .225606 Tw (matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete) Tj T* 0 Tw (description of dataset error-covariance.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 673.8394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 20.4 re B*
+Q
+q
+BT 1 0 0 1 0 2.4 Tm 14.4 TL /F2 12 Tf .12549 .262745 .360784 rg (Parameterisating Error-Correlation Matrices) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 619.8394 cm
+q
+BT 1 0 0 1 0 38 Tm .917435 Tw 12 TL /F1 10 Tf 0 0 0 rg (For ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( with ) Tj /F4 10 Tf (N) Tj /F1 10 Tf ( elements, the associated error-correlation matrix per ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( has the) Tj T* 0 Tw 1.774631 Tw (square of ) Tj /F4 10 Tf (N) Tj /F1 10 Tf ( elements. Where ) Tj /F4 10 Tf (observation variables) Tj /F1 10 Tf ( are large, it quickly becomes impractical to store this data.) Tj T* 0 Tw .977131 Tw (However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact) Tj T* 0 Tw (form, e.g., by defining it as having a specific structure \(i.e., identity, full, banded\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 601.8394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Such a parameterisation is here defined by 3 values, as follows:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 595.8394 cm
+Q
+q
+1 0 0 1 40.01575 595.8394 cm
+Q
+q
+1 0 0 1 40.01575 571.8394 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .05494 Tw 12 TL /F3 10 Tf 0 0 0 rg (form) Tj /F1 10 Tf ( - the parameterisation name, which defines the functional form of the parameterisation \(e.g., \223random\224 for) Tj T* 0 Tw (identity matrix structure\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 565.8394 cm
+Q
+q
+1 0 0 1 40.01575 553.8394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2374,7 +2585,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (params) Tj /F1 10 Tf ( - a list of parameters associated with the parameterisation \(e.g., the bandwidth for a banded matrix\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (params) Tj /F1 10 Tf ( - a list of parameters associated with the parameterisation \(e.g., the bandwidth for a banded matrix\).) Tj T* ET
 Q
 Q
 q
@@ -2382,10 +2593,10 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 769.0394 cm
+1 0 0 1 40.01575 547.8394 cm
 Q
 q
-1 0 0 1 40.01575 757.0394 cm
+1 0 0 1 40.01575 535.8394 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2399,7 +2610,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (units) Tj /F1 10 Tf ( - the physical units associated with each parameter in ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( list \() Tj /F3 10 Tf ("") Tj /F1 10 Tf ( where none required\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (units) Tj /F1 10 Tf ( - the physical units associated with each parameter in ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( list.) Tj T* ET
 Q
 Q
 q
@@ -2407,31 +2618,268 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 757.0394 cm
+1 0 0 1 40.01575 535.8394 cm
 Q
 q
-1 0 0 1 40.01575 727.0394 cm
+1 0 0 1 40.01575 493.8394 cm
 q
-BT 1 0 0 1 0 14 Tm -0.11685 Tw 12 TL /F1 10 Tf 0 0 0 rg (This standard defines a set of ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( variable attributes to store these error-correlation parameterisation) Tj T* 0 Tw (values.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 685.0394 cm
-q
-BT 1 0 0 1 0 26 Tm .516469 Tw 12 TL /F1 10 Tf 0 0 0 rg (To allow maximum flexibility, different parameterisations can be defined along each ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( dimension,) Tj T* 0 Tw .096711 Tw /F3 10 Tf (dim_x) Tj /F1 10 Tf (, or sets of dimensions, ) Tj /F3 10 Tf ([dim_x,) Tj ( ) Tj (dim_y,) Tj ( ) Tj (...]) Tj /F1 10 Tf (. For example, an error could be fully correlated in longitude) Tj T* 0 Tw (and latitude at each time step, but uncorrelated between time steps.) Tj T* ET
+BT 1 0 0 1 0 26 Tm .298273 Tw 12 TL /F1 10 Tf 0 0 0 rg (Appendix A) Tj ( defines a set of standard error-correlation parameterisations using this structure. For cases not covered) Tj T* 0 Tw .711894 Tw (by this standard set, users may make their own definitions and propose them for inclusion. The simplest and most) Tj T* 0 Tw (commonly used parameterisations from this standard set are:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 643.0394 cm
+1 0 0 1 40.01575 487.8394 cm
+Q
 q
-BT 1 0 0 1 0 26 Tm 2.182623 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( variable attributes are defined to store this parameterisation information, per) Tj T* 0 Tw -0.019805 Tw (dimension or set of dimensions \(each labelled by ) Tj /F3 10 Tf (i) Tj /F1 10 Tf (, which runs from 1 to the required number of dimensions / sets of) Tj T* 0 Tw (dimensions\):) Tj T* ET
+1 0 0 1 40.01575 457.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 20.4 re B*
+Q
+q
+BT 1 0 0 1 0 2.4 Tm 135.252 0 Td 14.4 TL /F2 12 Tf .12549 .262745 .360784 rg (Simple Error-correlation parameterisations) Tj T* -135.252 0 Td ET
 Q
 Q
 q
-1 0 0 1 40.01575 637.0394 cm
+1 0 0 1 40.01575 333.4394 cm
+q
+1 1 1 rg
+n 0 118 515.2441 -16 re f*
+.878431 .878431 .878431 rg
+n 0 102 515.2441 -30 re f*
+1 1 1 rg
+n 0 72 515.2441 -30 re f*
+.878431 .878431 .878431 rg
+n 0 42 515.2441 -42 re f*
+.94902 .94902 .94902 rg
+n 0 118 515.2441 -16 re f*
+.12549 .262745 .360784 rg
+BT /F2 10 Tf 10 TL ET
+q
+1 0 0 1 6 105 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 65.28661 10 re f*
 Q
 q
-1 0 0 1 40.01575 606.6394 cm
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 20.14331 0 Td (Form) Tj T* -20.14331 0 Td ET
+Q
+Q
+q
+1 0 0 1 83.28661 105 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 91.04882 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 18.28941 0 Td (Parameters) Tj T* -18.28941 0 Td ET
+Q
+Q
+q
+1 0 0 1 186.3354 105 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 142.5732 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 32.94661 0 Td (Matrix Structure) Tj T* -32.94661 0 Td ET
+Q
+Q
+q
+1 0 0 1 340.9087 105 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 168.3354 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 56.66272 0 Td (Description) Tj T* -56.66272 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (random) Tj T* ET
+Q
+Q
+q
+1 0 0 1 83.28661 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 186.3354 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Identity Matrix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 340.9087 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (No error-correlation between) Tj T* (elements in observation variable.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (systematic) Tj T* ET
+Q
+Q
+q
+1 0 0 1 83.28661 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 186.3354 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Full matrix of 1\222s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 340.9087 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Full error-correlation between) Tj T* (elements in observation variable.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (err_corr_m) Tj T* (atrix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 83.28661 15 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F3 10 Tf (err_corr_matri) Tj /F1 10 Tf  T* /F3 10 Tf (x_var) Tj /F1 10 Tf (]) Tj T* ET
+Q
+Q
+q
+1 0 0 1 186.3354 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Explicitly defined matrix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 340.9087 3 cm
+q
+BT 1 0 0 1 0 26 Tm 12 TL /F1 10 Tf 0 0 0 rg (User defined error-correlation matrix,) Tj T* (stored in data variable with name) Tj T* /F3 10 Tf (err_corr_matrix_var) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 102 m 515.2441 102 l S
+n 0 72 m 515.2441 72 l S
+n 0 42 m 515.2441 42 l S
+n 77.28661 0 m 77.28661 118 l S
+n 180.3354 0 m 180.3354 118 l S
+n 334.9087 0 m 334.9087 118 l S
+n 0 118 m 515.2441 118 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 118 l S
+n 515.2441 0 m 515.2441 118 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 333.4394 cm
+Q
+q
+1 0 0 1 40.01575 291.4394 cm
+q
+BT 1 0 0 1 0 26 Tm .302623 Tw 12 TL /F1 10 Tf 0 0 0 rg (To allow maximum flexibility, different parameterisations can be defined along each ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf ( dimension,) Tj T* 0 Tw .096711 Tw /F3 10 Tf (dim_x) Tj /F1 10 Tf (, or sets of dimensions, ) Tj /F3 10 Tf ([dim_x,) Tj ( ) Tj (dim_y,) Tj ( ) Tj (...]) Tj /F1 10 Tf (. For example, an error could be fully correlated in longitude) Tj T* 0 Tw (and latitude at each time step, but uncorrelated between time steps.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 279.4394 cm
+Q
+q
+1 0 0 1 40.01575 222.6394 cm
+q
+.933333 .933333 .933333 rg
+n 0 56.8 515.2441 -56.8 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 38.8 Tm  T* ET
+q
+1 0 0 1 8 32 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Note) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Pieter can we add the maths of how these sub-error-correlation matrices combine?) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 56.8 m 515.2441 56.8 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 56.8 l S
+n 515.2441 0 m 515.2441 56.8 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 216.6394 cm
+Q
+q
+1 0 0 1 40.01575 186.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 20.4 re B*
+Q
+q
+BT 1 0 0 1 0 2.4 Tm 14.4 TL /F2 12 Tf .12549 .262745 .360784 rg (Storing Error-Correlation Parameterisation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 156.2394 cm
+q
+BT 1 0 0 1 0 14 Tm 4.577238 Tw 12 TL /F1 10 Tf 0 0 0 rg (This specification defines a set of ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( variable attributes to store these error-correlation) Tj T* 0 Tw (parameterisation values.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 114.2394 cm
+q
+BT 1 0 0 1 0 26 Tm 2.310315 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following ) Tj /F4 10 Tf (uncertainty variable) Tj /F1 10 Tf ( variable attributes are defined to store the parameterisation information, per) Tj T* 0 Tw -0.019805 Tw (dimension or set of dimensions \(each labelled by ) Tj /F3 10 Tf (i) Tj /F1 10 Tf (, which runs from 1 to the required number of dimensions / sets of) Tj T* 0 Tw (dimensions\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 108.2394 cm
+Q
+q
+1 0 0 1 40.01575 77.83937 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -2443,7 +2891,30 @@ BT 1 0 0 1 0 2.4 Tm 98.23805 0 Td 14.4 TL /F2 12 Tf .12549 .262745 .360784 rg (E
 Q
 Q
 q
-1 0 0 1 40.01575 430.6394 cm
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Uncertainty Attributes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+115 0 obj
+<<
+/Length 9014
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 617.0394 cm
 q
 1 1 1 rg
 n 0 170 515.2441 -26 re f*
@@ -2574,9 +3045,9 @@ BT 1 0 0 1 0 26 Tm 12 TL /F3 10 Tf 0 0 0 rg (list[str) Tj ( ) Tj  T* (|) Tj ( ) 
 Q
 Q
 q
-1 0 0 1 146.5211 69 cm
+1 0 0 1 146.5211 57 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Parameterisation ) Tj /F3 10 Tf (params) Tj T* ET
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (Parameterisation ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( \(can omit if none) Tj T* (required\)) Tj T* ET
 Q
 Q
 q
@@ -2601,9 +3072,9 @@ BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (list[str]) Tj T* ET
 Q
 Q
 q
-1 0 0 1 146.5211 27 cm
+1 0 0 1 146.5211 15 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Parameterisation ) Tj /F3 10 Tf (units) Tj T* ET
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (Parameterisation ) Tj /F3 10 Tf (units) Tj /F1 10 Tf ( \(can omit if none) Tj T* (required\)) Tj T* ET
 Q
 Q
 q
@@ -2632,42 +3103,142 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 430.6394 cm
+1 0 0 1 40.01575 617.0394 cm
 Q
 q
-1 0 0 1 40.01575 400.6394 cm
+1 0 0 1 40.01575 587.0394 cm
 q
-BT 1 0 0 1 0 14 Tm 2.448864 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example of a dataset again shows a ) Tj /F3 10 Tf ("temperature") Tj /F1 10 Tf ( variable associated with two uncertainty) Tj T* 0 Tw (components - ) Tj /F3 10 Tf ("u_calibration") Tj /F1 10 Tf ( and ) Tj /F3 10 Tf ("u_noise") Tj /F1 10 Tf (.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 370.6394 cm
-q
-BT 1 0 0 1 0 14 Tm 1.383606 Tw 12 TL /F1 10 Tf 0 0 0 rg (Here, ) Tj /F3 10 Tf ("u_calibration") Tj /F1 10 Tf ( is defined to have a systematic error-correlation in the ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (lon) Tj /F1 10 Tf ( dimensions, and) Tj T* 0 Tw (random in ) Tj /F3 10 Tf (time) Tj /F1 10 Tf ( dimension \(perhaps, there is a recalibration between the measurements at each time step!\).) Tj T* ET
+BT 1 0 0 1 0 14 Tm 4.478675 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following example dataset again shows a ) Tj /F3 10 Tf ("temperature") Tj /F1 10 Tf ( variable associated with two uncertainty) Tj T* 0 Tw (components - ) Tj /F3 10 Tf ("u_calibration") Tj /F1 10 Tf ( and ) Tj /F3 10 Tf ("u_noise") Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 352.6394 cm
+1 0 0 1 40.01575 557.0394 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ("u_noise") Tj /F1 10 Tf ( have a error-correlation defined random in all dimensions.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .775881 Tw 12 TL /F1 10 Tf 0 0 0 rg (Here, ) Tj /F3 10 Tf ("u_calibration") Tj /F1 10 Tf ( is defined to have a systematic error-correlation in the ) Tj /F3 10 Tf (lat) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (lon) Tj /F1 10 Tf ( dimensions. In the) Tj T* 0 Tw /F3 10 Tf (time) Tj /F1 10 Tf ( dimension, an explicit error-correlation matrix is defined with the variable ) Tj /F3 10 Tf (err_corr_calibration_time) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 105.8394 cm
+1 0 0 1 40.01575 539.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ("u_noise") Tj /F1 10 Tf ( has is defined has having uncorrelated errors in all dimensions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 340.2394 cm
 q
 q
 q
 1 0 0 1 4.4 .4 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 230 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\);) Tj T* (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (    temperature:units="K") Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (    u_calibration:units="K";) Tj T* (    u_calibration:pdf_shape="rectangular";) Tj T* (    u_calibration:err_corr_dim1_name=["lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="systematic";) Tj T* (    u_calibration:err_corr_dim1_params=[];) Tj T* (    u_calibration:err_corr_dim1_units=[];) Tj T* (    u_calibration:err_corr_dim2_name="time";) Tj T* (    u_calibration:err_corr_dim2_form="random";) Tj T* (    u_calibration:err_corr_dim2_params=[];) Tj T* (    u_calibration:err_corr_dim2_units=[];) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* (    u_calibration:err_corr_dim1_name=["time", "lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="random";) Tj T* (    u_calibration:err_corr_dim1_params=[];) Tj T* (    u_calibration:err_corr_dim1_units=[];) Tj T* ET
+BT 1 0 0 1 0 182 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\);) Tj T* (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (    temperature:units="K") Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (    u_calibration:units="K";) Tj T* (    u_calibration:pdf_shape="rectangular";) Tj T* (    u_calibration:err_corr_dim1_name=["lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="systematic";) Tj T* (    u_calibration:err_corr_dim2_name="time";) Tj T* (    u_calibration:err_corr_dim2_form="err_corr_matrix";) Tj T* (    u_calibration:err_corr_dim2_params=["err_corr_calibration_time"];) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* (    u_calibration:err_corr_dim1_name=["time", "lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="random";) Tj T* (  float err_corr_calibration_time\(time, time\);) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 40.01575 73.03937 cm
+1 0 0 1 40.01575 305.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Appendix A: Error-Correlation Parameterisations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 275.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .359578 Tw (This Appendix defines a set of standard parameterisations for error-correlation matrices. As described above, these) Tj T* 0 Tw (parameterisations are defined with 3 values, as follows:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 269.0394 cm
+Q
+q
+1 0 0 1 40.01575 269.0394 cm
+Q
+q
+1 0 0 1 40.01575 245.0394 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .05494 Tw 12 TL /F3 10 Tf 0 0 0 rg (form) Tj /F1 10 Tf ( - the parameterisation name, which defines the functional form of the parameterisation \(e.g., \223random\224 for) Tj T* 0 Tw (identity matrix\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 239.0394 cm
+Q
+q
+1 0 0 1 40.01575 227.0394 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (params) Tj /F1 10 Tf ( - a list of parameters associated with the parameterisation e.g., the bandwidth for a banded matrix) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 221.0394 cm
+Q
+q
+1 0 0 1 40.01575 209.0394 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (units) Tj /F1 10 Tf ( - the physical units associated with each parameter in ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( list) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 209.0394 cm
+Q
+q
+1 0 0 1 40.01575 176.2394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -2675,15 +3246,54 @@ q
 n -10 0 525.2441 22.8 re B*
 Q
 q
-BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Appendix A: Error-Correlation Parameterisations) Tj T* ET
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Parameterisations based on Matrix Structure) Tj T* ET
 Q
 Q
 q
-1 0 0 1 40.01575 55.03937 cm
+1 0 0 1 40.01575 146.2394 cm
+q
+BT 1 0 0 1 0 14 Tm .931175 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following defined error-correlation matrix parameterisations are based on standardised matrix structures \(e.g.,) Tj T* 0 Tw (identity, full\). The following table defines the ) Tj /F3 10 Tf (form) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( necessary to define matrices of a given structure.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 134.2394 cm
+Q
+q
+1 0 0 1 40.01575 65.43937 cm
+q
+.933333 .933333 .933333 rg
+n 0 68.8 515.2441 -68.8 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 50.8 Tm  T* ET
+q
+1 0 0 1 8 44 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Existing parmaterisations:) Tj T* ET
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Note) Tj T* ET
 Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL -0.080311 Tw (I know Zhav was unsuccessful in finding a standard set of matrix structures we can adhere to\205 but I\222m interested) Tj T* 0 Tw (in any similar suggestions to simplify this definition\205) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 68.8 m 515.2441 68.8 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 68.8 l S
+n 515.2441 0 m 515.2441 68.8 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 59.43937 cm
 Q
 q
 1 0 0 1 40.01575 54.85039 cm
@@ -2692,39 +3302,27 @@ q
 1 0 0 1 34.01575 807.2126 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Uncertainty Attributes) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Appendix A: Error-Correlation Parameterisations) Tj T* ET
 Q
 Q
 q
 1 0 0 1 34.01575 22.67717 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (6) Tj T* ET
 Q
 Q
  
 endstream
 endobj
-100 0 obj
+116 0 obj
 <<
-/Length 2293
+/Length 5728
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 772.6394 cm
-q
-.8 .8 .8 RG
-.3 w
-.94902 .94902 .94902 rg
-n -10 0 525.2441 20.4 re B*
-Q
-q
-BT 1 0 0 1 0 2.4 Tm 156.594 0 Td 14.4 TL /F2 12 Tf .12549 .262745 .360784 rg (Error-correlation parameterisations) Tj T* -156.594 0 Td ET
-Q
-Q
-q
-1 0 0 1 40.01575 690.6394 cm
+1 0 0 1 40.01575 711.0394 cm
 q
 1 1 1 rg
 n 0 76 515.2441 -16 re f*
@@ -2740,33 +3338,44 @@ q
 1 0 0 1 6 63 cm
 q
 .94902 .94902 .94902 rg
-n 0 0 116.811 10 re f*
+n 0 0 85.21587 10 re f*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 3.945512 0 Td (Parameterisation Form) Tj T* -3.945512 0 Td ET
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 30.10793 0 Td (Form) Tj T* -30.10793 0 Td ET
 Q
 Q
 q
-1 0 0 1 134.811 63 cm
+1 0 0 1 103.2159 63 cm
 q
 .94902 .94902 .94902 rg
-n 0 0 116.811 10 re f*
+n 0 0 119.2414 10 re f*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 31.17051 0 Td (Parameters) Tj T* -31.17051 0 Td ET
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 32.38571 0 Td (Parameters) Tj T* -32.38571 0 Td ET
 Q
 Q
 q
-1 0 0 1 263.622 63 cm
+1 0 0 1 234.4573 63 cm
 q
 .94902 .94902 .94902 rg
-n 0 0 245.622 10 re f*
+n 0 0 94.93745 10 re f*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 95.30602 0 Td (Description) Tj T* -95.30602 0 Td ET
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 9.128727 0 Td (Matrix Structure) Tj T* -9.128727 0 Td ET
+Q
+Q
+q
+1 0 0 1 341.3947 63 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 167.8494 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 56.41968 0 Td (Description) Tj T* -56.41968 0 Td ET
 Q
 Q
 0 0 0 rg
@@ -2775,42 +3384,54 @@ q
 1 0 0 1 6 45 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (random) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (random) Tj T* ET
 Q
 Q
 q
-1 0 0 1 134.811 45 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([]) Tj T* ET
-Q
-Q
-q
-1 0 0 1 263.622 33 cm
+1 0 0 1 103.2159 45 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (No error-correlation between elements in observation) Tj T* (variable.) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (None required) Tj T* ET
+Q
+Q
+q
+1 0 0 1 234.4573 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Identity matrix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 341.3947 33 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (No error-correlation between) Tj T* (elements in the ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 6 15 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (systematic) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (systematic) Tj T* ET
 Q
 Q
 q
-1 0 0 1 134.811 15 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([]) Tj T* ET
-Q
-Q
-q
-1 0 0 1 263.622 3 cm
+1 0 0 1 103.2159 15 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Full error-correlation between elements in observation) Tj T* (variable.) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (None required) Tj T* ET
+Q
+Q
+q
+1 0 0 1 234.4573 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Full matrix of 1\222s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 341.3947 3 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (Full error-correlation between) Tj T* (elements in ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (.) Tj T* ET
 Q
 Q
 q
@@ -2820,8 +3441,9 @@ q
 .25 w
 n 0 60 m 515.2441 60 l S
 n 0 30 m 515.2441 30 l S
-n 128.811 0 m 128.811 76 l S
-n 257.622 0 m 257.622 76 l S
+n 97.21587 0 m 97.21587 76 l S
+n 228.4573 0 m 228.4573 76 l S
+n 335.3947 0 m 335.3947 76 l S
 n 0 76 m 515.2441 76 l S
 n 0 0 m 515.2441 0 l S
 n 0 0 m 0 76 l S
@@ -2830,205 +3452,391 @@ Q
 Q
 Q
 q
-1 0 0 1 40.01575 690.6394 cm
+1 0 0 1 40.01575 711.0394 cm
+Q
+q
+1 0 0 1 40.01575 678.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F2 14 Tf .12549 .262745 .360784 rg (Parameterisations based on Data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 648.2394 cm
+q
+BT 1 0 0 1 0 14 Tm 2.823392 Tw 12 TL /F1 10 Tf 0 0 0 rg (The following defined error-correlation matrix parameterisations are based on providing data that defines the) Tj T* 0 Tw (contents of the matrix. The following table defines the ) Tj /F3 10 Tf (form) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (params) Tj /F1 10 Tf ( of these parameterisations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 636.2394 cm
+Q
+q
+1 0 0 1 40.01575 579.4394 cm
+q
+.933333 .933333 .933333 rg
+n 0 56.8 515.2441 -56.8 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 38.8 Tm  T* ET
+q
+1 0 0 1 8 32 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Note) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Anything urgent to add? Sparse matrix definitions?) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 56.8 m 515.2441 56.8 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 56.8 l S
+n 515.2441 0 m 515.2441 56.8 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 573.4394 cm
+Q
+q
+1 0 0 1 40.01575 567.4394 cm
+Q
+q
+1 0 0 1 40.01575 497.4394 cm
+q
+1 1 1 rg
+n 0 70 515.2441 -16 re f*
+.878431 .878431 .878431 rg
+n 0 54 515.2441 -54 re f*
+.94902 .94902 .94902 rg
+n 0 70 515.2441 -16 re f*
+.12549 .262745 .360784 rg
+BT /F2 10 Tf 10 TL ET
+q
+1 0 0 1 6 57 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 79.19365 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 27.09682 0 Td (Form) Tj T* -27.09682 0 Td ET
+Q
+Q
+q
+1 0 0 1 97.19365 57 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 111.1114 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 28.32071 0 Td (Parameters) Tj T* -28.32071 0 Td ET
+Q
+Q
+q
+1 0 0 1 220.3051 57 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 120.2308 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 21.77539 0 Td (Matrix Structure) Tj T* -21.77539 0 Td ET
+Q
+Q
+q
+1 0 0 1 352.5359 57 cm
+q
+.94902 .94902 .94902 rg
+n 0 0 156.7082 10 re f*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 50.84912 0 Td (Description) Tj T* -50.84912 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (err_corr_matr) Tj T* (ix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 97.19365 3 cm
+q
+BT 1 0 0 1 0 38 Tm 12 TL /F3 10 Tf 0 0 0 rg (err_corr_matrix_va) Tj  T* (r) Tj /F1 10 Tf ( - name of the dataset) Tj T* (variable that defines the) Tj T* (error correlation matrix.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 220.3051 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Explicitly defined matrix) Tj T* ET
+Q
+Q
+q
+1 0 0 1 352.5359 27 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg (Full error-correlation between) Tj T* (elements in ) Tj /F4 10 Tf (observation variable) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 54 m 515.2441 54 l S
+n 91.19365 0 m 91.19365 70 l S
+n 214.3051 0 m 214.3051 70 l S
+n 346.5359 0 m 346.5359 70 l S
+n 0 70 m 515.2441 70 l S
+n 0 0 m 515.2441 0 l S
+n 0 0 m 0 70 l S
+n 515.2441 0 m 515.2441 70 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 497.4394 cm
 Q
 q
 1 0 0 1 34.01575 807.2126 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Uncertainty Attributes) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Appendix A: Error-Correlation Parameterisations) Tj T* ET
 Q
 Q
 q
 1 0 0 1 34.01575 22.67717 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (6) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (7) Tj T* ET
 Q
 Q
  
 endstream
 endobj
-101 0 obj
+117 0 obj
 <<
-/Nums [ 0 102 0 R 1 103 0 R 2 104 0 R 3 105 0 R 4 106 0 R 
-  5 107 0 R 6 108 0 R 7 109 0 R 8 110 0 R 9 111 0 R ]
+/Nums [ 0 118 0 R 1 119 0 R 2 120 0 R 3 121 0 R 4 122 0 R 
+  5 123 0 R 6 124 0 R 7 125 0 R 8 126 0 R 9 127 0 R 
+  10 128 0 R ]
 >>
 endobj
-102 0 obj
+118 0 obj
 <<
 /S /D /St 1
 >>
 endobj
-103 0 obj
+119 0 obj
 <<
 /S /D /St 2
 >>
 endobj
-104 0 obj
+120 0 obj
 <<
 /S /r /St 1
 >>
 endobj
-105 0 obj
+121 0 obj
 <<
 /S /r /St 2
 >>
 endobj
-106 0 obj
+122 0 obj
 <<
 /S /D /St 1
 >>
 endobj
-107 0 obj
+123 0 obj
 <<
 /S /D /St 2
 >>
 endobj
-108 0 obj
+124 0 obj
 <<
 /S /D /St 3
 >>
 endobj
-109 0 obj
+125 0 obj
 <<
 /S /D /St 4
 >>
 endobj
-110 0 obj
+126 0 obj
 <<
 /S /D /St 5
 >>
 endobj
-111 0 obj
+127 0 obj
 <<
 /S /D /St 6
 >>
 endobj
+128 0 obj
+<<
+/S /D /St 7
+>>
+endobj
 xref
-0 112
+0 129
 0000000000 65535 f 
 0000000073 00000 n 
 0000000147 00000 n 
 0000000254 00000 n 
 0000000366 00000 n 
-0000000571 00000 n 
-0000000776 00000 n 
-0000000944 00000 n 
-0000001112 00000 n 
-0000001280 00000 n 
-0000001448 00000 n 
-0000001617 00000 n 
-0000001786 00000 n 
-0000001955 00000 n 
-0000002124 00000 n 
-0000002293 00000 n 
-0000002462 00000 n 
-0000002631 00000 n 
-0000002800 00000 n 
-0000002969 00000 n 
-0000003138 00000 n 
-0000003307 00000 n 
-0000003476 00000 n 
-0000003645 00000 n 
-0000003814 00000 n 
-0000003983 00000 n 
-0000004152 00000 n 
-0000004321 00000 n 
-0000004490 00000 n 
-0000004659 00000 n 
-0000004828 00000 n 
-0000004997 00000 n 
-0000005166 00000 n 
-0000005335 00000 n 
-0000005504 00000 n 
-0000005673 00000 n 
-0000005842 00000 n 
-0000006011 00000 n 
-0000006180 00000 n 
-0000006349 00000 n 
-0000006518 00000 n 
-0000006687 00000 n 
-0000006856 00000 n 
-0000007025 00000 n 
-0000007194 00000 n 
-0000007683 00000 n 
-0000007889 00000 n 
-0000007995 00000 n 
-0000008203 00000 n 
-0000008395 00000 n 
-0000008593 00000 n 
-0000008797 00000 n 
-0000008989 00000 n 
-0000009105 00000 n 
-0000009358 00000 n 
-0000009549 00000 n 
-0000009740 00000 n 
-0000009931 00000 n 
-0000010122 00000 n 
-0000010327 00000 n 
-0000010525 00000 n 
-0000010719 00000 n 
-0000010986 00000 n 
-0000011192 00000 n 
-0000011378 00000 n 
-0000011603 00000 n 
-0000011723 00000 n 
-0000011929 00000 n 
-0000012136 00000 n 
-0000012243 00000 n 
-0000012501 00000 n 
-0000012576 00000 n 
-0000012742 00000 n 
-0000012890 00000 n 
-0000012991 00000 n 
-0000013157 00000 n 
-0000013264 00000 n 
-0000013389 00000 n 
-0000013515 00000 n 
-0000013636 00000 n 
-0000013820 00000 n 
-0000013931 00000 n 
-0000014056 00000 n 
-0000014181 00000 n 
-0000014293 00000 n 
-0000014456 00000 n 
-0000014590 00000 n 
-0000014710 00000 n 
-0000014846 00000 n 
-0000014988 00000 n 
-0000015137 00000 n 
-0000015260 00000 n 
-0000016237 00000 n 
-0000016362 00000 n 
-0000021118 00000 n 
-0000021243 00000 n 
-0000030042 00000 n 
-0000036973 00000 n 
-0000044609 00000 n 
-0000052508 00000 n 
-0000061194 00000 n 
-0000063540 00000 n 
-0000063676 00000 n 
-0000063711 00000 n 
-0000063746 00000 n 
-0000063781 00000 n 
-0000063816 00000 n 
-0000063851 00000 n 
-0000063886 00000 n 
-0000063921 00000 n 
-0000063956 00000 n 
-0000063991 00000 n 
+0000000573 00000 n 
+0000000780 00000 n 
+0000000948 00000 n 
+0000001116 00000 n 
+0000001284 00000 n 
+0000001452 00000 n 
+0000001621 00000 n 
+0000001790 00000 n 
+0000001959 00000 n 
+0000002128 00000 n 
+0000002297 00000 n 
+0000002466 00000 n 
+0000002635 00000 n 
+0000002804 00000 n 
+0000002973 00000 n 
+0000003142 00000 n 
+0000003311 00000 n 
+0000003480 00000 n 
+0000003649 00000 n 
+0000003818 00000 n 
+0000003987 00000 n 
+0000004156 00000 n 
+0000004325 00000 n 
+0000004494 00000 n 
+0000004663 00000 n 
+0000004832 00000 n 
+0000005001 00000 n 
+0000005170 00000 n 
+0000005339 00000 n 
+0000005508 00000 n 
+0000005677 00000 n 
+0000005846 00000 n 
+0000006015 00000 n 
+0000006184 00000 n 
+0000006353 00000 n 
+0000006522 00000 n 
+0000006691 00000 n 
+0000006860 00000 n 
+0000007029 00000 n 
+0000007198 00000 n 
+0000007367 00000 n 
+0000007536 00000 n 
+0000007705 00000 n 
+0000007874 00000 n 
+0000008043 00000 n 
+0000008212 00000 n 
+0000008381 00000 n 
+0000008550 00000 n 
+0000009100 00000 n 
+0000009308 00000 n 
+0000009414 00000 n 
+0000009622 00000 n 
+0000009814 00000 n 
+0000010012 00000 n 
+0000010216 00000 n 
+0000010408 00000 n 
+0000010524 00000 n 
+0000010779 00000 n 
+0000010970 00000 n 
+0000011161 00000 n 
+0000011352 00000 n 
+0000011543 00000 n 
+0000011759 00000 n 
+0000011964 00000 n 
+0000012162 00000 n 
+0000012356 00000 n 
+0000012632 00000 n 
+0000012840 00000 n 
+0000013048 00000 n 
+0000013235 00000 n 
+0000013404 00000 n 
+0000013524 00000 n 
+0000013758 00000 n 
+0000013966 00000 n 
+0000014174 00000 n 
+0000014282 00000 n 
+0000014540 00000 n 
+0000014615 00000 n 
+0000014789 00000 n 
+0000014937 00000 n 
+0000015038 00000 n 
+0000015204 00000 n 
+0000015311 00000 n 
+0000015436 00000 n 
+0000015562 00000 n 
+0000015683 00000 n 
+0000015867 00000 n 
+0000015978 00000 n 
+0000016103 00000 n 
+0000016228 00000 n 
+0000016340 00000 n 
+0000016517 00000 n 
+0000016651 00000 n 
+0000016771 00000 n 
+0000016907 00000 n 
+0000017077 00000 n 
+0000017224 00000 n 
+0000017370 00000 n 
+0000017561 00000 n 
+0000017709 00000 n 
+0000017845 00000 n 
+0000017979 00000 n 
+0000018956 00000 n 
+0000019082 00000 n 
+0000024849 00000 n 
+0000024975 00000 n 
+0000033838 00000 n 
+0000040764 00000 n 
+0000048427 00000 n 
+0000054963 00000 n 
+0000064874 00000 n 
+0000073941 00000 n 
+0000079722 00000 n 
+0000079872 00000 n 
+0000079907 00000 n 
+0000079942 00000 n 
+0000079977 00000 n 
+0000080012 00000 n 
+0000080047 00000 n 
+0000080082 00000 n 
+0000080117 00000 n 
+0000080152 00000 n 
+0000080187 00000 n 
+0000080222 00000 n 
 trailer
 <<
 /ID 
-[<fbc570fceba145c585a675702196d705><fbc570fceba145c585a675702196d705>]
+[<fc9c98c084616c75aadd13c9ff099e06><fc9c98c084616c75aadd13c9ff099e06>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-/Info 69 0 R
-/Root 68 0 R
-/Size 112
+/Info 80 0 R
+/Root 79 0 R
+/Size 129
 >>
 startxref
-64026
+80257
 %%EOF

@@ -1,8 +1,8 @@
-======================================
-Uncertainty Metadata Conventions (UNC)
-======================================
+=============================================
+Uncertainty Metadata Naming Conventions (UNC)
+=============================================
 
-The goal of these metadata conventions is to provide a standardised format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.
+The goal of these metadata naming conventions is to provide a standardised format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.
 
 This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiative, which includes Python tools to support it's implementation.
 
@@ -13,13 +13,13 @@ This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiati
         :link: specification/draft-v0.1/unc_specification
         :link-type: doc
 
-        For the latest version of this standard
+        For the latest version of the UNC specification
 
     .. grid-item-card::  Other Versions
         :link: specification/spec_toc
         :link-type: doc
 
-        For all versions of this standard - including web and PDF
+        For all versions of the UNC specification - including web and PDF
 
     .. grid-item-card::  Governance
         :link: governance
@@ -47,7 +47,7 @@ The development has been funded by:
    :maxdepth: 1
    :hidden:
 
-   Unc Specification <specification/spec_toc>
+   UNC Specification <specification/spec_toc>
    Governance <governance>
    CoMet Toolkit <comet>
 
