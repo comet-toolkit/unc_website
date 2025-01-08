@@ -21,9 +21,9 @@ PDF_PATH = "build/html/_static/spec_pdfs"
 PDF_URL = "https://comet-toolkit.github.io/unc_website/_static/spec_pdfs"
 
 # Static page content elements
-HEADER = ("======================================\n"
-          "Uncertainty Metadata Conventions (UNC)\n"
-          "======================================\n\n")
+HEADER = ("=============================================\n"
+          "Uncertainty Metadata Naming Conventions (UNC)\n"
+          "=============================================\n\n")
 
 WEB_VERS_SUBHEADER = ("Web Versions\n"
                       "------------\n\n"

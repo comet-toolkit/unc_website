@@ -1,6 +1,6 @@
-**************************************
-Uncertainty Metadata Conventions (UNC)
-**************************************
+*********************************************
+Uncertainty Metadata Naming Conventions (UNC)
+*********************************************
 
 Authors
 ============
@@ -19,7 +19,7 @@ Goals
 
 Measurement datasets are becoming larger, more complex, and are increasingly used to support critical applications such as manufacturing, health, and environmental monitoring. Reliable interpretation of these measurements requires accompanying uncertainty and error-covariance information - however, this is often overlooked. Where available, such information lacks standardisation and could, in principle, be highly complex and large.
 
-The goal of this specification is to provide a standardised metadata format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.
+The goal of this Uncertainty metadata Naming Conventions (UNC) specification is to provide a standardised metadata format for storing the accompanying uncertainty/error-covariance information with measurement datasets. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-covariance with a simple set of metadata.
 
 Philosophy
 ----------
@@ -63,18 +63,19 @@ For terminology related to measurements and associated uncertainties, definition
 * `Uncertainty`_
 * `Coverage factor`_
 
-The following terms are derived from X:
+Definitions of the following terms are adopted from `work undertaken in the H2020 FIDUCEO <https://iopscience.iop.org/article/10.1088/1681-7575/ab1705/pdf>`_:
 
 * Error-correlation
 * Error-covariance
-* fractional uncertainty
+
+.. note::
+
+   Are there any other widely adopted definitions we can use for these terms?
 
 Format for Examples
 -------------------
 
-The ASCII format used to describe the contents of a NetCDF dataset is called `CDL`_ (NetCDF Common Data form Language). This follows C-style indexing where indices start at 0, and the last declared dimension varies fastest in storage order. For example, in a 2D array `data(time, lat)`, the `lat` dimension changes faster than `time` during indexing.
-
-Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in CDL is given below. Here a dataset of `temperature` with its metadata (units and description) is defined along `time`, `lat` and `lon` dimensions.
+The plain text (ASCII) format used to describe the contents of a NetCDF dataset is called `CDL`_ (NetCDF Common Data Language). Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in CDL is given below. Here the dataset contains a single `temperature` variable with accompanying metadata (`units` and `description`), which is defined along `time`, `lat` and `lon` dimensions (each of which is length 2). Dimension sizes and data are omitted in specification examples for brevity.
 
 .. code-block::
 
@@ -87,7 +88,7 @@ Snippets of CDL are used to present examples in this specification. A minimal ex
       variables:
         float temperature(time, lat, lon) ;
           temperature:units = "K" ;
-          temperature:long_name = "Temperature" ;
+          temperature:description = "measured temperature" ;
 
       data:
         temperature =
@@ -101,14 +102,14 @@ Snippets of CDL are used to present examples in this specification. A minimal ex
 Measurement Dataset Structures
 ==============================
 
-As mentioned above, the `NetCDF`_ data model for creating self-describing, array-oriented scientific datasets is adopted. The components of NetCDF datasets are described in Section 2 of the `NUG`_ (NetCDF Users Guide). In this section, we introduce the core components of this data model relevant to this standard.
+As mentioned above, the `NetCDF`_ data model for creating self-describing, array-oriented scientific datasets is adopted. The components of NetCDF datasets are described in Section 2 of the `NUG`_ (NetCDF Users Guide). In this section, we introduce the core components of this data model relevant to this specification.
 
 Variables
 ---------
 
 Datasets are composed of variables, which are multidimensional data arrays.
 
-This standard defines the following categories of variables:
+This specification defines the following categories of variables:
 
 * **Observation Variables**
 
@@ -121,19 +122,23 @@ This standard defines the following categories of variables:
 
   *Uncertainty variables* must have the same dimensions as the *observation variable* they are associated with.
 
+.. note::
+
+   Should we allow uncertainty variables to be smaller that observation variables? i.e. that have a subset of the dimensions to save space where there are repeated values? (in practice, compression would reduce this as well...)
+
 A dataset may also contain variables that are neither *observation variables* or *uncertainty variables*.
 
 Dimensions
 ----------
 
-A variable may have any number of named dimensions, including zero -- e.g., `"x"`, `"y"`, `"time"`. Dimensions may be of any size, including unity.
+A variable may have any number of named dimensions, including zero -- e.g., `"x"`, `"y"`, `"time"`. Dimensions may be of any size, including 1.
 
 Data Types
 ----------
 
 .. note::
 
-   Do we want to permit different types?
+   Can we permit different types?
 
 *Observation variables* and *uncertainty variables* must be `floats`.
 
@@ -144,12 +149,12 @@ Attributes
 
 Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the entire dataset (e.g., title, institution, history). Variable attributes define specific properties of the variable  (e.g., units, valid ranges). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by following standardised conventions.
 
-This standard defines a set of variable attributes to:
+This specification defines a set of variable attributes to:
 
 * link *observation variables* with their associated *uncertainty variables*
 * define the error-correlation properties of a given *uncertainty variables* in a compact way.
 
-A dataset may also contain non-standard attributes.
+A dataset may also contain other unrelated attributes.
 
 Uncertainty Attributes
 ======================
@@ -178,7 +183,7 @@ The physical units associated with *observation variables* and *uncertainty vari
 
 *uncertainty variables* must have the same `"units"` as the *observation variables* they are associated with. If `"units"` is not defined, the *uncertainty variable* is assumed fractional.
 
-The following example of a dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined with units `K`, matching `temperature`. `u_noise` has no defined units and so is a fractional uncertainty
+The following example dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined with units `K`, matching `temperature`. `u_noise` has no defined units and so assumed is a fractional uncertainty.
 
 .. code-block::
 
@@ -207,7 +212,7 @@ The probability density function (PDF) shape associated with the uncertainty est
 
 If `"pdf_shape"` is not defined for an *uncertainty variable* it is assumed to be `"gaussian"`.
 
-The following example of a dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined to be represented by a rectangular PDF. `u_noise` has no defined `"pdf_shape"` and so is assumed Gaussian.
+The following example dataset again shows a `temperature` variable associated with two uncertainty components - `u_calibration` and `u_noise`. Here, `u_calibration` is defined to be represented by a rectangular PDF. `u_noise` has no defined `"pdf_shape"` and so is assumed Gaussian.
 
 .. code-block::
 
@@ -224,21 +229,54 @@ The following example of a dataset again shows a `temperature` variable associat
 Error-Correlation Structure
 ---------------------------
 
-To provide the complete uncertainty information associated with an *observation variable*, the cross-element error-covariance matrix is required. In practice, the error-covariance matrix is `often determined from <https://doi.org/10.3390/rs11050474>`_ a combination of the per element uncertainties (i.e., the *uncertainty variable* described above) and the cross-element error-correlation matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete description of dataset error-covariance.
+To provide the complete uncertainty information associated with an *observation variable*, the cross-element error-covariance matrix is required. In practice, error-covariance matrices are `often determined from <https://doi.org/10.3390/rs11050474>`_ a combination of the per element uncertainties (i.e., the *uncertainty variable* described above) and the cross-element error-correlation matrix. This section therefore defines a standardised way to store error-correlation matrices, to enable this complete description of dataset error-covariance.
 
-For *observation variables* with `N` elements, the associated error-correlation matrix per *uncertainty variable* has the square of `N` elements. Where *observation variables* are large, it quickly becomes impractical to store this data. However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form (e.g., identity, full, banded).
+Parameterisating Error-Correlation Matrices
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For *observation variables* with *N* elements, the associated error-correlation matrix per *uncertainty variable* has the square of *N* elements. Where *observation variables* are large, it quickly becomes impractical to store this data. However, in many cases the associated error-correlation matrix can in fact be simply parameterised in a compact form, e.g., by defining it as having a specific structure (i.e., identity, full, banded).
 
 Such a parameterisation is here defined by 3 values, as follows:
 
-* `form` - the parameterisation name, which defines the functional form of the parameterisation (e.g., "random" for identity matrix)
-* `params` - a list of parameters associated with the parameterisation (e.g., the bandwidth for a banded matrix)
-* `units` - the physical units associated with each parameter in `params` list (`""` where none required)
+* `form` - the parameterisation name, which defines the functional form of the parameterisation (e.g., "random" for identity matrix structure).
+* `params` - a list of parameters associated with the parameterisation (e.g., the bandwidth for a banded matrix).
+* `units` - the physical units associated with each parameter in `params` list.
 
-This standard defines a set of *uncertainty variable* variable attributes to store these error-correlation parameterisation values.
+:ref:`Appendix A <Appendix Err Corr Params>` defines a set of standard error-correlation parameterisations using this structure. For cases not covered by this standard set, users may make their own definitions and propose them for inclusion. The simplest and most commonly used parameterisations from this standard set are:
 
-To allow maximum flexibility, different parameterisations can be defined along each *uncertainty variable* dimension, `dim_x`, or sets of dimensions, `[dim_x, dim_y, ...]`. For example, an error could be fully correlated in longitude and latitude at each time step, but uncorrelated between time steps.
+.. list-table:: Simple Error-correlation parameterisations
+   :widths: 15 20 30 35
+   :header-rows: 1
 
-The following *uncertainty variable* variable attributes are defined to store this parameterisation information, per dimension or set of dimensions (each labelled by `i`, which runs from 1 to the required number of dimensions / sets of dimensions):
+   * - Form
+     - Parameters
+     - Matrix Structure
+     - Description
+   * - `random`
+     - None
+     - Identity Matrix
+     - No error-correlation between elements in observation variable.
+   * - `systematic`
+     - None
+     - Full matrix of 1's
+     - Full error-correlation between elements in observation variable.
+   * - `err_corr_matrix`
+     - [`err_corr_matrix_var`]
+     - Explicitly defined matrix
+     - User defined error-correlation matrix, stored in data variable with name `err_corr_matrix_var`.
+
+To allow maximum flexibility, different parameterisations can be defined along each *observation variable* dimension, `dim_x`, or sets of dimensions, `[dim_x, dim_y, ...]`. For example, an error could be fully correlated in longitude and latitude at each time step, but uncorrelated between time steps.
+
+.. note::
+
+   Pieter can we add the maths of how these sub-error-correlation matrices combine?
+
+Storing Error-Correlation Parameterisation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This specification defines a set of *uncertainty variable* variable attributes to store these error-correlation parameterisation values.
+
+The following *uncertainty variable* variable attributes are defined to store the parameterisation information, per dimension or set of dimensions (each labelled by `i`, which runs from 1 to the required number of dimensions / sets of dimensions):
 
 .. list-table:: Error-correlation *uncertainty variable* variable attributes
    :widths: 15 15 50 30
@@ -258,18 +296,18 @@ The following *uncertainty variable* variable attributes are defined to store th
      - `err_corr_dim1_form="random"`
    * - `err_corr_dimi_params`
      - `list[str | float | int]`
-     - Parameterisation `params`
+     - Parameterisation `params` (can omit if none required)
      - `err_corr_dim1_params=[1,2,3]`
    * - `err_corr_dimi_units`
      - `list[str]`
-     - Parameterisation `units`
+     - Parameterisation `units` (can omit if none required)
      - `err_corr_dim1_params=["second", "K"]`
 
-The following example of a dataset again shows a `"temperature"` variable associated with two uncertainty components - `"u_calibration"` and `"u_noise"`.
+The following example dataset again shows a `"temperature"` variable associated with two uncertainty components - `"u_calibration"` and `"u_noise"`.
 
-Here, `"u_calibration"` is defined to have a systematic error-correlation in the `lat` and `lon` dimensions, and random in `time` dimension (perhaps, there is a recalibration between the measurements at each time step!).
+Here, `"u_calibration"` is defined to have a systematic error-correlation in the `lat` and `lon` dimensions. In the `time` dimension, an explicit error-correlation matrix is defined with the variable `err_corr_calibration_time`.
 
-`"u_noise"` have a error-correlation defined random in all dimensions.
+`"u_noise"` has is defined has having uncorrelated errors in all dimensions.
 
 .. code-block::
 
@@ -282,37 +320,69 @@ Here, `"u_calibration"` is defined to have a systematic error-correlation in the
         u_calibration:pdf_shape="rectangular";
         u_calibration:err_corr_dim1_name=["lat", "lon"];
         u_calibration:err_corr_dim1_form="systematic";
-        u_calibration:err_corr_dim1_params=[];
-        u_calibration:err_corr_dim1_units=[];
         u_calibration:err_corr_dim2_name="time";
-        u_calibration:err_corr_dim2_form="random";
-        u_calibration:err_corr_dim2_params=[];
-        u_calibration:err_corr_dim2_units=[];
+        u_calibration:err_corr_dim2_form="err_corr_matrix";
+        u_calibration:err_corr_dim2_params=["err_corr_calibration_time"];
       float u_noise(time, lat, lon);
         u_calibration:err_corr_dim1_name=["time", "lat", "lon"];
         u_calibration:err_corr_dim1_form="random";
-        u_calibration:err_corr_dim1_params=[];
-        u_calibration:err_corr_dim1_units=[];
+      float err_corr_calibration_time(time, time);
 
+.. _Appendix Err Corr Params:
 
 Appendix A: Error-Correlation Parameterisations
------------------------------------------------
+===============================================
 
-Existing parmaterisations:
+This Appendix defines a set of standard parameterisations for error-correlation matrices. As described above, these parameterisations are defined with 3 values, as follows:
 
-.. list-table:: Error-correlation parameterisations
-   :widths: 25 25 50
-   :header-rows: 1
+* `form` - the parameterisation name, which defines the functional form of the parameterisation (e.g., "random" for identity matrix)
+* `params` - a list of parameters associated with the parameterisation e.g., the bandwidth for a banded matrix
+* `units` - the physical units associated with each parameter in `params` list
 
-   * - Parameterisation Form
-     - Parameters
-     - Description
-   * - random
-     - []
-     - No error-correlation between elements in observation variable.
-   * - systematic
-     - []
-     - Full error-correlation between elements in observation variable.
+Parameterisations based on Matrix Structure
+-------------------------------------------
+
+The following defined error-correlation matrix parameterisations are based on standardised matrix structures (e.g., identity, full). The following table defines the `form` and `params` necessary to define matrices of a given structure.
+
+.. note::
+
+   I know Zhav was unsuccessful in finding a standard set of matrix structures we can adhere to... but I'm interested in any similar suggestions to simplify this definition...
+
++--------------------+---------------------------+----------------------+-------------------------------------+
+| Form               | Parameters                | Matrix Structure     | Description                         |
++====================+===========================+======================+=====================================+
+|  `random`          | None required             | Identity matrix      | |random_description|                |
++--------------------+---------------------------+----------------------+-------------------------------------+
+|  `systematic`      | None required             | Full matrix of 1's   | |systematic_description|            |
++--------------------+---------------------------+----------------------+-------------------------------------+
+
+
+.. Description Shortenings
+
+.. |random_description| replace:: No error-correlation between elements in the *observation variable*.
+.. |systematic_description| replace:: Full error-correlation between elements in *observation variable*.
+
+Parameterisations based on Data
+-------------------------------
+
+The following defined error-correlation matrix parameterisations are based on providing data that defines the contents of the matrix. The following table defines the `form` and `params` of these parameterisations.
+
+.. note::
+
+   Anything urgent to add? Sparse matrix definitions?
+
++--------------------+---------------------------+-----------------------------+-------------------------------------+
+| Form               | Parameters                | Matrix Structure            | Description                         |
++====================+===========================+=============================+=====================================+
+|  `err_corr_matrix` | |err_corr_matrix_params|  | Explicitly defined matrix   | |err_corr_matrix_description|       |
++--------------------+---------------------------+-----------------------------+-------------------------------------+
+
+
+.. Description Shortenings
+
+.. |err_corr_matrix_params| replace:: `err_corr_matrix_var` - name of the dataset variable that defines the error correlation matrix.
+
+.. |err_corr_matrix_description| replace:: Full error-correlation between elements in *observation variable*.
 
 
 .. Links
