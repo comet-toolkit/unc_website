@@ -484,7 +484,7 @@ endobj
 endobj
 80 0 obj
 <<
-/Author () /CreationDate (D:20250108150547+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250108150547+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20250108174737+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250108174737+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -622,25 +622,25 @@ endobj
 endobj
 106 0 obj
 <<
-/Length 925
+/Length 959
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 775.0394 cm
+1 0 0 1 40.01575 751.0394 cm
 q
 .8 .8 .8 RG
 .3 w
 .94902 .94902 .94902 rg
-n -10 0 525.2441 30 re B*
+n -10 0 525.2441 54 re B*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 22.57205 0 Td (Uncertainty Metadata Conventions Specifications) Tj T* -22.57205 0 Td ET
+BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 22.60205 0 Td (Uncertainty Metadata Naming Conventions \(UNC\)) Tj T* 172.78 0 Td (Specification) Tj T* -195.382 0 Td ET
 Q
 Q
 q
-1 0 0 1 40.01575 721.0394 cm
+1 0 0 1 40.01575 697.0394 cm
 q
 .8 .8 .8 RG
 .3 w
@@ -653,30 +653,30 @@ BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 195.102 0 Td (version draft-v0.1) Tj T* -195.1
 Q
 Q
 q
-1 0 0 1 40.01575 600 cm
+1 0 0 1 40.01575 576 cm
 Q
 q
-1 0 0 1 40.01575 579.6 cm
+1 0 0 1 40.01575 555.6 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2.4 Tm /F2 12 Tf 14.4 TL 200.616 0 Td (CoMet Toolkit Team) Tj T* -200.616 0 Td ET
 Q
 Q
 q
-1 0 0 1 40.01575 494.5606 cm
+1 0 0 1 40.01575 470.5606 cm
 Q
 q
-1 0 0 1 40.01575 474.1606 cm
+1 0 0 1 40.01575 450.1606 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 211.26 0 Td (January 08, 2025) Tj T* -211.26 0 Td ET
 Q
 Q
 q
-1 0 0 1 40.01575 474.1606 cm
+1 0 0 1 40.01575 450.1606 cm
 Q
 q
-1 0 0 1 40.01575 474.1606 cm
+1 0 0 1 40.01575 450.1606 cm
 Q
  
 endstream
@@ -3805,32 +3805,32 @@ xref
 0000017709 00000 n 
 0000017845 00000 n 
 0000017979 00000 n 
-0000018956 00000 n 
-0000019082 00000 n 
-0000024849 00000 n 
-0000024975 00000 n 
-0000033838 00000 n 
-0000040764 00000 n 
-0000048427 00000 n 
-0000054963 00000 n 
-0000064874 00000 n 
-0000073941 00000 n 
-0000079722 00000 n 
-0000079872 00000 n 
-0000079907 00000 n 
-0000079942 00000 n 
-0000079977 00000 n 
-0000080012 00000 n 
-0000080047 00000 n 
-0000080082 00000 n 
-0000080117 00000 n 
-0000080152 00000 n 
-0000080187 00000 n 
-0000080222 00000 n 
+0000018990 00000 n 
+0000019116 00000 n 
+0000024883 00000 n 
+0000025009 00000 n 
+0000033872 00000 n 
+0000040798 00000 n 
+0000048461 00000 n 
+0000054997 00000 n 
+0000064908 00000 n 
+0000073975 00000 n 
+0000079756 00000 n 
+0000079906 00000 n 
+0000079941 00000 n 
+0000079976 00000 n 
+0000080011 00000 n 
+0000080046 00000 n 
+0000080081 00000 n 
+0000080116 00000 n 
+0000080151 00000 n 
+0000080186 00000 n 
+0000080221 00000 n 
+0000080256 00000 n 
 trailer
 <<
 /ID 
-[<fc9c98c084616c75aadd13c9ff099e06><fc9c98c084616c75aadd13c9ff099e06>]
+[<4170ea7569fcc50f104e9304ed9702d1><4170ea7569fcc50f104e9304ed9702d1>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 80 0 R
@@ -3838,5 +3838,5 @@ trailer
 /Size 129
 >>
 startxref
-80257
+80291
 %%EOF

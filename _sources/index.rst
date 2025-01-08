@@ -13,13 +13,13 @@ This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiati
         :link: specification/draft-v0.1/unc_specification
         :link-type: doc
 
-        For the latest version of the UNC specification
+        For the latest version of the UNC Specification
 
     .. grid-item-card::  Other Versions
         :link: specification/spec_toc
         :link-type: doc
 
-        For all versions of the UNC specification - including web and PDF
+        For all versions of the UNC Specification - including web and PDF
 
     .. grid-item-card::  Governance
         :link: governance
