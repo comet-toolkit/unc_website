@@ -15,7 +15,7 @@ import os
 
 build_type = sys.argv[2]
 
-project_title = "Uncertainty Metadata Conventions Specifications"
+project_title = "Uncertainty Metadata Naming Conventions (UNC) Specification"
 
 # -- General configuration ---------------------------------------------
 

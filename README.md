@@ -1,3 +1,3 @@
-# Uncertainty Metadata Conventions Website
+# Uncertainty Metadata Naming Conventions (UNC) Website
 
-This repository contains the sources files for the [Uncertainty Metadata Conventions website](https://comet-toolkit.github.io/unc_website/).
+This repository contains the sources files for the [UNC website](https://comet-toolkit.github.io/unc_website/).
