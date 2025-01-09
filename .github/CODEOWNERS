@@ -1,3 +1,3 @@
 # CODEOWNERS file
-# Assign `@user1` as owners for all files
+# Assign "Lead Authors" team as owners for all files
 * @comet-toolkit/lead-authors
