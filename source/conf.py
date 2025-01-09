@@ -86,7 +86,6 @@ html_theme = "sphinx_book_theme"
 # documentation.
 
 html_theme_options = {
-    "announcement": "This site is a pre-release draft",
     "repository_url": "https://github.com/comet-toolkit/unc_website",
     "use_repository_button": True,
     "show_prev_next": False,
