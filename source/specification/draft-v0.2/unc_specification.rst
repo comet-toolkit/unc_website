@@ -10,12 +10,8 @@ Lead Authors
 
 * Sam Hunt, NPL
 * Pieter De Vis, NPL
-
-Co-Authors
-----------
-
-* David Hassell, NCAS / University of Reading
 * Owen Embury, University of Reading
+* David Hassell, NCAS / University of Reading
 
 Contributors
 ------------
