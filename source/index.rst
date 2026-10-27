@@ -6,11 +6,13 @@ The goal of these metadata naming conventions is to provide a standardised forma
 
 This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiative, which includes Python tools to support it's implementation.
 
+The latest draft (v0.2) was developed in collaboration with the `Climate and Forecast (CF) conventions`_ community, and has been `proposed for inclusion in the CF conventions`_.
+
 .. grid:: 2
     :gutter: 2
 
     .. grid-item-card::  Latest Specification
-        :link: specification/draft-v0.1/unc_specification
+        :link: specification/draft-v0.2/unc_specification
         :link-type: doc
 
         For the latest version of the UNC Specification
@@ -54,3 +56,5 @@ The development has been funded by:
 .. Links
 
 .. _CoMet Toolkit: https://www.comet-toolkit.org
+.. _Climate and Forecast (CF) conventions: https://cfconventions.org
+.. _proposed for inclusion in the CF conventions: https://github.com/cf-convention/cf-conventions/pull/661

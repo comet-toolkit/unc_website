@@ -47,8 +47,8 @@ def make_spec_version_toc(spec_dir: str):
     # add header
     page_content += HEADER
 
-    # each version of the spec is a separate folder in the spec_dir
-    spec_vers = [f for f in listdir(spec_dir) if isdir(pjoin(spec_dir, f))]
+    # each version of the spec is a separate folder in the spec_dir, listed newest first
+    spec_vers = sorted([f for f in listdir(spec_dir) if isdir(pjoin(spec_dir, f))], reverse=True)
     spec_vers_toc_paths = [f"{f}/unc_specification" for f in spec_vers]
     spec_vers_urls = [f"{PDF_URL}/{f}/unc_specification_{f}.pdf" for f in spec_vers]
 
@@ -63,7 +63,7 @@ def make_spec_version_toc(spec_dir: str):
     page_content += PDF_VERS_SUBHEADER
 
     for spec_ver, spec_vers_url in zip(spec_vers, spec_vers_urls):
-        page_content += f"`{spec_ver} <{spec_vers_url}>`_\n"
+        page_content += f"* `{spec_ver} <{spec_vers_url}>`_\n"
 
     with open(toc_path, "w") as f:
         f.write(page_content)
