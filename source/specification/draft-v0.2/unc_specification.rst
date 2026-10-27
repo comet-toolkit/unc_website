@@ -33,13 +33,13 @@ The goal of this Uncertainty metadata Naming Conventions (UNC) specification is 
 Relationship to the CF Conventions
 ----------------------------------
 
-Draft v0.2 is a major revision of draft v0.1. It was developed in collaboration with the CF community, and has been proposed for inclusion in the CF conventions as a new chapter, "Uncertainty" (see `CF pull request #661`_, and the associated discussion in `CF issue #660`_). This version of the specification is aligned with that proposal, and will be kept aligned with it as it progresses through the CF review process.
+Draft v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been proposed for inclusion in the CF conventions as a new chapter, "Uncertainty" (see `CF pull request #661`_, and the associated discussion in `CF issue #660`_). This version of the specification is aligned with that proposal, and will be kept aligned with it as it progresses through the CF review process.
 
 This specification can be read on its own, but it builds on the wider CF conventions - for example, the definitions of the `units`, `units_metadata` and `standard_name` attributes. Where this specification depends on other parts of the CF conventions, links are given to the relevant sections of the `CF conventions document`_.
 
 Within CF, the uncertainty of a data variable has previously been expressed using an ancillary variable with the `standard_error` standard name modifier (see the `Ancillary Data <https://cfconventions.org/cf-conventions/cf-conventions.html#ancillary-data>`__ section of the CF conventions). The CF proposal deprecates this approach in favour of the *uncertainty variables* defined in this specification.
 
-The changes from draft v0.1 are summarised in :ref:`changes-from-v0.1`.
+The changes from v0.1 are summarised in :ref:`changes-from-v0.1`.
 
 Philosophy
 ----------
@@ -138,7 +138,7 @@ This specification defines the following categories of variables:
 
 * **Data Variables**
 
-  *Data variables* represent a multidimensional array of measured values. (These were called *observation variables* in draft v0.1.)
+  *Data variables* represent a multidimensional array of measured values. (These were called *observation variables* in v0.1.)
 
 * **Uncertainty Variables**
 
@@ -950,16 +950,16 @@ For convenience, :ref:`Table A.5 <table-coverage-probabilities-gaussian>` and :r
 
 .. _changes-from-v0.1:
 
-Appendix B: Changes from Draft v0.1
-===================================
+Appendix B: Changes from v0.1
+=============================
 
-Draft v0.2 is a major revision of draft v0.1, made to align the specification with the CF conventions (see :ref:`relationship-to-cf`). Datasets written following draft v0.1 are not compatible with draft v0.2. The main changes are summarised in the table below.
+Draft v0.2 is a major revision of v0.1, made to align the specification with the CF conventions (see :ref:`relationship-to-cf`). Datasets written following v0.1 are not compatible with draft v0.2. The main changes are summarised in the table below.
 
-.. list-table:: Summary of changes from draft v0.1
+.. list-table:: Summary of changes from v0.1
    :widths: 35 35 30
    :header-rows: 1
 
-   * - Draft v0.1
+   * - v0.1
      - Draft v0.2
      - Notes
    * - *Observation variable*
@@ -1005,11 +1005,11 @@ Draft v0.2 is a major revision of draft v0.1, made to align the specification wi
      - Error-correlation structural types `triangular` and `exponential`, and descriptions of error-correlation by non-standardised text (form 3a)
      - See :ref:`Table A.3 <table-structural-types>`.
 
-The example below shows the final example dataset from draft v0.1 updated to follow draft v0.2. In draft v0.1, the uncertainty values were implicitly standard uncertainties, and `u_noise` was a fractional uncertainty because it had no `units` attribute.
+The example below shows the final example dataset from v0.1 updated to follow draft v0.2. In v0.1, the uncertainty values were implicitly standard uncertainties, and `u_noise` was a fractional uncertainty because it had no `units` attribute.
 
-.. admonition:: Example 11. Draft v0.1 example updated to follow draft v0.2
+.. admonition:: Example 11. v0.1 example updated to follow draft v0.2
 
-    Draft v0.1:
+    v0.1:
 
     .. code-block::
 

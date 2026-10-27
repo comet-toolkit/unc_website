@@ -86,7 +86,7 @@ html_theme = "sphinx_book_theme"
 # documentation.
 
 html_theme_options = {
-    "announcement": "This site is a pre-release draft",
+    "announcement": "UNC v0.2 is a draft, proposed for inclusion in the CF conventions",
     "repository_url": "https://github.com/comet-toolkit/unc_website",
     "use_repository_button": True,
     "show_prev_next": False,
@@ -100,6 +100,10 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+# Add any paths that contain extra files to copy to the root of the HTML
+# output, e.g. redirects from old page URLs.
+html_extra_path = ["_redirects"]
 
 # -- Options for HTMLHelp output ---------------------------------------
 

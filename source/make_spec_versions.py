@@ -1,5 +1,6 @@
 """unc_website.source.make_spec_version_toc - module containing function to build TOC page for different specification versions"""
 import os.path
+import re
 from os import listdir, makedirs
 from os.path import isdir, dirname, abspath
 from os.path import join as pjoin
@@ -34,6 +35,11 @@ PDF_VERS_SUBHEADER = ("PDF Versions\n"
                       "------------\n\n")
 
 
+def _version_key(spec_ver: str):
+    """Sort key from the version number in a spec version folder name, e.g. "draft-v0.2" -> (0, 2)"""
+    return tuple(int(n) for n in re.findall(r"\d+", spec_ver))
+
+
 def make_spec_version_toc(spec_dir: str):
     """
     Produces "spec_toc.rst" in `spec_dir` - containing TOC for spec versions and links to PDF versions
@@ -48,7 +54,7 @@ def make_spec_version_toc(spec_dir: str):
     page_content += HEADER
 
     # each version of the spec is a separate folder in the spec_dir, listed newest first
-    spec_vers = sorted([f for f in listdir(spec_dir) if isdir(pjoin(spec_dir, f))], reverse=True)
+    spec_vers = sorted([f for f in listdir(spec_dir) if isdir(pjoin(spec_dir, f))], key=_version_key, reverse=True)
     spec_vers_toc_paths = [f"{f}/unc_specification" for f in spec_vers]
     spec_vers_urls = [f"{PDF_URL}/{f}/unc_specification_{f}.pdf" for f in spec_vers]
 
