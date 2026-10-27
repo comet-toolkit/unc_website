@@ -1,0 +1,1592 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Uncertainty Metadata Naming Conventions (UNC) &#8212; Uncertainty Metadata Naming Conventions (UNC) Specification  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=4418a689" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'specification/draft-v0.2/unc_specification';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Uncertainty Metadata Naming Conventions (UNC)" href="../v0.1/unc_specification.html" />
+    <link rel="prev" title="Uncertainty Metadata Naming Conventions (UNC)" href="../spec_toc.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">UNC v0.2 is a draft, proposed for inclusion in the CF conventions</div>
+</aside>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/comet_logo_icon_light.svg" class="logo__image only-light" alt="Uncertainty Metadata Naming Conventions (UNC) Specification  documentation - Home"/>
+    <img src="../../_static/comet_logo_icon_dark.svg" class="logo__image only-dark pst-js-only" alt="Uncertainty Metadata Naming Conventions (UNC) Specification  documentation - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../spec_toc.html">UNC Specification</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">draft-v0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../v0.1/unc_specification.html">v0.1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../comet.html">CoMet Toolkit</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/comet-toolkit/unc_website" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/specification/draft-v0.2/unc_specification.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Uncertainty Metadata Naming Conventions (UNC)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-to-the-cf-conventions">Relationship to the CF Conventions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophy">Philosophy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#format-for-examples">Format for Examples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-structure">Dataset Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data Types</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-variables">Uncertainty Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-uncertainty-variables">Assigning Uncertainty Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-intervals">Coverage Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-probability">Coverage Probability</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-factor">Coverage Factor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#units-and-standard-names">Units and Standard Names</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-differences">Relative Differences</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-components">Uncertainty Components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-evaluation">Uncertainty Evaluation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compression-by-gathering">Compression by Gathering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distribution">Probability Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation">Error Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-1-error-correlation-matrices">Form 1: Error-Correlation Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-2-parameterised-error-correlation-structures">Form 2: Parameterised Error-Correlation Structures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-3-error-correlation-descriptions">Form 3: Error-Correlation Descriptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-error-correlations">Comments on Error Correlations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-a-controlled-vocabularies">Appendix A: Controlled Vocabularies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distributions">Probability Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structures">Error-Correlation Structures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-probabilities">Coverage Probabilities</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-b-changes-from-v0-1">Appendix B: Changes from v0.1</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="uncertainty-metadata-naming-conventions-unc">
+<h1>Uncertainty Metadata Naming Conventions (UNC)<a class="headerlink" href="#uncertainty-metadata-naming-conventions-unc" title="Link to this heading">#</a></h1>
+<section id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Link to this heading">#</a></h2>
+<section id="lead-authors">
+<h3>Lead Authors<a class="headerlink" href="#lead-authors" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Sam Hunt, NPL</p></li>
+<li><p>Pieter De Vis, NPL</p></li>
+<li><p>Owen Embury, NCEO / University of Reading</p></li>
+<li><p>David Hassell, NCAS / University of Reading</p></li>
+</ul>
+</section>
+<section id="contributors">
+<h3>Contributors<a class="headerlink" href="#contributors" title="Link to this heading">#</a></h3>
+<p>This version of the specification was developed in collaboration with the <a class="reference external" href="https://cfconventions.org">Climate and Forecast (CF) conventions</a> community, as part of a proposal to include these conventions within CF (see <a class="reference internal" href="#relationship-to-cf"><span class="std std-ref">Relationship to the CF Conventions</span></a>).</p>
+</section>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<section id="goals">
+<h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">#</a></h3>
+<p>Measurement datasets are becoming larger, more complex, and are increasingly used to support critical applications such as manufacturing, health, and environmental monitoring. Reliable interpretation of these measurements requires accompanying uncertainty and error-covariance information - however, this is often overlooked. Where available, such information lacks standardisation and could, in principle, be highly complex and large.</p>
+<p>The goal of this Uncertainty metadata Naming Conventions (UNC) specification is to provide a standardised metadata format for storing the accompanying uncertainty information with measurement datasets. This includes the magnitude of the uncertainty, the probability distribution it describes, and the structure of the error-correlation between the elements of a dataset. This format is intended to support fully capturing the content of the error-covariance matrices associated with measurement data in a compact structure, by parameterising error-correlation with a simple set of metadata.</p>
+</section>
+<section id="relationship-to-the-cf-conventions">
+<span id="relationship-to-cf"></span><h3>Relationship to the CF Conventions<a class="headerlink" href="#relationship-to-the-cf-conventions" title="Link to this heading">#</a></h3>
+<p>Draft v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been proposed for inclusion in the CF conventions as a new chapter, “Uncertainty” (see <a class="reference external" href="https://github.com/cf-convention/cf-conventions/pull/661">CF pull request #661</a>, and the associated discussion in <a class="reference external" href="https://github.com/cf-convention/cf-conventions/issues/660">CF issue #660</a>). This version of the specification is aligned with that proposal, and will be kept aligned with it as it progresses through the CF review process.</p>
+<p>This specification can be read on its own, but it builds on the wider CF conventions - for example, the definitions of the <code class="code docutils literal notranslate"><span class="pre">units</span></code>, <code class="code docutils literal notranslate"><span class="pre">units_metadata</span></code> and <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code> attributes. Where this specification depends on other parts of the CF conventions, links are given to the relevant sections of the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html">CF conventions document</a>.</p>
+<p>Within CF, the uncertainty of a data variable has previously been expressed using an ancillary variable with the <code class="code docutils literal notranslate"><span class="pre">standard_error</span></code> standard name modifier (see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#ancillary-data">Ancillary Data</a> section of the CF conventions). The CF proposal deprecates this approach in favour of the <em>uncertainty variables</em> defined in this specification.</p>
+<p>The changes from v0.1 are summarised in <a class="reference internal" href="#changes-from-v0-1"><span class="std std-ref">Appendix B: Changes from v0.1</span></a>.</p>
+</section>
+<section id="philosophy">
+<h3>Philosophy<a class="headerlink" href="#philosophy" title="Link to this heading">#</a></h3>
+<p>This specification is intended to contribute to and build upon an existing ecosystem of standards and best practices. In particular the following are adhered to, to the extent possible:</p>
+<ul class="simple">
+<li><p>The understanding of uncertainty concepts defined in the JCGM <a class="reference external" href="https://doi.org/10.59161/JCGM100-2008E">GUM</a> (Guide to the expression of uncertainty in measurement) suite of documents.</p></li>
+<li><p>The definition of uncertainty-related terminology defined in the JCGM <a class="reference external" href="https://jcgm.bipm.org/vim/en/index.html">VIM</a> (International Vocabulary of Metrology).</p></li>
+<li><p>The <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> data model for creating self-describing, array-oriented scientific datasets.</p></li>
+<li><p>The <a class="reference external" href="https://cfconventions.org">Climate and Forecast (CF) conventions</a> on metadata for weather and climate data, with which this specification is designed to be fully consistent.</p></li>
+</ul>
+<p>The work builds on previous work on the standardisation of uncertainty information for climate data developed within the H2020 <a class="reference external" href="https://research.reading.ac.uk/fiduceo/">FIDUCEO</a> project.</p>
+<p>Within this context, this specification also attempts to adhere to the following principles:</p>
+<ul>
+<li><p><strong>Scalability of Complexity</strong></p>
+<p>The complexity of the metadata should align with the use case:</p>
+<ul class="simple">
+<li><p><em>Simple use cases</em> should be achievable with a <em>simple implementation</em>.</p></li>
+<li><p><em>Complex use cases</em> should be <em>possible without unnecessary restrictions</em>.</p></li>
+</ul>
+</li>
+<li><p><strong>Minimisation of Redundancy</strong></p>
+<p>The metadata specification should <em>avoid duplication</em> of information to prevent potential inconsistencies.</p>
+</li>
+<li><p><strong>Human and Machine Readability</strong></p>
+<p>Metadata must be:</p>
+<ul class="simple">
+<li><p><em>Comprehensible</em> for humans.</p></li>
+<li><p><em>Parsable</em> by machines.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Link to this heading">#</a></h3>
+<p>The provision of uncertainty metadata in this specification is designed to be consistent, in both scientific content and terminology, with the <a class="reference external" href="https://doi.org/10.59161/JCGM100-2008E">GUM</a> and the <a class="reference external" href="https://jcgm.bipm.org/vim/en/index.html">VIM</a>, both published by the Joint Committee for Guides in Metrology (JCGM), which should be considered the canonical references for this specification. This includes the following important terms:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.3.html">Measurand</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.16.html">Measurement error</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.26.html">Measurement uncertainty</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.30.html">Standard uncertainty</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.35.html">Expanded uncertainty</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.36.html">Coverage interval</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.37.html">Coverage probability</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.38.html">Coverage factor</a></p></li>
+<li><p><a class="reference external" href="https://jcgm.bipm.org/vim/en/2.28.html">Type A evaluation</a> and <a class="reference external" href="https://jcgm.bipm.org/vim/en/2.29.html">Type B evaluation</a> of measurement uncertainty</p></li>
+</ul>
+<p>Definitions of the following terms are adopted from <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1681-7575/ab1705/pdf">work undertaken in the H2020 FIDUCEO</a>:</p>
+<ul class="simple">
+<li><p>Error-correlation</p></li>
+<li><p>Error-covariance</p></li>
+</ul>
+<p>Measurement, in the context of uncertainty, is the process of obtaining a numerical value that represents a physical quantity (i.e. the measurand). A measured value is typically derived from a numerical simulation (e.g. climate model output), a direct observation (e.g. sensor data), or a remote sensing platform (e.g. satellite retrievals). The error of a measurement is the measured value minus the true, unknowable value of the measurand. The uncertainty of a measurement is a measure of the dispersion of the values that could reasonably be attributed to the measurand.</p>
+</section>
+<section id="format-for-examples">
+<h3>Format for Examples<a class="headerlink" href="#format-for-examples" title="Link to this heading">#</a></h3>
+<p>The plain text (ASCII) format used to describe the contents of a NetCDF dataset is called <a class="reference external" href="https://docs.unidata.ucar.edu/nug/2.0-draft/cdl.html">CDL</a> (NetCDF Common Data Language). Snippets of CDL are used to present examples in this specification. A minimal example of a measurement dataset in CDL is given below. Here the dataset contains a single <code class="code docutils literal notranslate"><span class="pre">temperature</span></code> variable with accompanying metadata (<code class="code docutils literal notranslate"><span class="pre">units</span></code> and <code class="code docutils literal notranslate"><span class="pre">long_name</span></code>), which is defined along <code class="code docutils literal notranslate"><span class="pre">time</span></code>, <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions (each of which is length 2). Data are omitted in specification examples for brevity.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">netcdf</span> <span class="n">short_example</span> <span class="p">{</span>
+  <span class="n">dimensions</span><span class="p">:</span>
+    <span class="n">time</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+
+  <span class="n">variables</span><span class="p">:</span>
+    <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+      <span class="n">temperature</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+      <span class="n">temperature</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">"measured temperature"</span> <span class="p">;</span>
+
+  <span class="n">data</span><span class="p">:</span>
+    <span class="n">temperature</span> <span class="o">=</span>
+      <span class="mf">290.1</span><span class="p">,</span> <span class="mf">291.2</span><span class="p">,</span>
+      <span class="mf">292.3</span><span class="p">,</span> <span class="mf">293.4</span><span class="p">,</span>
+      <span class="mf">294.5</span><span class="p">,</span> <span class="mf">295.6</span><span class="p">,</span>
+      <span class="mf">296.7</span><span class="p">,</span> <span class="mf">297.8</span> <span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The examples follow the CF conventions, and so include attributes defined by CF (such as <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code>, <code class="code docutils literal notranslate"><span class="pre">units</span></code> and <code class="code docutils literal notranslate"><span class="pre">units_metadata</span></code>) as well as those defined by this specification. In some examples, long attribute values are split across multiple lines to improve readability, whereas the actual encoded value would be a single string with no embedded newlines - such pseudo-CDL will not parse directly.</p>
+</section>
+</section>
+<section id="dataset-structure">
+<h2>Dataset Structure<a class="headerlink" href="#dataset-structure" title="Link to this heading">#</a></h2>
+<p>As mentioned above, the <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> data model for creating self-describing, array-oriented scientific datasets is adopted. The components of NetCDF datasets are described in Section 2 of the <a class="reference external" href="https://docs.unidata.ucar.edu/nug/current/">NUG</a> (NetCDF Users Guide). In this section, we introduce the core components of this data model relevant to this specification.</p>
+<section id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h3>
+<p>Datasets are composed of variables, which are multidimensional data arrays.</p>
+<p>This specification defines the following categories of variables:</p>
+<ul>
+<li><p><strong>Data Variables</strong></p>
+<p><em>Data variables</em> represent a multidimensional array of measured values. (These were called <em>observation variables</em> in v0.1.)</p>
+</li>
+<li><p><strong>Uncertainty Variables</strong></p>
+<p><em>Uncertainty variables</em> characterise a component of the uncertainty of a <em>data variable</em>, by defining a coverage interval for its values. A <em>data variable</em> may have multiple <em>uncertainty variables</em> associated with it, and an <em>uncertainty variable</em> may be associated with more than one <em>data variable</em>. See <a class="reference internal" href="#uncertainty-variables"><span class="std std-ref">Uncertainty Variables</span></a>.</p>
+</li>
+<li><p><strong>Distribution Parameter Variables</strong></p>
+<p><em>Distribution parameter variables</em> provide the values of a parameter (such as skewness) of the probability distribution from which an <em>uncertainty variable</em>’s coverage interval is derived. See <a class="reference internal" href="#probability-distribution"><span class="std std-ref">Probability Distribution</span></a>.</p>
+</li>
+<li><p><strong>Error-Correlation Variables</strong></p>
+<p><em>Error-correlation variables</em> contain an explicit matrix of error-correlation coefficients along one or more dimensions of a <em>data variable</em>. See <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>.</p>
+</li>
+<li><p><strong>Error-Correlation Parameter Variables</strong></p>
+<p><em>Error-correlation parameter variables</em> are scalar variables that provide the value of a parameter used to configure a parameterised error-correlation structure. See <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>.</p>
+</li>
+</ul>
+<p>A dataset may also contain variables that do not fall into any of these categories.</p>
+</section>
+<section id="dimensions">
+<h3>Dimensions<a class="headerlink" href="#dimensions" title="Link to this heading">#</a></h3>
+<p>A variable may have any number of named dimensions, including zero – e.g., <code class="code docutils literal notranslate"><span class="pre">&quot;x&quot;</span></code>, <code class="code docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code>, <code class="code docutils literal notranslate"><span class="pre">&quot;time&quot;</span></code>. Dimensions may be of any size, including 1.</p>
+<p><em>Uncertainty variables</em> may have all or a subset of the dimensions of their <em>data variable</em>, and some also have an additional size-two <em>interval dimension</em>, used to store the limits of an asymmetric coverage interval (see <a class="reference internal" href="#coverage-intervals"><span class="std std-ref">Coverage Intervals</span></a>).</p>
+</section>
+<section id="data-types">
+<h3>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h3>
+<p><em>Data variables</em> and <em>uncertainty variables</em> must have a numeric data type.</p>
+<p>Note: these variables may be encoded as e.g. integers for efficient storage on disc (see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#packed-data">Packed Data</a> section of the CF conventions).</p>
+</section>
+<section id="attributes">
+<span id="id1"></span><h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
+<p>Dataset attributes provide metadata about the dataset, its variables, and dimensions. Global attributes describe the entire dataset (e.g., title, institution, history). Variable attributes define specific properties of the variable  (e.g., units, valid ranges). These attributes ensure data is interpretable, support automated processing, and facilitate sharing by following standardised conventions.</p>
+<p>This specification defines a set of variable attributes to:</p>
+<ul class="simple">
+<li><p>link <em>data variables</em> with their associated <em>uncertainty variables</em></p></li>
+<li><p>define how the values of an <em>uncertainty variable</em> characterise the uncertainty of its <em>data variable</em></p></li>
+<li><p>define the error-correlation properties of a given <em>uncertainty variable</em> in a compact way.</p></li>
+</ul>
+<p>These attributes are summarised in the table below. A dataset may also contain other unrelated attributes.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id9">
+<caption><span class="caption-text">Summary of attributes</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 33.0%" />
+<col style="width: 11.0%" />
+<col style="width: 13.0%" />
+<col style="width: 17.0%" />
+<col style="width: 26.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Used on</p></th>
+<th class="head"><p>Requirement</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_variables</span></code></p></td>
+<td><p>string</p></td>
+<td><p>data variable</p></td>
+<td><p>Optional</p></td>
+<td><p>Identifies the <em>uncertainty variables</em> of the <em>data variable</em>. See <a class="reference internal" href="#uncertainty-variables"><span class="std std-ref">Uncertainty Variables</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Required</p></td>
+<td><p>Specifies how the <em>uncertainty variable</em> array defines the coverage interval. See <a class="reference internal" href="#coverage-intervals"><span class="std std-ref">Coverage Intervals</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">coverage_probability</span></code></p></td>
+<td><p>numeric</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Required</p></td>
+<td><p>Contains the probability that the coverage interval contains the true <em>data variable</em> value. See <a class="reference internal" href="#attr-coverage-probability"><span class="std std-ref">Coverage Probability</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_representation</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Optional (default <code class="code docutils literal notranslate"><span class="pre">difference</span></code>)</p></td>
+<td><p>Specifies whether the <em>uncertainty variable</em> array represents absolute or relative differences to the <em>data variable</em> values. See <a class="reference internal" href="#relative-differences"><span class="std std-ref">Relative Differences</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Required if <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code>, otherwise optional</p></td>
+<td><p>Describes the mathematical form of the probability distribution from which the coverage interval is derived. See <a class="reference internal" href="#probability-distribution"><span class="std std-ref">Probability Distribution</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">coverage_factor</span></code></p></td>
+<td><p>numeric</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Optional (default 1), only if <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code></p></td>
+<td><p>Gives a positive numerical coverage factor for the coverage interval. See <a class="reference internal" href="#attr-coverage-factor"><span class="std std-ref">Coverage Factor</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_evaluation</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Optional</p></td>
+<td><p>Describes the method used to evaluate the uncertainty. See <a class="reference internal" href="#attr-uncertainty-evaluation"><span class="std std-ref">Uncertainty Evaluation</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_component</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Optional</p></td>
+<td><p>Describes the component of the uncertainty represented by the <em>uncertainty variable</em>. See <a class="reference internal" href="#attr-uncertainty-component"><span class="std std-ref">Uncertainty Components</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code></p></td>
+<td><p>string</p></td>
+<td><p>uncertainty variable</p></td>
+<td><p>Optional</p></td>
+<td><p>Describes the correlations of errors across the domain. See <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="uncertainty-variables">
+<span id="id2"></span><h2>Uncertainty Variables<a class="headerlink" href="#uncertainty-variables" title="Link to this heading">#</a></h2>
+<p>An <em>uncertainty variable</em> characterises a component of the uncertainty of a <em>data variable</em>, by defining a coverage interval for the <em>data variable</em>’s values. Its attributes define how its array values characterise the uncertainty. Two of these attributes, <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> and <code class="code docutils literal notranslate"><span class="pre">coverage_probability</span></code>, must be set on all <em>uncertainty variables</em>, with the others being optional, or conditionally optional depending on the value of another attribute (see <a class="reference internal" href="#attributes"><span class="std std-ref">Attributes</span></a>). The <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> and <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attributes, which can describe the uncertainty in more detail, are described in <a class="reference internal" href="#probability-distribution"><span class="std std-ref">Probability Distribution</span></a> and <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>.</p>
+<section id="assigning-uncertainty-variables">
+<h3>Assigning Uncertainty Variables<a class="headerlink" href="#assigning-uncertainty-variables" title="Link to this heading">#</a></h3>
+<p>When a variable provides metadata about the uncertainty in the measurement of a quantity described by a <em>data variable</em>, this association is expressed by providing a link between the variables. The attribute <code class="code docutils literal notranslate"><span class="pre">uncertainty_variables</span></code> is used to express these types of relationships. It is a string attribute whose value is a blank separated list of variable names, for which the order is not significant. The nature of the relationship between a <em>data variable</em> and its <em>uncertainty variables</em> (i.e. those named by its <code class="code docutils literal notranslate"><span class="pre">uncertainty_variables</span></code> attribute) is determined by the <em>uncertainty variables’</em> attributes. See <a class="reference internal" href="#example-assigning-uncertainty-variables"><span class="std std-ref">Example 1</span></a>.</p>
+<div class="admonition-example-1-assigning-uncertainty-variables admonition" id="example-assigning-uncertainty-variables">
+<p class="admonition-title">Example 1. Assigning uncertainty variables</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"u_noise u_calibration"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variables</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"half_width"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.95</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>data variable</em> <code class="code docutils literal notranslate"><span class="pre">q</span></code> is linked to two <em>uncertainty variables</em>, <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code> and <code class="code docutils literal notranslate"><span class="pre">u_calibration</span></code>, by its <code class="code docutils literal notranslate"><span class="pre">uncertainty_variables</span></code> attribute (the order of the names is not significant). Each <em>uncertainty variable</em> characterises a different component of the uncertainty in <code class="code docutils literal notranslate"><span class="pre">q</span></code>, as defined by its own attributes. <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code> gives the standard uncertainty of each element of <code class="code docutils literal notranslate"><span class="pre">q</span></code> along the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension, whereas <code class="code docutils literal notranslate"><span class="pre">u_calibration</span></code> gives the half-width of a coverage interval with a coverage probability of 0.95, as a single value that applies to every element of <code class="code docutils literal notranslate"><span class="pre">q</span></code> (see <a class="reference internal" href="#coverage-intervals"><span class="std std-ref">Coverage Intervals</span></a>).</p>
+</div>
+</section>
+<section id="coverage-intervals">
+<span id="id3"></span><h3>Coverage Intervals<a class="headerlink" href="#coverage-intervals" title="Link to this heading">#</a></h3>
+<p>Uncertainty is expressed as a statistical coverage interval (hereafter referred to as a “coverage interval”) derived from the probability distribution of the measurand (hereafter referred to as the “probability distribution”) that contains the true value with a given probability, i.e. the range of values within which the true value is expected to lie. For instance, for a measured value of 50 there could be a probability of 0.95 that the true value lies within the coverage interval [40, 60]. This concept is applicable to any probability distribution, including Gaussian, non-Gaussian, and asymmetric distributions. For example, when a coverage interval is defined for a skewed probability distribution, the interval limits would typically be asymmetric about the measured value.</p>
+<p>The coverage interval, which may vary across the <em>data variable</em>’s domain, is defined by the array of an <em>uncertainty variable</em> with a numeric data type; and the probability that the true value lies inside the coverage interval is stored by the <em>uncertainty variable</em>’s <code class="code docutils literal notranslate"><span class="pre">coverage_probability</span></code> attribute (see <a class="reference internal" href="#attr-coverage-probability"><span class="std std-ref">Coverage Probability</span></a>).</p>
+<p>In general, an <em>uncertainty variable</em> must have all or a subset of the dimensions of the <em>data variable</em> to which it is related, with the addition of a size-two <em>interval dimension</em> for defining the coverage interval limits (but the interval dimension may be omitted in the common case of the coverage interval being symmetrical about the <em>data variable</em> values, as described below). These are stored as difference offsets to the <em>data variable</em> values (but relative differences may also be provided, see <a class="reference internal" href="#relative-differences"><span class="std std-ref">Relative Differences</span></a>). The coverage interval limits are reconstructed by adding the two offsets to the <em>data variable</em> values. The interval dimension must be the most rapidly varying dimension (the last dimension in CDL order), with the first element representing the coverage interval’s lower limit and the second representing the coverage interval’s upper limit. The order of other dimensions is not restricted, and does not have to be the same as for the parent <em>data variable</em>. For instance, for a <em>data variable</em> containing a measured value of 30 there could be a probability of 0.9 that the true value lies within the coverage interval [25, 40]. The coverage interval offsets could be stored in an <em>uncertainty variable</em> array as (−5, 10), and adding the <em>data variable</em> value of 30 to these values reconstitutes the actual coverage interval of [25, 40].</p>
+<p>When the coverage interval is symmetrical about the <em>data variable</em> values (i.e. the <em>data variable</em> values lie at the midpoint of the coverage interval), the coverage interval may be fully defined by a single non-negative value. This value is equal to the absolute difference between the <em>data variable</em> value and the coverage interval’s lower or upper limit. The coverage interval limits are reconstructed by subtracting the half-width from, and adding it to, the <em>data variable</em> value. This case is indicated by specific values of the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute (such as <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code> and <code class="code docutils literal notranslate"><span class="pre">half_width</span></code>), for which the size-two interval dimension is not required and must be omitted. For instance, for a <em>data variable</em> containing a measured value of 20 there could be a probability of 0.95 that the true value lies within the coverage interval [15, 25]. This coverage interval is symmetrical around the <em>data variable</em> value, so the half-width could be stored in an <em>uncertainty variable</em> array as 5, and subtracting this from, and adding it to, the <em>data variable</em> value of 20 reconstitutes the actual coverage interval of [15, 25].</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute specifies how the <em>uncertainty variable</em> array defines the coverage interval. The attribute must be set, and takes one of the following values:</p>
+<dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code></dt><dd><p>The array has no interval dimension and contains the coverage interval’s non-negative half-width that is equal to the standard deviation of the probability distribution defined by the <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute, which must also be set. One standard deviation of the probability distribution is also known as the “standard uncertainty”. However, if the <code class="code docutils literal notranslate"><span class="pre">coverage_factor</span></code> attribute has a value other than 1, then the values in the <em>uncertainty variable</em> array are instead one standard deviation multiplied by this amount (see <a class="reference internal" href="#attr-coverage-factor"><span class="std std-ref">Coverage Factor</span></a>).</p>
+</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">half_width</span></code></dt><dd><p>The array has no interval dimension and contains the coverage interval’s non-negative half-width.</p>
+</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">offsets</span></code></dt><dd><p>The array has a size-two interval dimension that contains the offsets which define the lower and upper limits of the coverage interval.</p>
+</dd>
+</dl>
+<div class="admonition-example-2-standard-uncertainty admonition" id="example-standard-uncertainty">
+<p class="admonition-title">Example 2. Standard uncertainty</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"q_uncertainty"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q_uncertainty</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+
+<span class="n">data</span><span class="p">:</span>
+  <span class="n">q</span> <span class="o">=</span> <span class="mf">0.024</span><span class="p">,</span> <span class="mf">0.021</span><span class="p">,</span> <span class="mf">0.046</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+  <span class="n">q_uncertainty</span> <span class="o">=</span> <span class="mf">0.003</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.002</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>uncertainty variable</em> <code class="code docutils literal notranslate"><span class="pre">q_uncertainty</span></code> contains the standard deviation (σ, the standard uncertainty) of the Gaussian distribution that characterises the errors in the <em>data variable</em> <code class="code docutils literal notranslate"><span class="pre">q</span></code>. The probability that the true values of <code class="code docutils literal notranslate"><span class="pre">q</span></code> are within σ of its actual array values is 0.6827. For instance, for the first element of the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension the measured value of specific humidity is 0.024, and there is a 68.27% chance that its true value lies in the range [0.021, 0.027].</p>
+</div>
+<div class="admonition-example-3-asymmetric-uncertainty-coverage-interval admonition" id="example-asymmetric-interval">
+<p class="admonition-title">Example 3. Asymmetric uncertainty coverage interval</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">interval_offset</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"q_uncertainty"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q_uncertainty</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">interval_offset</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"offsets"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="p">;</span>
+
+<span class="n">data</span><span class="p">:</span>
+  <span class="n">q</span> <span class="o">=</span> <span class="mf">0.024</span><span class="p">,</span> <span class="mf">0.021</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+  <span class="n">q_uncertainty</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.006</span><span class="p">,</span> <span class="mf">0.003</span><span class="p">,</span>
+                  <span class="o">-</span><span class="mf">0.002</span><span class="p">,</span> <span class="mf">0.004</span><span class="p">,</span>
+                  <span class="o">...</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>uncertainty variable</em> <code class="code docutils literal notranslate"><span class="pre">q_uncertainty</span></code> contains a coverage interval defined by lower and upper limits. The probability that the true values of the <em>data variable</em> <code class="code docutils literal notranslate"><span class="pre">q</span></code> are within the coverage interval limits is 0.9. For instance, for the first element of the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension the measured value of specific humidity is 0.024, and there is a 90% chance that its true value lies in the range [0.018, 0.027]. The probability distribution of the errors is unspecified.</p>
+</div>
+<section id="coverage-probability">
+<span id="attr-coverage-probability"></span><h4>Coverage Probability<a class="headerlink" href="#coverage-probability" title="Link to this heading">#</a></h4>
+<p>The <code class="code docutils literal notranslate"><span class="pre">coverage_probability</span></code> attribute contains the probability, in the range 0 to 1, that the coverage interval contains the true <em>data variable</em> value. The attribute must be set. For convenience, <a class="reference internal" href="#table-coverage-probabilities-gaussian"><span class="std std-ref">Table A.5</span></a> and <a class="reference internal" href="#table-coverage-probabilities-uniform"><span class="std std-ref">Table A.6</span></a> provide the coverage probabilities for coverage intervals based on the standard uncertainty (i.e. one standard deviation either side of the mean of the distribution), and selected expanded uncertainties, of the Gaussian and uniform distributions.</p>
+</section>
+<section id="coverage-factor">
+<span id="attr-coverage-factor"></span><h4>Coverage Factor<a class="headerlink" href="#coverage-factor" title="Link to this heading">#</a></h4>
+<p>When the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code>, the <code class="code docutils literal notranslate"><span class="pre">coverage_factor</span></code> attribute gives a positive numerical “coverage factor” for the coverage interval. For values other than 1, the <em>uncertainty variable</em> represents an “expanded uncertainty”, i.e. one for which the values in the <em>uncertainty variable</em> array are in fact the standard deviation of the probability distribution multiplied by the coverage factor. The standard deviation of the probability distribution (i.e. the standard uncertainty) may be calculated by dividing the <em>uncertainty variable</em> array values by the coverage factor. The attribute is optional with a default value of 1, and must not be set if the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is not <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code>.</p>
+<div class="admonition-example-4-expanded-uncertainty admonition" id="example-expanded-uncertainty">
+<p class="admonition-title">Example 4. Expanded uncertainty</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"q_uncertainty"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q_uncertainty</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.9545</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_factor</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+
+<span class="n">data</span><span class="p">:</span>
+  <span class="n">q</span> <span class="o">=</span> <span class="mf">0.024</span><span class="p">,</span> <span class="mf">0.021</span><span class="p">,</span> <span class="mf">0.106</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+  <span class="n">q_uncertainty</span> <span class="o">=</span> <span class="mf">0.006</span><span class="p">,</span> <span class="mf">0.002</span><span class="p">,</span> <span class="mf">0.004</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>uncertainty variable</em> <code class="code docutils literal notranslate"><span class="pre">q_uncertainty</span></code> contains two standard deviations (2σ) of the Gaussian distribution that characterises the errors in the <em>data variable</em> <code class="code docutils literal notranslate"><span class="pre">q</span></code>. The probability that the true values of <code class="code docutils literal notranslate"><span class="pre">q</span></code> are within 2σ of its actual array values is 0.9545. For instance, for the first element of the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension the <em>data variable</em> value is 0.024, and there is a 95.45% chance that its true value lies in the range [0.018, 0.030].</p>
+</div>
+</section>
+<section id="units-and-standard-names">
+<h4>Units and Standard Names<a class="headerlink" href="#units-and-standard-names" title="Link to this heading">#</a></h4>
+<p>An <em>uncertainty variable</em> containing difference offsets represents the same physical quantity as the parent <em>data variable</em>, and so its units must be physically equivalent to the <em>data variable</em> units (not necessarily identical, see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#units">Units</a> section of the CF conventions). If the <em>uncertainty variable</em> has a <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code> attribute then it must be identical to the <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code> attribute of the parent <em>data variable</em>. However, if the <em>uncertainty variable</em> has no standard name then it may be associated with any appropriate parent <em>data variable</em> with physically equivalent units. Note that there are different rules regarding the <code class="code docutils literal notranslate"><span class="pre">units</span></code> and <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code> attributes of an <em>uncertainty variable</em> that contains relative differences (see <a class="reference internal" href="#relative-differences"><span class="std std-ref">Relative Differences</span></a>).</p>
+</section>
+<section id="relative-differences">
+<span id="id4"></span><h4>Relative Differences<a class="headerlink" href="#relative-differences" title="Link to this heading">#</a></h4>
+<p>The coverage interval limits may alternatively be defined as relative differences (i.e. fractional or percentage differences, as opposed to difference offsets) to the <em>data variable</em> values. This is specified by the <code class="code docutils literal notranslate"><span class="pre">uncertainty_representation</span></code> attribute, which takes one of the following values:</p>
+<dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">difference</span></code></dt><dd><p>This is the default. The array contains values that are differences to the <em>data variable</em> values.</p>
+</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">relative_difference</span></code></dt><dd><p>The array contains values that are fractional or percentage relative differences to the <em>data variable</em> values.</p>
+</dd>
+</dl>
+<p>For a symmetric coverage interval defined by a single non-negative number (i.e. when the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code> or <code class="code docutils literal notranslate"><span class="pre">half_width</span></code>), the limits are reconstituted by multiplying the <em>data variable</em> value by the factors <code class="code docutils literal notranslate"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">f</span></code> and <code class="code docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">f</span></code>, where <code class="code docutils literal notranslate"><span class="pre">f</span></code> is the relative offset uncertainty array value expressed as a fraction. If the uncertainty is provided as a percentage, <code class="code docutils literal notranslate"><span class="pre">f</span></code> is found by dividing the uncertainty array value by 100. For instance, for a <em>data variable</em> containing a measured value of 20 there could be a probability of 0.95 that the true value lies within the symmetrical coverage interval [15, 25], and the half-width could be stored in an <em>uncertainty variable</em> array as the relative values 25% or 0.25.</p>
+<p>For a coverage interval defined by two offsets stored in an interval dimension (i.e. when the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">offsets</span></code>), the limits are reconstituted by multiplying the <em>data variable</em> value by the factors <code class="code docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">f</span></code> and <code class="code docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">g</span></code>, where <code class="code docutils literal notranslate"><span class="pre">f</span></code> and <code class="code docutils literal notranslate"><span class="pre">g</span></code> are the two relative offset uncertainty array values expressed as fractions. For instance, for a <em>data variable</em> containing a measured value of 20 there could be a probability of 0.9 that the true value lies within the asymmetric coverage interval [15, 30], in which case the coverage interval offsets could be stored in an <em>uncertainty variable</em> array as the relative values (−25%, 50%) or (−0.25, 0.5).</p>
+<p>An <em>uncertainty variable</em> containing relative difference offsets does not represent the same physical quantity as the parent <em>data variable</em>, and must not have a <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code> attribute. It must have dimensionless units or units of percent, for fractional and percentage relative differences respectively.</p>
+<p>The <em>uncertainty variable</em> containing relative difference offsets may be associated with any number of parent <em>data variables</em>, but it is not recommended to use relative differences for a <em>data variable</em> whose array contains values of zero, or has on-scale units with a shifted origin (such as on-scale Celsius, see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#temperature-units">Temperature Units</a> section of the CF conventions), because there is a possibility that the coverage intervals reconstructed by the data reader are not those intended by the data writer. In the case of a <em>data variable</em> value of zero, relative difference offsets always result in a zero-width coverage interval; and in the case of on-scale units with a shifted origin, the calculated coverage interval depends on whether the given <em>data variable</em> units are used in the calculation, or if equivalent units with the origin unshifted are used instead.</p>
+<div class="admonition-example-5-uncertainty-defined-as-relative-differences admonition" id="example-relative-difference">
+<p class="admonition-title">Example 5. Uncertainty defined as relative differences</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variables</span>
+  <span class="nb">float</span> <span class="n">skin</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">skin</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_skin_temperature"</span> <span class="p">;</span>
+    <span class="n">skin</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">skin</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">skin</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"uncertainty"</span> <span class="p">;</span>
+  <span class="nb">float</span> <span class="n">subskin</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">subskin</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_subskin_temperature"</span> <span class="p">;</span>
+    <span class="n">subskin</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">subskin</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">subskin</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"uncertainty"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">uncertainty</span> <span class="p">;</span>
+    <span class="n">uncertainty</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"%"</span> <span class="p">;</span>
+    <span class="n">uncertainty</span><span class="p">:</span><span class="n">uncertainty_representation</span> <span class="o">=</span> <span class="s2">"relative_difference"</span> <span class="p">;</span>
+    <span class="n">uncertainty</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"half_width"</span> <span class="p">;</span>
+    <span class="n">uncertainty</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="p">;</span>
+
+<span class="n">data</span><span class="p">:</span>
+  <span class="n">skin</span> <span class="o">=</span> <span class="mf">283.15</span><span class="p">,</span> <span class="mf">284.15</span><span class="p">,</span> <span class="mf">282.9</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+  <span class="n">subskin</span> <span class="o">=</span> <span class="mf">284.5</span><span class="p">,</span> <span class="mf">283.9</span><span class="p">,</span> <span class="mf">283.0</span><span class="p">,</span> <span class="o">...</span> <span class="p">;</span>
+  <span class="n">uncertainty</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>uncertainty variable</em> <code class="code docutils literal notranslate"><span class="pre">uncertainty</span></code> contains the half-width of the coverage interval that characterises the errors in both the <em>data variables</em> <code class="code docutils literal notranslate"><span class="pre">skin</span></code> and <code class="code docutils literal notranslate"><span class="pre">subskin</span></code>, expressed as a relative percentage difference. For each element of the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension there is a 90% chance that the true value lies within 1% of its <em>data variable</em> value. For instance, the first element of the <code class="code docutils literal notranslate"><span class="pre">skin</span></code> variable is 283.15 and has a coverage interval of [280.3185, 285.9815]; and the first element of the <code class="code docutils literal notranslate"><span class="pre">subskin</span></code> variable is 284.5 and has a coverage interval of [281.655, 287.345].</p>
+</div>
+</section>
+</section>
+<section id="uncertainty-components">
+<span id="attr-uncertainty-component"></span><h3>Uncertainty Components<a class="headerlink" href="#uncertainty-components" title="Link to this heading">#</a></h3>
+<p>When multiple <em>uncertainty variables</em> are given, each stores a component of uncertainty, and the definition of the coverage interval and coverage probability may differ across the components.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">uncertainty_component</span></code> attribute describes the component of the uncertainty represented by the <em>uncertainty variable</em>. In general, the description is given as non-standardised text (e.g. <code class="code docutils literal notranslate"><span class="pre">Uncertainty</span> <span class="pre">correlated</span> <span class="pre">over</span> <span class="pre">synoptic</span> <span class="pre">scales</span></code>). The special value of <code class="code docutils literal notranslate"><span class="pre">combined_uncertainty</span></code> indicates that the <em>uncertainty variable</em> represents the combined uncertainty (i.e. the total uncertainty in the <em>data variable</em> arising from all uncertainty components), and at most one of a <em>data variable</em>’s <em>uncertainty variables</em> can have this attribute value. The attribute is optional and there is no default value.</p>
+<p>When there is no <code class="code docutils literal notranslate"><span class="pre">combined_uncertainty</span></code> component, it is assumed that the uncertainty components are all independent of each other (i.e. there is no inter-component correlation). When a combined uncertainty component is present, there is no assumption about the independence of the other components.</p>
+<div class="admonition-example-6-uncertainty-components admonition" id="example-uncertainty-components">
+<p class="admonition-title">Example 6. Uncertainty components</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">lon</span> <span class="o">=</span> <span class="mi">360</span> <span class="p">;</span>
+  <span class="n">lat</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">sst</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"u_total u_random u_systematic"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variables</span>
+  <span class="nb">float</span> <span class="n">u_total</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">u_total</span><span class="p">:</span><span class="n">uncertainty_component</span> <span class="o">=</span> <span class="s2">"combined_uncertainty"</span> <span class="p">;</span>
+  <span class="nb">float</span> <span class="n">u_random</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">coverage_factor</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.9545</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">u_random</span><span class="p">:</span><span class="n">uncertainty_component</span> <span class="o">=</span> <span class="s2">"Uncorrelated"</span> <span class="p">;</span>
+  <span class="nb">float</span> <span class="n">u_systematic</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">u_systematic</span><span class="p">:</span><span class="n">uncertainty_component</span> <span class="o">=</span> <span class="s2">"Correlated over synoptic scales"</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>Multiple uncertainty components, including the combined uncertainty, described by their <code class="code docutils literal notranslate"><span class="pre">uncertainty_component</span></code> attributes. Note that the definition of the coverage interval and coverage probability may differ between uncertainty components. Note that not all <em>uncertainty variables</em> need to have the same set of dimensions.</p>
+</div>
+</section>
+<section id="uncertainty-evaluation">
+<span id="attr-uncertainty-evaluation"></span><h3>Uncertainty Evaluation<a class="headerlink" href="#uncertainty-evaluation" title="Link to this heading">#</a></h3>
+<p>The <code class="code docutils literal notranslate"><span class="pre">uncertainty_evaluation</span></code> attribute describes the method used to evaluate the uncertainty, one of:</p>
+<dl class="simple">
+<dt><code class="code docutils literal notranslate"><span class="pre">statistical</span></code></dt><dd><p>Based on statistical analysis, i.e. obtained from a probability density function derived from an observed frequency distribution, such as a coverage interval derived from the standard error of the mean of an original sample. This is also known as a “Type A evaluation” (<a class="reference external" href="https://doi.org/10.59161/JCGM100-2008E">GUM</a>).</p>
+</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">scientific_judgement</span></code></dt><dd><p>Based on scientific judgement, i.e. obtained from an assumed probability density function, such as a coverage interval derived from an instrument manufacturer’s accuracy specification. This is also known as a “Type B evaluation” (<a class="reference external" href="https://doi.org/10.59161/JCGM100-2008E">GUM</a>).</p>
+</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">mixed</span></code></dt><dd><p>Based on a combination of statistical analysis and scientific judgement, i.e. a combination of the <code class="code docutils literal notranslate"><span class="pre">statistical</span></code> and <code class="code docutils literal notranslate"><span class="pre">scientific_judgement</span></code> methods.</p>
+</dd>
+</dl>
+<p>The <code class="code docutils literal notranslate"><span class="pre">uncertainty_evaluation</span></code> attribute is optional, and there is no default value. Note that an evaluation method does not imply anything about the nature of the uncertainty, for instance systematic and random uncertainty can both be evaluated using either the <code class="code docutils literal notranslate"><span class="pre">statistical</span></code> or <code class="code docutils literal notranslate"><span class="pre">scientific_judgement</span></code> methods.</p>
+</section>
+<section id="compression-by-gathering">
+<h3>Compression by Gathering<a class="headerlink" href="#compression-by-gathering" title="Link to this heading">#</a></h3>
+<p>If an <em>uncertainty variable</em> of a <em>data variable</em> that has been compressed by gathering (see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#compression-by-gathering">Compression by Gathering</a> section of the CF conventions) does not span the compressed dimension, then the subset of the parent <em>data variable</em> dimensions is restricted to the <em>data variable</em>’s uncompressed dimensions, i.e. it may have any of the dimensions listed by the <code class="code docutils literal notranslate"><span class="pre">compress</span></code> attribute of the compressed coordinate variable, as well as any of the other dimensions of the <em>data variable</em> (those apart from the compressed dimension).</p>
+</section>
+</section>
+<section id="probability-distribution">
+<span id="id5"></span><h2>Probability Distribution<a class="headerlink" href="#probability-distribution" title="Link to this heading">#</a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute of an <em>uncertainty variable</em> describes the mathematical form of the probability distribution from which the coverage interval is derived (i.e. the probability distribution that characterises the dispersion of the values that could reasonably be attributed to the <em>data variable</em>). In general the attribute is optional, and there is no default value. However, the attribute must be set if the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code>.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute is a string attribute of the form: <code class="code docutils literal notranslate"><span class="pre">distribution</span> <span class="pre">[(parameter:</span> <span class="pre">value</span> <span class="pre">[parameter:</span> <span class="pre">value</span> <span class="pre">...])]</span></code>, where square brackets indicate optional content. The <em>distribution</em> keyword identifies the mathematical form of the probability distribution, and the optional <em>parameter: value</em> pairs provide parameters that define the distribution.</p>
+<p>The <em>distribution</em> must be one of the probability distribution names defined in <a class="reference internal" href="#table-distributions"><span class="std std-ref">Table A.1</span></a> (such as <code class="code docutils literal notranslate"><span class="pre">gaussian</span></code>). See <a class="reference internal" href="#example-standard-uncertainty"><span class="std std-ref">Example 2</span></a>.</p>
+<p>A distribution parameter may be defined by a <em>parameter: value</em> pair. The type of parameter is named by the <em>parameter</em> keyword, and must be one of the distribution parameter names defined in <a class="reference internal" href="#table-distribution-parameters"><span class="std std-ref">Table A.2</span></a> (such as <code class="code docutils literal notranslate"><span class="pre">skew</span></code>). The <em>value</em> names a <em>distribution parameter variable</em> whose data array contains the distribution parameter values, and which may have attributes to describe it (such as <code class="code docutils literal notranslate"><span class="pre">units</span></code> or <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code>). See <a class="reference internal" href="#example-probability-distribution"><span class="std std-ref">Example 7</span></a>.</p>
+<p>A <em>distribution parameter variable</em> must have all or a subset of the dimensions of the <em>uncertainty variable</em> to which it is related. The order of dimensions of a <em>distribution parameter variable</em> is not restricted; it does not have to be the same as for the parent <em>uncertainty variable</em>. If a <em>distribution parameter variable</em> of an <em>uncertainty variable</em> that has been compressed by gathering does not span the compressed dimension (see the <a class="reference external" href="https://cfconventions.org/cf-conventions/cf-conventions.html#compression-by-gathering">Compression by Gathering</a> section of the CF conventions), then the subset of the parent <em>uncertainty variable</em> dimensions is restricted to the <em>uncertainty variable</em>’s uncompressed dimensions, i.e. it may have any of the dimensions listed by the <code class="code docutils literal notranslate"><span class="pre">compress</span></code> attribute of the compressed coordinate variable, as well as any of the other dimensions of the <em>uncertainty variable</em> (those apart from the compressed dimension).</p>
+<div class="admonition-example-7-uncertainty-probability-distribution admonition" id="example-probability-distribution">
+<p class="admonition-title">Example 7. Uncertainty probability distribution</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">interval_offset</span> <span class="o">=</span> <span class="mi">2</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"q_uncertainty"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">q_uncertainty</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">interval_offset</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"specific_humidity"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"g/g"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"offsets"</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="p">;</span>
+    <span class="n">q_uncertainty</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"skewed_gaussian</span>
+                                              <span class="p">(</span><span class="n">skew</span><span class="p">:</span> <span class="n">skew</span> <span class="n">kurtosis</span><span class="p">:</span> <span class="n">kurtosis</span><span class="p">)</span><span class="s2">" ;</span>
+  <span class="o">//</span> <span class="n">Distribution</span> <span class="n">parameter</span> <span class="n">variables</span>
+  <span class="nb">float</span> <span class="n">skew</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">skew</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="p">;</span>
+  <span class="nb">float</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">kurtosis</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <em>uncertainty variable</em> <code class="code docutils literal notranslate"><span class="pre">q_uncertainty</span></code> contains a coverage interval defined by lower and upper limits. The probability that the true values of the <em>data variable</em> <code class="code docutils literal notranslate"><span class="pre">q</span></code> are within the coverage interval limits is 0.9. The errors are characterised by a skew-normal distribution, which is further defined at each point by its skewness and kurtosis (i.e. the third and fourth standardised statistical moments), which are provided in separate <em>distribution parameter variables</em>.</p>
+</div>
+</section>
+<section id="error-correlation">
+<span id="id6"></span><h2>Error Correlation<a class="headerlink" href="#error-correlation" title="Link to this heading">#</a></h2>
+<p>The <em>uncertainty variable</em> array provides a measure of the magnitude of the error in the <em>data variable</em> at each domain location. The error-correlations describe the pattern, independently of the magnitude of the errors themselves, of statistical relationships between the unknown actual errors at different domain locations. For instance, this information can be used for assessing the uncertainty of derived products (such as those formed by averaging, or by subtraction of a statistical norm), and for the weighting of observations when updating numerical models via data assimilation systems.</p>
+<p>Error correlation information may be defined by the <em>uncertainty variable</em>’s <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute, which relates <em>data variable</em> dimensions to matrices of error-correlation coefficients (possibly in parametric form), or to a non-standardised description of the error-correlation structure, or both. In particular, the parametric form of an error-correlation matrix always names the structural type of the correlations (such as <code class="code docutils literal notranslate"><span class="pre">independent</span></code> or <code class="code docutils literal notranslate"><span class="pre">common</span></code>), providing physical insight into the error structure. The allowed parametric forms are defined in <a class="reference internal" href="#appendix-controlled-vocabularies"><span class="std std-ref">Appendix A: Controlled Vocabularies</span></a>.</p>
+<p>Error-correlation information may be given for any dimensions of the <em>data variable</em>, including any that are not spanned by the <em>uncertainty variable</em>. This is because, even though the probability distribution characterised by the <em>uncertainty variable</em> does not depend on such dimensions, the error correlations along them may still have different characteristics to those of other dimensions.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute may be used to describe the correlations of errors across the domain. Error correlations are defined as correlation coefficients which must be in the range −1 (perfect negative correlation) to +1 (perfect positive correlation), and 0 indicates no correlation. The attribute is optional and there is no default value.</p>
+<p>In general, error correlations are given in the form of an error-correlation matrix that provides the error-correlation coefficients between all pairs of locations along one or more dimensions of the <em>data variable</em> (see form 1, below). However, when the correlation structure is parameterisable, the parameters that fully define the error-correlation matrix may be provided instead, which can not only significantly reduce the dataset size, but also provides physical insight regarding the error-correlation structure (see form 2, below). Non-standardised text describing the error-correlation structure may be used instead of an error-correlation matrix or its parameterised structure (see form 3, below), and also with forms 1 and 2.</p>
+<p>Error-correlations are provided instead of any other joint-dispersion measure (e.g. error-covariance) because they allow the pattern of error connectivity to be completely de-coupled from the uncertainty magnitudes. This de-coupling allows the error-correlation structure to be parameterised (see form 2, below), and also allows the same structure to be re-used across multiple <em>uncertainty variables</em>. A corresponding joint-dispersion measure that combines the error pattern with the error magnitude may be reconstructed by pre- and post-multiplying the dimensionless error-correlation matrix (which by definition has ones on its main diagonal) with a diagonal matrix of uncertainty magnitudes. For instance, this will be the error-covariance when the uncertainty values are standard deviations of the probability distribution.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute is a string attribute comprising a list of one or more blank-separated elements, the order of which is not significant. Each element has one of the following forms, where square brackets indicate optional content, and different elements may have different forms:</p>
+<ul class="simple">
+<li><p><strong>Form 1</strong>. Error-correlation coefficients defined explicitly in an error-correlation matrix:</p>
+<ul>
+<li><p><strong>1a</strong>. <code class="code docutils literal notranslate"><span class="pre">dim:</span> <span class="pre">error_correlation_var</span> <span class="pre">[([comment:]</span> <span class="pre">comment)]</span></code></p></li>
+<li><p><strong>1b</strong>. <code class="code docutils literal notranslate"><span class="pre">dim:</span> <span class="pre">dim:</span> <span class="pre">[dim:</span> <span class="pre">...]</span> <span class="pre">error_correlation_var</span> <span class="pre">[([comment:]</span> <span class="pre">comment)]</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Form 2</strong>. Error-correlation coefficients defined implicitly by a parametric structure:</p>
+<ul>
+<li><p><strong>2a</strong>. <code class="code docutils literal notranslate"><span class="pre">dim:</span> <span class="pre">[dim:</span> <span class="pre">...]</span> <span class="pre">error_correlation_structure</span> <span class="pre">[(comment:</span> <span class="pre">comment)]</span></code></p></li>
+<li><p><strong>2b</strong>. <code class="code docutils literal notranslate"><span class="pre">dim:</span> <span class="pre">[dim:</span> <span class="pre">...]</span> <span class="pre">error_correlation_structure</span> <span class="pre">(parameter:</span> <span class="pre">value</span> <span class="pre">[parameter:</span> <span class="pre">value</span> <span class="pre">...]</span> <span class="pre">[comment:</span> <span class="pre">comment])</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Form 3</strong>. Error-correlation coefficients characterised only by non-standardised text:</p>
+<ul>
+<li><p><strong>3a</strong>. <code class="code docutils literal notranslate"><span class="pre">dim:</span> <span class="pre">[dim:</span> <span class="pre">...]</span> <span class="pre">([comment:]</span> <span class="pre">comment)</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>In all forms, <em>dim</em> names a dimension of the parent <em>data variable</em> to which the error correlation information applies. A dimension can appear at most once anywhere in the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute, and not all parent <em>data variable</em> dimensions need to be referenced.</p>
+<section id="form-1-error-correlation-matrices">
+<h3>Form 1: Error-Correlation Matrices<a class="headerlink" href="#form-1-error-correlation-matrices" title="Link to this heading">#</a></h3>
+<p>In <strong>form 1a</strong>, <em>error_correlation_var</em> names an <em>error-correlation variable</em> that contains a square matrix of numeric correlation coefficients between the errors for every pair of cells indexed by the given dimension, and can be used when the errors for the given dimension are independent of those for all other dimensions. The <em>error-correlation variable</em> has the given dimension, and a different dimension of the same size that is not one of the parent <em>data variable</em> dimensions. The correlation between the errors at the i-th and j-th positions of the given dimension is stored at the intersection of the i-th row and j-th column of the matrix. Each error-correlation coefficient must be in the range −1 to 1. The matrix must be symmetric and have ones on the main diagonal. An <em>error-correlation variable</em> must have dimensionless units. For instance, if the given dimension is <code class="code docutils literal notranslate"><span class="pre">time</span></code> with size 360, then <code class="code docutils literal notranslate"><span class="pre">time:</span> <span class="pre">varname</span></code> means that the <em>error-correlation variable</em> <code class="code docutils literal notranslate"><span class="pre">varname</span></code> contains a 360 by 360 error-correlation matrix for the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension. See <a class="reference internal" href="#example-error-correlation-1a-2a"><span class="std std-ref">Example 8</span></a>.</p>
+<div class="admonition-example-8-one-dimensional-error-correlations admonition" id="example-error-correlation-1a-2a">
+<p class="admonition-title">Example 8. One-dimensional error correlations</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">lon</span> <span class="o">=</span> <span class="mi">360</span> <span class="p">;</span>
+  <span class="n">lat</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+  <span class="n">lat1</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">sst</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"unc"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">unc</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"lat: correlations</span>
+                             <span class="n">time</span><span class="p">:</span> <span class="n">independent</span>
+                             <span class="n">lon</span><span class="p">:</span> <span class="n">triangular</span> <span class="p">(</span><span class="n">localization_radius</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span><span class="s2">" ;</span>
+  <span class="o">//</span> <span class="n">Error</span><span class="o">-</span><span class="n">correlation</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">correlations</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lat1</span><span class="p">)</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>Error correlations described by error-correlation matrices that demonstrate forms 1a, 2a, and 2b of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute. For the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> dimension there is an <em>error-correlation variable</em> called <code class="code docutils literal notranslate"><span class="pre">correlations</span></code> giving the actual error-correlation coefficients (form 1a). For the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension, that is not spanned by the <em>uncertainty variable</em>, the error-correlation coefficients are parameterised as <code class="code docutils literal notranslate"><span class="pre">independent</span></code> (form 2a). For the <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimension the error-correlation coefficients are parameterised as the <code class="code docutils literal notranslate"><span class="pre">triangular</span></code> error-correlation structural type, with the configuration parameter <code class="code docutils literal notranslate"><span class="pre">localization_radius</span></code> given as an integer number of grid cells within the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute (form 2b).</p>
+</div>
+<p><strong>Form 1b</strong> is similar to form 1a, but now the <em>error-correlation variable</em> provides error correlations for every pair of cells indexed by two or more dimensions simultaneously. The error-correlation matrix is square and indexes the given dimensions after they have been flattened in row-major order, i.e. the first of the dimensions given in the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute varies the slowest, and the last varies the fastest. The number of rows or columns in the matrix is therefore equal to the product of the sizes of the given dimensions. For instance, if the dimension <code class="code docutils literal notranslate"><span class="pre">lat</span></code> has size 20 and dimension <code class="code docutils literal notranslate"><span class="pre">lon</span></code> has size 30, then <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">lon:</span> <span class="pre">varname</span></code> means that the <em>error-correlation variable</em> <code class="code docutils literal notranslate"><span class="pre">varname</span></code> contains a 600 by 600 error-correlation matrix for the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions that is composed of 400 non-overlapping square blocks, each of size 30 by 30. Each block along the main diagonal represents the error-correlations between pairs of cells on the <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimension at a specific <code class="code docutils literal notranslate"><span class="pre">lat</span></code> dimension location, and the off-diagonal blocks represent the correlations between pairs of cells on the <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimension that have different <code class="code docutils literal notranslate"><span class="pre">lat</span></code> dimension locations. See <a class="reference internal" href="#example-error-correlation-1b"><span class="std std-ref">Example 9</span></a>.</p>
+<p>To save space in the dataset, form 1b should only be used when the error-correlation structure is intrinsically coupled across the dimensions, and cannot be calculated using the Kronecker product (<a class="reference external" href="https://www.researchgate.net/publication/243041232_The_vec-permutation_matrix_the_vec_operator_and_Kronecker_products_A_review">KRONECKER</a>) of error-correlation matrices that each apply to a single dimension, which are defined by form 1a.</p>
+<div class="admonition-example-9-multi-dimensional-error-correlations admonition" id="example-error-correlation-1b">
+<p class="admonition-title">Example 9. Multi-dimensional error correlations</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">lon</span> <span class="o">=</span> <span class="mi">360</span> <span class="p">;</span>
+  <span class="n">lat</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+  <span class="n">lat_lon</span> <span class="o">=</span> <span class="mi">64800</span> <span class="p">;</span>
+  <span class="n">lat_lon1</span> <span class="o">=</span> <span class="mi">64800</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">sst</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"unc"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">unc</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"lat: lon: correlations"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Error</span><span class="o">-</span><span class="n">correlation</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">correlations</span><span class="p">(</span><span class="n">lat_lon</span><span class="p">,</span> <span class="n">lat_lon1</span><span class="p">)</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>Error correlations described by an error-correlation matrix that demonstrates form 1b of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute. For the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions combined there is a single <em>error-correlation variable</em> called <code class="code docutils literal notranslate"><span class="pre">correlations</span></code>. This variable’s data is a 64800 by 64800 matrix, where 64800 = 180 x 360, i.e. the product of the sizes of the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions. Note that error-correlation information does not need to be provided for every <em>data variable</em> dimension, as is the case here.</p>
+</div>
+</section>
+<section id="form-2-parameterised-error-correlation-structures">
+<h3>Form 2: Parameterised Error-Correlation Structures<a class="headerlink" href="#form-2-parameterised-error-correlation-structures" title="Link to this heading">#</a></h3>
+<p><strong>Form 2a</strong> is a parameterised alternative to forms 1a and 1b, for which <em>error_correlation_structure</em> names an error-correlation structural type which implies the error-correlation coefficient matrix for every pair of cells indexed by the given dimension or dimensions. The structural type must be one of those defined in <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>. For instance, when the errors are independent (i.e. uncorrelated) the error-correlation matrix is always the identity matrix, which can be parameterised by the structural type <code class="code docutils literal notranslate"><span class="pre">independent</span></code>. Each structural type must be associated with a number of dimensions that is in the range allowed by the structural type definition in <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>, and the parameterisation applies to all of those dimensions simultaneously, rather than to each named dimension independently. If the data writer expects <em>error_correlation_structure</em> to be interpreted as one of the structural type strings defined in <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>, then none of the variables in the dataset should be given a name identical to that of the string, because the encoding of an <em>error-correlation variable</em> takes precedence. See <a class="reference internal" href="#example-error-correlation-1a-2a"><span class="std std-ref">Example 8</span></a>.</p>
+<p><strong>Form 2b</strong> is similar to form 2a, but with the addition of standardised parameters for configuring the structural type. Parameters for configuring the structural type are given by the <em>parameter: value</em> pairs that identify a configuration parameter and provide its value. Each parameter must be one of those defined in <a class="reference internal" href="#table-structural-type-parameters"><span class="std std-ref">Table A.4</span></a>, which also specifies the structural types that the parameter may be paired with. In general, <em>value</em> names a scalar <em>error-correlation parameter variable</em> that contains the parameter value in its data array, and may have attributes to describe it (such as <code class="code docutils literal notranslate"><span class="pre">units</span></code> or a <code class="code docutils literal notranslate"><span class="pre">standard_name</span></code>). However, in the special case that the parameter value is a dimensionless integer, then the <em>value</em> may alternatively be set within the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> string as the decimal representation of that integer. If the data writer expects <em>value</em> to be interpreted as an integer, then none of the variables in the dataset should be given a name identical to that of the string of digits, because the encoding of an <em>error-correlation parameter variable</em> takes precedence. See <a class="reference internal" href="#example-error-correlation-1a-2a"><span class="std std-ref">Example 8</span></a> and <a class="reference internal" href="#example-error-correlation-2b"><span class="std std-ref">Example 10</span></a>.</p>
+<div class="admonition-example-10-one-dimensional-error-correlations-with-an-error-correlation-parameter-variable admonition" id="example-error-correlation-2b">
+<p class="admonition-title">Example 10. One-dimensional error correlations with an error-correlation parameter variable</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">lon</span> <span class="o">=</span> <span class="mi">360</span> <span class="p">;</span>
+  <span class="n">lat</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+  <span class="n">lat1</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">sst</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"unc"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">unc</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"lat: correlations</span>
+                             <span class="n">time</span><span class="p">:</span> <span class="n">independent</span>
+                             <span class="n">lon</span><span class="p">:</span> <span class="n">triangular</span> <span class="p">(</span><span class="n">localization_radius</span><span class="p">:</span> <span class="n">r</span><span class="p">)</span><span class="s2">" ;</span>
+  <span class="o">//</span> <span class="n">Error</span><span class="o">-</span><span class="n">correlation</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">correlations</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lat1</span><span class="p">)</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Error</span><span class="o">-</span><span class="n">correlation</span> <span class="n">parameter</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">r</span> <span class="p">;</span>
+    <span class="n">r</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"m"</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>As for <a class="reference internal" href="#example-error-correlation-1a-2a"><span class="std std-ref">Example 8</span></a>, but now for the <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimension, the form 2b configuration parameter <code class="code docutils literal notranslate"><span class="pre">localization_radius</span></code> is instead provided by the <em>error-correlation parameter variable</em> <code class="code docutils literal notranslate"><span class="pre">r</span></code>, which gives the parameter value in units of metres.</p>
+</div>
+</section>
+<section id="form-3-error-correlation-descriptions">
+<h3>Form 3: Error-Correlation Descriptions<a class="headerlink" href="#form-3-error-correlation-descriptions" title="Link to this heading">#</a></h3>
+<p>In <strong>form 3a</strong>, the actual error-correlation coefficients for the given dimensions are unknown, but nonetheless their structure may be described by non-standardised text given by the <em>comment</em>. For instance, <code class="code docutils literal notranslate"><span class="pre">time:</span> <span class="pre">(time</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">day)</span></code> could be used to indicate the temporal scale over which the errors are correlated along the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension. The non-standardised information may optionally be preceded by the string <code class="code docutils literal notranslate"><span class="pre">comment:</span></code> (e.g. <code class="code docutils literal notranslate"><span class="pre">time:</span> <span class="pre">(comment:</span> <span class="pre">time</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">day)</span></code>), but it is recommended to not do this. When more than one dimension is given, the comment applies to those dimensions simultaneously, rather than to each named dimension independently. For instance, <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">lon:</span> <span class="pre">(length</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">100</span> <span class="pre">km)</span></code> may imply a different error correlation structure to <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">(length</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">100</span> <span class="pre">km)</span> <span class="pre">lon:</span> <span class="pre">(length</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">100</span> <span class="pre">km)</span></code>. See <a class="reference internal" href="#example-error-correlation-3a"><span class="std std-ref">Example 11</span></a>.</p>
+<div class="admonition-example-11-error-correlations-described-by-comments admonition" id="example-error-correlation-3a">
+<p class="admonition-title">Example 11. Error correlations described by comments</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dimensions</span><span class="p">:</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">;</span>
+  <span class="n">lon</span> <span class="o">=</span> <span class="mi">360</span> <span class="p">;</span>
+  <span class="n">lat</span> <span class="o">=</span> <span class="mi">180</span> <span class="p">;</span>
+
+<span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">sst</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">sst</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"unc"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">unc</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">standard_name</span> <span class="o">=</span> <span class="s2">"sea_surface_temperature"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">units_metadata</span> <span class="o">=</span> <span class="s2">"temperature: on_scale"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">unc</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"time: (time scale = 1 day)</span>
+                             <span class="n">lat</span><span class="p">:</span> <span class="n">lon</span><span class="p">:</span> <span class="p">(</span><span class="n">length</span> <span class="n">scale</span> <span class="o">=</span> <span class="mi">100</span> <span class="n">km</span><span class="p">)</span><span class="s2">" ;</span>
+</pre></div>
+</div>
+<p>Error correlations described by non-standardised text that demonstrates form 3a of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute.</p>
+</div>
+</section>
+<section id="comments-on-error-correlations">
+<h3>Comments on Error Correlations<a class="headerlink" href="#comments-on-error-correlations" title="Link to this heading">#</a></h3>
+<p>It is also possible to provide an optional non-standardised comment that gives extra information about the explicit or parameterised error-correlations of forms 1 and 2. In form 1, the comment is placed in round brackets immediately after the <em>error-correlation variable</em> name (e.g. <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">varname</span> <span class="pre">(length</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">100</span> <span class="pre">km)</span></code>). The comment text may optionally be preceded by the string <code class="code docutils literal notranslate"><span class="pre">comment:</span></code>, but it is recommended to not do this. In form 2a, the comment text is placed in round brackets immediately after the error-correlation structural type name, and must be preceded by the string <code class="code docutils literal notranslate"><span class="pre">comment:</span></code> in order to distinguish the comment from any possible standardised parameters (e.g. <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">independent</span> <span class="pre">(comment:</span> <span class="pre">Grid</span> <span class="pre">spacing</span> <span class="pre">exceeds</span> <span class="pre">the</span> <span class="pre">error</span> <span class="pre">correlation</span> <span class="pre">length)</span></code>). In form 2b, the comment text is placed in the round brackets immediately after the error-correlation structural type name, must be preceded by the string <code class="code docutils literal notranslate"><span class="pre">comment:</span></code>, and must be placed after all of the standardised parameter definitions (e.g. <code class="code docutils literal notranslate"><span class="pre">lat:</span> <span class="pre">triangular</span> <span class="pre">(localization_radius:</span> <span class="pre">50</span> <span class="pre">comment:</span> <span class="pre">length</span> <span class="pre">scale</span> <span class="pre">=</span> <span class="pre">100</span> <span class="pre">km)</span></code>).</p>
+</section>
+</section>
+<section id="appendix-a-controlled-vocabularies">
+<span id="appendix-controlled-vocabularies"></span><h2>Appendix A: Controlled Vocabularies<a class="headerlink" href="#appendix-a-controlled-vocabularies" title="Link to this heading">#</a></h2>
+<p>This appendix defines the controlled vocabularies required by some components of the following <em>uncertainty variable</em> attributes:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> (see <a class="reference internal" href="#probability-distribution"><span class="std std-ref">Probability Distribution</span></a>)</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> (see <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>)</p></li>
+</ul>
+<section id="probability-distributions">
+<h3>Probability Distributions<a class="headerlink" href="#probability-distributions" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><span id="table-distributions"></span><table class="table" id="id10">
+<caption><span class="caption-text">Table A.1. Distributions allowed by the <em>distribution</em> component of the <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Distribution</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">gaussian</span></code></p></td>
+<td><p>Normal distribution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">uniform</span></code></p></td>
+<td><p>A continuous probability distribution in which all values within a specified interval occur with equal likelihood, producing a flat probability density across the range.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">skewed_gaussian</span></code></p></td>
+<td><p>A continuous probability distribution that generalises the normal distribution to allow for non-zero skewness.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">log_normal</span></code></p></td>
+<td><p>A continuous probability distribution of a random variable whose logarithm is normally distributed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">chi_squared</span></code></p></td>
+<td><p>The distribution of a sum of the squares of <em>k</em> independent standard normal random variables.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><span id="table-distribution-parameters"></span><table class="table" id="id11">
+<caption><span class="caption-text">Table A.2. Distribution parameters allowed by the <em>parameter</em> component of the <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Distribution parameter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">skew</span></code></p></td>
+<td><p>A measure of the asymmetry of the probability distribution, given by the third standardised moment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">kurtosis</span></code></p></td>
+<td><p>A measure of the degree of “tailedness” in the probability distribution, given by the fourth standardised moment.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">degrees_of_freedom</span></code></p></td>
+<td><p>The number of values in the calculation of a statistic that are free to vary. For instance, a <code class="code docutils literal notranslate"><span class="pre">chi_squared</span></code> distribution with <em>k</em> degrees of freedom is the distribution of a sum of the squares of <em>k</em> independent standard normal random variables.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="error-correlation-structures">
+<h3>Error-Correlation Structures<a class="headerlink" href="#error-correlation-structures" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><span id="table-structural-types"></span><table class="table" id="id12">
+<caption><span class="caption-text">Table A.3. Error-correlation structural types allowed by the <em>error_correlation_structure</em> component of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute</span><a class="headerlink" href="#id12" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 16.0%" />
+<col style="width: 18.0%" />
+<col style="width: 14.0%" />
+<col style="width: 27.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Structural type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Number of dimensions (N)</p></th>
+<th class="head"><p>Implied error-correlation matrix structure</p></th>
+<th class="head"><p>Optional configuration parameters (see <a class="reference internal" href="#table-structural-type-parameters"><span class="std std-ref">Table A.4</span></a>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">independent</span></code></p></td>
+<td><p>No error-correlation.</p></td>
+<td><p>N ≥ 1</p></td>
+<td><p>The identity matrix. The error-correlation structure arising from two or more dimensions simultaneously is the same as that resulting from the structural type applied to those dimensions individually.</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">common</span></code></p></td>
+<td><p>Perfect error-correlation.</p></td>
+<td><p>N ≥ 1</p></td>
+<td><p>A full matrix of ones. The error-correlation structure arising from two or more dimensions simultaneously is the same as that resulting from the structural type applied to those dimensions individually.</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">triangular</span></code></p></td>
+<td><p>Error-correlation drops linearly along each dimension.</p></td>
+<td><p>N ≥ 1</p></td>
+<td><p>A banded diagonal matrix, with values dropping off linearly from the diagonal. The error-correlation structure arising from two or more dimensions simultaneously may be different to that resulting from the structural type applied to those dimensions individually.</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">localization_radius</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">exponential</span></code></p></td>
+<td><p>Error-correlation drops exponentially along each dimension.</p></td>
+<td><p>N ≥ 1</p></td>
+<td><p>A banded diagonal matrix, with values dropping off exponentially from the diagonal. The error-correlation structure arising from two or more dimensions simultaneously may be different to that resulting from the structural type applied to those dimensions individually.</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">localization_radius</span></code>, <code class="code docutils literal notranslate"><span class="pre">e_folding_length</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><span id="table-structural-type-parameters"></span><table class="table" id="id13">
+<caption><span class="caption-text">Table A.4. Error-correlation structure parameters allowed by the <em>parameter</em> component of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Structural type configuration parameter</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Applicable structural types (see <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">localization_radius</span></code></p></td>
+<td><p>The distance along a dimension at which error-correlation reduces to zero. An <em>error-correlation parameter variable</em> may have any units that are physically meaningful for the dimension (e.g. units of <code class="code docutils literal notranslate"><span class="pre">metres</span></code> or <code class="code docutils literal notranslate"><span class="pre">degrees_north</span></code> could be used for a “latitude” dimension; <code class="code docutils literal notranslate"><span class="pre">degrees</span></code> could be used when both “latitude” and “longitude” dimensions are indicated). A dimensionless integer is assumed to be a number of cells.</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">triangular</span></code>, <code class="code docutils literal notranslate"><span class="pre">exponential</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">e_folding_length</span></code></p></td>
+<td><p>The distance along a dimension at which error-correlation reduces by a factor of <em>e</em>. An <em>error-correlation parameter variable</em> may have any units that are physically meaningful for the dimension (e.g. units of <code class="code docutils literal notranslate"><span class="pre">metres</span></code> or <code class="code docutils literal notranslate"><span class="pre">degrees_north</span></code> could be used for a “latitude” dimension; <code class="code docutils literal notranslate"><span class="pre">degrees</span></code> could be used when both “latitude” and “longitude” dimensions are indicated). A dimensionless integer is assumed to be a number of cells.</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">exponential</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="coverage-probabilities">
+<h3>Coverage Probabilities<a class="headerlink" href="#coverage-probabilities" title="Link to this heading">#</a></h3>
+<p>For convenience, <a class="reference internal" href="#table-coverage-probabilities-gaussian"><span class="std std-ref">Table A.5</span></a> and <a class="reference internal" href="#table-coverage-probabilities-uniform"><span class="std std-ref">Table A.6</span></a> show a selection of commonly used coverage probabilities that may be used when the coverage interval is defined as a multiple (i.e. the coverage factor) of one standard deviation either side of the mean of a Gaussian or uniform probability distribution (see <a class="reference internal" href="#attr-coverage-factor"><span class="std std-ref">Coverage Factor</span></a>). These values are only relevant when the <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code> and the <code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute is <code class="code docutils literal notranslate"><span class="pre">gaussian</span></code> or <code class="code docutils literal notranslate"><span class="pre">uniform</span></code>; the coverage factor is defined by the <code class="code docutils literal notranslate"><span class="pre">coverage_factor</span></code> attribute.</p>
+<div class="pst-scrollable-table-container"><span id="table-coverage-probabilities-gaussian"></span><table class="table" id="id14">
+<caption><span class="caption-text">Table A.5. Selected coverage probabilities for the standard and expanded uncertainties of the Gaussian distribution</span><a class="headerlink" href="#id14" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Coverage factor</p></th>
+<th class="head"><p>Coverage probability</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+<td><p>0.6827</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">1.645</span></code></p></td>
+<td><p>0.9</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">1.96</span></code></p></td>
+<td><p>0.95</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">2</span></code></p></td>
+<td><p>0.9545</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">2.576</span></code></p></td>
+<td><p>0.99</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">3</span></code></p></td>
+<td><p>0.9973</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><span id="table-coverage-probabilities-uniform"></span><table class="table" id="id15">
+<caption><span class="caption-text">Table A.6. Selected coverage probabilities for the standard and expanded uncertainties of the uniform distribution</span><a class="headerlink" href="#id15" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Coverage factor</p></th>
+<th class="head"><p>Coverage probability</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">1</span></code></p></td>
+<td><p>0.5774</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">1.559</span></code></p></td>
+<td><p>0.9</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">1.645</span></code></p></td>
+<td><p>0.95</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">1.715</span></code></p></td>
+<td><p>0.99</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">1.732</span></code></p></td>
+<td><p>1.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="appendix-b-changes-from-v0-1">
+<span id="changes-from-v0-1"></span><h2>Appendix B: Changes from v0.1<a class="headerlink" href="#appendix-b-changes-from-v0-1" title="Link to this heading">#</a></h2>
+<p>Draft v0.2 is a major revision of v0.1, made to align the specification with the CF conventions (see <a class="reference internal" href="#relationship-to-cf"><span class="std std-ref">Relationship to the CF Conventions</span></a>). Datasets written following v0.1 are not compatible with draft v0.2. The main changes are summarised in the table below.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id16">
+<caption><span class="caption-text">Summary of changes from v0.1</span><a class="headerlink" href="#id16" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>v0.1</p></th>
+<th class="head"><p>Draft v0.2</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Observation variable</em></p></td>
+<td><p><em>Data variable</em></p></td>
+<td><p>Terminology aligned with CF.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">unc_comps</span></code> attribute (list of names)</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_variables</span></code> attribute (blank-separated string of names)</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>Uncertainty variables</em> must have the same dimensions as their <em>observation variable</em></p></td>
+<td><p><em>Uncertainty variables</em> may have all or a subset of the dimensions of their <em>data variable</em>, plus an optional interval dimension</p></td>
+<td><p>See <a class="reference internal" href="#coverage-intervals"><span class="std std-ref">Coverage Intervals</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Meaning of the <em>uncertainty variable</em> values not defined</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> and <code class="code docutils literal notranslate"><span class="pre">coverage_probability</span></code> attributes (both required), and <code class="code docutils literal notranslate"><span class="pre">coverage_factor</span></code> attribute</p></td>
+<td><p>Supports standard uncertainties, expanded uncertainties, and symmetric or asymmetric coverage intervals.</p></td>
+</tr>
+<tr class="row-even"><td><p><em>Uncertainty variable</em> with no <code class="code docutils literal notranslate"><span class="pre">units</span></code> is a fractional uncertainty</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_representation</span> <span class="pre">=</span> <span class="pre">&quot;relative_difference&quot;</span></code>, with units of <code class="code docutils literal notranslate"><span class="pre">&quot;1&quot;</span></code> or <code class="code docutils literal notranslate"><span class="pre">&quot;%&quot;</span></code></p></td>
+<td><p>See <a class="reference internal" href="#relative-differences"><span class="std std-ref">Relative Differences</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">pdf_shape</span></code> attribute (default <code class="code docutils literal notranslate"><span class="pre">&quot;gaussian&quot;</span></code>)</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">probability_distribution</span></code> attribute (no default, but required when <code class="code docutils literal notranslate"><span class="pre">coverage_interval</span></code> is <code class="code docutils literal notranslate"><span class="pre">standard_deviation</span></code>)</p></td>
+<td><p>Distributions may now be parameterised with <em>distribution parameter variables</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">pdf_shape</span> <span class="pre">=</span> <span class="pre">&quot;rectangular&quot;</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">probability_distribution</span> <span class="pre">=</span> <span class="pre">&quot;uniform&quot;</span></code></p></td>
+<td><p>See <a class="reference internal" href="#table-distributions"><span class="std std-ref">Table A.1</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">uncertainty_evaluation</span></code> and <code class="code docutils literal notranslate"><span class="pre">uncertainty_component</span></code> attributes</p></td>
+<td><p>Including the identification of a combined uncertainty.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_name</span></code>, <code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_form</span></code>, <code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_params</span></code> and <code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_units</span></code> attributes</p></td>
+<td><p>Single <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> string attribute</p></td>
+<td><p>See <a class="reference internal" href="#error-correlation"><span class="std std-ref">Error Correlation</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Error-correlation form <code class="code docutils literal notranslate"><span class="pre">random</span></code></p></td>
+<td><p>Error-correlation structural type <code class="code docutils literal notranslate"><span class="pre">independent</span></code></p></td>
+<td><p>See <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Error-correlation form <code class="code docutils literal notranslate"><span class="pre">systematic</span></code></p></td>
+<td><p>Error-correlation structural type <code class="code docutils literal notranslate"><span class="pre">common</span></code></p></td>
+<td><p>See <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Error-correlation form <code class="code docutils literal notranslate"><span class="pre">err_corr_matrix</span></code>, with the matrix variable name given in <code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_params</span></code></p></td>
+<td><p>Form 1a or 1b of the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute, naming an <em>error-correlation variable</em></p></td>
+<td><p>The <em>error-correlation variable</em> must not use the same dimension twice.</p></td>
+</tr>
+<tr class="row-even"><td><p>Parameter units given in <code class="code docutils literal notranslate"><span class="pre">err_corr_dimi_units</span></code></p></td>
+<td><p>Parameter values given in <em>error-correlation parameter variables</em>, with their own <code class="code docutils literal notranslate"><span class="pre">units</span></code> attribute</p></td>
+<td><p>Dimensionless integer parameters may be given directly in the <code class="code docutils literal notranslate"><span class="pre">error_correlation</span></code> attribute.</p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>Error-correlation structural types <code class="code docutils literal notranslate"><span class="pre">triangular</span></code> and <code class="code docutils literal notranslate"><span class="pre">exponential</span></code>, and descriptions of error-correlation by non-standardised text (form 3a)</p></td>
+<td><p>See <a class="reference internal" href="#table-structural-types"><span class="std std-ref">Table A.3</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The example below shows the final example dataset from v0.1 updated to follow draft v0.2. In v0.1, the uncertainty values were implicitly standard uncertainties, and <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code> was a fractional uncertainty because it had no <code class="code docutils literal notranslate"><span class="pre">units</span></code> attribute.</p>
+<div class="admonition-example-12-v0-1-example-updated-to-follow-draft-v0-2 admonition">
+<p class="admonition-title">Example 12. v0.1 example updated to follow draft v0.2</p>
+<p>v0.1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">unc_comps</span><span class="o">=</span><span class="p">[</span><span class="s2">"u_calibration"</span><span class="p">,</span> <span class="s2">"u_noise"</span><span class="p">];</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">"K"</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span><span class="o">=</span><span class="s2">"K"</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">pdf_shape</span><span class="o">=</span><span class="s2">"rectangular"</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_name</span><span class="o">=</span><span class="p">[</span><span class="s2">"lat"</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">];</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim1_form</span><span class="o">=</span><span class="s2">"systematic"</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_name</span><span class="o">=</span><span class="s2">"time"</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_form</span><span class="o">=</span><span class="s2">"err_corr_matrix"</span><span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">err_corr_dim2_params</span><span class="o">=</span><span class="p">[</span><span class="s2">"err_corr_calibration_time"</span><span class="p">];</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">);</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">err_corr_dim1_name</span><span class="o">=</span><span class="p">[</span><span class="s2">"time"</span><span class="p">,</span> <span class="s2">"lat"</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">];</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">err_corr_dim1_form</span><span class="o">=</span><span class="s2">"random"</span><span class="p">;</span>
+  <span class="nb">float</span> <span class="n">err_corr_calibration_time</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">time</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Draft v0.2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span><span class="p">:</span>
+  <span class="o">//</span> <span class="n">Data</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">temperature</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">temperature</span><span class="p">:</span><span class="n">uncertainty_variables</span> <span class="o">=</span> <span class="s2">"u_calibration u_noise"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Uncertainty</span> <span class="n">variables</span>
+  <span class="nb">float</span> <span class="n">u_calibration</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"K"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.5774</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"uniform"</span> <span class="p">;</span>
+    <span class="n">u_calibration</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"lat: lon: common</span>
+                                       <span class="n">time</span><span class="p">:</span> <span class="n">err_corr_calibration_time</span><span class="s2">" ;</span>
+  <span class="nb">float</span> <span class="n">u_noise</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">uncertainty_representation</span> <span class="o">=</span> <span class="s2">"relative_difference"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">coverage_interval</span> <span class="o">=</span> <span class="s2">"standard_deviation"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">coverage_probability</span> <span class="o">=</span> <span class="mf">0.6827</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">probability_distribution</span> <span class="o">=</span> <span class="s2">"gaussian"</span> <span class="p">;</span>
+    <span class="n">u_noise</span><span class="p">:</span><span class="n">error_correlation</span> <span class="o">=</span> <span class="s2">"time: lat: lon: independent"</span> <span class="p">;</span>
+  <span class="o">//</span> <span class="n">Error</span><span class="o">-</span><span class="n">correlation</span> <span class="n">variable</span>
+  <span class="nb">float</span> <span class="n">err_corr_calibration_time</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">time1</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">err_corr_calibration_time</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>The <code class="code docutils literal notranslate"><span class="pre">u_calibration</span></code> standard uncertainty has a uniform distribution, so its coverage probability is 0.5774 (see <a class="reference internal" href="#table-coverage-probabilities-uniform"><span class="std std-ref">Table A.6</span></a>). Its errors are fully correlated in the <code class="code docutils literal notranslate"><span class="pre">lat</span></code> and <code class="code docutils literal notranslate"><span class="pre">lon</span></code> dimensions (form 2a), and correlated in the <code class="code docutils literal notranslate"><span class="pre">time</span></code> dimension as defined by the <em>error-correlation variable</em> <code class="code docutils literal notranslate"><span class="pre">err_corr_calibration_time</span></code> (form 1a), which now uses a separate dimension, <code class="code docutils literal notranslate"><span class="pre">time1</span></code>, of the same size as <code class="code docutils literal notranslate"><span class="pre">time</span></code>. The <code class="code docutils literal notranslate"><span class="pre">u_noise</span></code> standard uncertainty is given as a fractional relative difference, with uncorrelated errors in all dimensions.</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">Authors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-authors">Lead Authors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-to-the-cf-conventions">Relationship to the CF Conventions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophy">Philosophy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#format-for-examples">Format for Examples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-structure">Dataset Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data Types</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-variables">Uncertainty Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assigning-uncertainty-variables">Assigning Uncertainty Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-intervals">Coverage Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-probability">Coverage Probability</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-factor">Coverage Factor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#units-and-standard-names">Units and Standard Names</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-differences">Relative Differences</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-components">Uncertainty Components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-evaluation">Uncertainty Evaluation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compression-by-gathering">Compression by Gathering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distribution">Probability Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation">Error Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-1-error-correlation-matrices">Form 1: Error-Correlation Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-2-parameterised-error-correlation-structures">Form 2: Parameterised Error-Correlation Structures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#form-3-error-correlation-descriptions">Form 3: Error-Correlation Descriptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-error-correlations">Comments on Error Correlations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-a-controlled-vocabularies">Appendix A: Controlled Vocabularies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distributions">Probability Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-correlation-structures">Error-Correlation Structures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-probabilities">Coverage Probabilities</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-b-changes-from-v0-1">Appendix B: Changes from v0.1</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By CoMet Toolkit Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
