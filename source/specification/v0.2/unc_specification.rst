@@ -27,7 +27,7 @@ This version of the specification was developed in collaboration with the `Clima
 
     This version of the specification is archived on Zenodo, with DOI `10.5281/zenodo.24467473 <https://doi.org/10.5281/zenodo.24467473>`__. Please cite it as:
 
-        Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
+        Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (Version v0.2). CoMet Toolkit. https://doi.org/10.5281/zenodo.24467473
 
 Introduction
 ============

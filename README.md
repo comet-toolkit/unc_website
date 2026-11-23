@@ -8,4 +8,4 @@ This repository contains the sources files for the [UNC website](https://comet-t
 
 The latest version of the UNC Specification (v0.2) is archived on [Zenodo](https://doi.org/10.5281/zenodo.24467473). Please cite it as:
 
-> Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
+> Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (Version v0.2). CoMet Toolkit. https://doi.org/10.5281/zenodo.24467473
