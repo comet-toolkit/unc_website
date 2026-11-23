@@ -18,6 +18,17 @@ Contributors
 
 This version of the specification was developed in collaboration with the `Climate and Forecast (CF) conventions`_ community, as part of a proposal to include these conventions within CF (see :ref:`relationship-to-cf`).
 
+.. The citation is web-only, so the PDF stays identical to the copy archived on Zenodo.
+
+.. only:: html
+
+    How to Cite
+    -----------
+
+    This version of the specification is archived on Zenodo, with DOI `10.5281/zenodo.24467473 <https://doi.org/10.5281/zenodo.24467473>`__. Please cite it as:
+
+        Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
+
 Introduction
 ============
 
@@ -33,7 +44,7 @@ The goal of this Uncertainty metadata Naming Conventions (UNC) specification is 
 Relationship to the CF Conventions
 ----------------------------------
 
-Draft v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been proposed for inclusion in the CF conventions as a new chapter, "Uncertainty" (see `CF pull request #661`_, and the associated discussion in `CF issue #660`_). This version of the specification is aligned with that proposal, and will be kept aligned with it as it progresses through the CF review process.
+UNC v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been proposed for inclusion in the CF conventions as a new chapter, "Uncertainty" (see `CF pull request #661`_, and the associated discussion in `CF issue #660`_). This version of the specification is aligned with that proposal, and will be kept aligned with it as it progresses through the CF review process.
 
 This specification can be read on its own, but it builds on the wider CF conventions - for example, the definitions of the `units`, `units_metadata` and `standard_name` attributes. Where this specification depends on other parts of the CF conventions, links are given to the relevant sections of the `CF conventions document`_.
 
@@ -954,14 +965,14 @@ For convenience, :ref:`Table A.5 <table-coverage-probabilities-gaussian>` and :r
 Appendix B: Changes from v0.1
 =============================
 
-Draft v0.2 is a major revision of v0.1, made to align the specification with the CF conventions (see :ref:`relationship-to-cf`). Datasets written following v0.1 are not compatible with draft v0.2. The main changes are summarised in the table below.
+UNC v0.2 is a major revision of v0.1, made to align the specification with the CF conventions (see :ref:`relationship-to-cf`). Datasets written following v0.1 are not compatible with v0.2. The main changes are summarised in the table below.
 
 .. list-table:: Summary of changes from v0.1
    :widths: 35 35 30
    :header-rows: 1
 
    * - v0.1
-     - Draft v0.2
+     - v0.2
      - Notes
    * - *Observation variable*
      - *Data variable*
@@ -1006,9 +1017,9 @@ Draft v0.2 is a major revision of v0.1, made to align the specification with the
      - Error-correlation structural types `triangular` and `exponential`, and descriptions of error-correlation by non-standardised text (form 3a)
      - See :ref:`Table A.3 <table-structural-types>`.
 
-The example below shows the final example dataset from v0.1 updated to follow draft v0.2. In v0.1, the uncertainty values were implicitly standard uncertainties, and `u_noise` was a fractional uncertainty because it had no `units` attribute.
+The example below shows the final example dataset from v0.1 updated to follow v0.2. In v0.1, the uncertainty values were implicitly standard uncertainties, and `u_noise` was a fractional uncertainty because it had no `units` attribute.
 
-.. admonition:: Example 12. v0.1 example updated to follow draft v0.2
+.. admonition:: Example 12. v0.1 example updated to follow v0.2
 
     v0.1:
 
@@ -1031,7 +1042,7 @@ The example below shows the final example dataset from v0.1 updated to follow dr
             u_noise:err_corr_dim1_form="random";
           float err_corr_calibration_time(time, time);
 
-    Draft v0.2:
+    v0.2:
 
     .. code-block::
 

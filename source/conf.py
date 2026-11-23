@@ -86,7 +86,7 @@ html_theme = "sphinx_book_theme"
 # documentation.
 
 html_theme_options = {
-    "announcement": "UNC v0.2 is a draft, proposed for inclusion in the CF conventions",
+    "announcement": "UNC v0.2 has been drafted for proposed inclusion in the CF conventions",
     "repository_url": "https://github.com/comet-toolkit/unc_website",
     "use_repository_button": True,
     "show_prev_next": False,
