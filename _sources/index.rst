@@ -6,13 +6,13 @@ The goal of these metadata naming conventions is to provide a standardised forma
 
 This work is part of the `CoMet Toolkit`_ (community metrology toolkit) initiative, which includes Python tools to support it's implementation.
 
-The latest draft (v0.2) was developed in collaboration with the `Climate and Forecast (CF) conventions`_ community, and has been `proposed for inclusion in the CF conventions`_.
+The latest version (v0.2) was developed in collaboration with the `Climate and Forecast (CF) conventions`_ community, and has been `proposed for inclusion in the CF conventions`_.
 
 .. grid:: 2
     :gutter: 2
 
     .. grid-item-card::  Latest Specification
-        :link: specification/draft-v0.2/unc_specification
+        :link: specification/v0.2/unc_specification
         :link-type: doc
 
         For the latest version of the UNC Specification
@@ -35,6 +35,13 @@ The latest draft (v0.2) was developed in collaboration with the `Climate and For
 
         For more information about CoMet Toolkit
 
+
+Citing UNC
+----------
+
+The latest version of the UNC Specification (v0.2) is archived on Zenodo, with DOI `10.5281/zenodo.24467473 <https://doi.org/10.5281/zenodo.24467473>`__. Please cite it as:
+
+    Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
 
 Acknowledgements
 ----------------

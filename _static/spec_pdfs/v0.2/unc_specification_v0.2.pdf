@@ -1171,12 +1171,12 @@ endobj
 endobj
 196 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 90 0 R /XYZ 40.01575 341.0394 0 ] /Rect [ 474.0857 295.4394 555.3421 307.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 90 0 R /XYZ 40.01575 341.0394 0 ] /Rect [ 474.0757 295.4394 555.3416 307.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 197 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 90 0 R /XYZ 40.01575 341.0394 0 ] /Rect [ 40.01575 283.4394 114.672 295.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 90 0 R /XYZ 40.01575 341.0394 0 ] /Rect [ 40.01575 283.4394 111.6741 295.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 198 0 obj
@@ -1236,7 +1236,7 @@ endobj
 endobj
 207 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 199 0 R /XYZ 41.8938 491.8394 0 ] /Rect [ 48.01575 389.4394 91.58544 401.4394 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 199 0 R /XYZ 41.8938 491.8394 0 ] /Rect [ 48.01575 401.4394 91.58544 413.4394 ] /Subtype /Link /Type /Annot
 >>
 endobj
 208 0 obj
@@ -1256,7 +1256,7 @@ endobj
 endobj
 210 0 obj
 <<
-/Author () /CreationDate (D:20261027170643+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261027170643+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20261123142835+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261123142835+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -1461,7 +1461,7 @@ endobj
 endobj
 249 0 obj
 <<
-/Length 959
+/Length 956
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1488,7 +1488,7 @@ n -10 0 525.2441 24 re B*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 195.102 0 Td (version draft-v0.2) Tj T* -195.102 0 Td ET
+BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 214.2645 0 Td (version v0.2) Tj T* -214.2645 0 Td ET
 Q
 Q
 q
@@ -1508,7 +1508,7 @@ q
 1 0 0 1 40.01575 450.1606 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 211.26 0 Td (October 27, 2026) Tj T* -211.26 0 Td ET
+BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 204.93 0 Td (November 23, 2026) Tj T* -204.93 0 Td ET
 Q
 Q
 q
@@ -2050,7 +2050,7 @@ endstream
 endobj
 253 0 obj
 <<
-/Length 7812
+/Length 7810
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -2271,7 +2271,7 @@ Q
 q
 1 0 0 1 40.01575 267.4394 cm
 q
-BT 1 0 0 1 0 38 Tm 1.814952 Tw 12 TL /F1 10 Tf 0 0 0 rg (Draft v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been) Tj T* 0 Tw 1.081339 Tw (proposed for inclusion in the CF conventions as a new chapter, \223Uncertainty\224 \(see ) Tj 0 .4 .6 rg (CF pull request #661) Tj 0 0 0 rg (, and the) Tj T* 0 Tw .711894 Tw (associated discussion in ) Tj 0 .4 .6 rg (CF issue #660) Tj 0 0 0 rg (\). This version of the specification is aligned with that proposal, and will be) Tj T* 0 Tw (kept aligned with it as it progresses through the CF review process.) Tj T* ET
+BT 1 0 0 1 0 38 Tm 1.815479 Tw 12 TL /F1 10 Tf 0 0 0 rg (UNC v0.2 is a major revision of v0.1. It was developed in collaboration with the CF community, and has been) Tj T* 0 Tw 1.081339 Tw (proposed for inclusion in the CF conventions as a new chapter, \223Uncertainty\224 \(see ) Tj 0 .4 .6 rg (CF pull request #661) Tj 0 0 0 rg (, and the) Tj T* 0 Tw .711894 Tw (associated discussion in ) Tj 0 .4 .6 rg (CF issue #660) Tj 0 0 0 rg (\). This version of the specification is aligned with that proposal, and will be) Tj T* 0 Tw (kept aligned with it as it progresses through the CF review process.) Tj T* ET
 Q
 Q
 q
@@ -6655,7 +6655,7 @@ endstream
 endobj
 272 0 obj
 <<
-/Length 10485
+/Length 10472
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -7007,7 +7007,7 @@ Q
 q
 1 0 0 1 40.01575 271.4394 cm
 q
-BT 1 0 0 1 0 26 Tm -0.082295 Tw 12 TL /F1 10 Tf 0 0 0 rg (Draft v0.2 is a major revision of v0.1, made to align the specification with the CF conventions \(see ) Tj (Relationship to the) Tj T* 0 Tw 2.966273 Tw (CF Conventions) Tj (\). Datasets written following v0.1 are not compatible with draft v0.2. The main changes are) Tj T* 0 Tw (summarised in the table below.) Tj T* ET
+BT 1 0 0 1 0 26 Tm -0.081795 Tw 12 TL /F1 10 Tf 0 0 0 rg (UNC v0.2 is a major revision of v0.1, made to align the specification with the CF conventions \(see ) Tj (Relationship to the) Tj T* 0 Tw -0.031619 Tw (CF Conventions) Tj (\). Datasets written following v0.1 are not compatible with v0.2. The main changes are summarised in) Tj T* 0 Tw (the table below.) Tj T* ET
 Q
 Q
 q
@@ -7061,7 +7061,7 @@ n 0 0 168.3354 10 re f*
 Q
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 61.38272 0 Td (Draft v0.2) Tj T* -61.38272 0 Td ET
+BT 1 0 0 1 0 0 Tm /F2 10 Tf 10 TL 74.43772 0 Td (v0.2) Tj T* -74.43772 0 Td ET
 Q
 Q
 q
@@ -7184,7 +7184,7 @@ endstream
 endobj
 273 0 obj
 <<
-/Length 8276
+/Length 8308
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -7423,31 +7423,31 @@ q
 1 0 0 1 40.01575 331.0394 cm
 Q
 q
+1 0 0 1 40.01575 301.0394 cm
+q
+BT 1 0 0 1 0 14 Tm .030227 Tw 12 TL /F1 10 Tf 0 0 0 rg (The example below shows the final example dataset from v0.1 updated to follow v0.2. In v0.1, the uncertainty values) Tj T* 0 Tw (were implicitly standard uncertainties, and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf ( was a fractional uncertainty because it had no ) Tj /F3 10 Tf (units) Tj /F1 10 Tf ( attribute.) Tj T* ET
+Q
+Q
+q
 1 0 0 1 40.01575 289.0394 cm
-q
-BT 1 0 0 1 0 26 Tm .524116 Tw 12 TL /F1 10 Tf 0 0 0 rg (The example below shows the final example dataset from v0.1 updated to follow draft v0.2. In v0.1, the uncertainty) Tj T* 0 Tw .981606 Tw (values were implicitly standard uncertainties, and ) Tj /F3 10 Tf (u_noise) Tj /F1 10 Tf ( was a fractional uncertainty because it had no ) Tj /F3 10 Tf (units) Tj /F1 10 Tf  T* 0 Tw (attribute.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 40.01575 277.0394 cm
 Q
 q
 1 0 0 1 40.01575 54.85039 cm
 q
 .933333 1 .8 rg
-n 0 222.189 515.2441 -222.189 re f*
+n 0 234.189 515.2441 -234.189 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 6 204.189 Tm  T* ET
+BT 1 0 0 1 6 216.189 Tm  T* ET
 q
-1 0 0 1 8 197.389 cm
+1 0 0 1 8 209.389 cm
 q
 .12549 .262745 .360784 rg
-BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Example 12. v0.1 example updated to follow draft v0.2) Tj T* ET
+BT 1 0 0 1 0 2.8 Tm /F2 14 Tf 16.8 TL (Example 12. v0.1 example updated to follow v0.2) Tj T* ET
 Q
 Q
 q
-1 0 0 1 8 173.389 cm
+1 0 0 1 8 185.389 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (v0.1:) Tj T* ET
@@ -7461,7 +7461,7 @@ q
 1 0 0 1 4.4 .4 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 146 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\);) Tj T* (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (    temperature:units="K") Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (    u_calibration:units="K";) Tj T* (    u_calibration:pdf_shape="rectangular";) Tj T* (    u_calibration:err_corr_dim1_name=["lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="systematic";) Tj T* (    u_calibration:err_corr_dim2_name="time";) Tj T* (    u_calibration:err_corr_dim2_form="err_corr_matrix";) Tj T* (    u_calibration:err_corr_dim2_params=["err_corr_calibration_time"];) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* ET
+BT 1 0 0 1 0 158 Tm /F3 10 Tf 12 TL (variables:) Tj T* (  float temperature\(time, lat, lon\);) Tj T* (    temperature:unc_comps=["u_calibration", "u_noise"];) Tj T* (    temperature:units="K") Tj T* (  float u_calibration\(time, lat, lon\);) Tj T* (    u_calibration:units="K";) Tj T* (    u_calibration:pdf_shape="rectangular";) Tj T* (    u_calibration:err_corr_dim1_name=["lat", "lon"];) Tj T* (    u_calibration:err_corr_dim1_form="systematic";) Tj T* (    u_calibration:err_corr_dim2_name="time";) Tj T* (    u_calibration:err_corr_dim2_form="err_corr_matrix";) Tj T* (    u_calibration:err_corr_dim2_params=["err_corr_calibration_time"];) Tj T* (  float u_noise\(time, lat, lon\);) Tj T* (    u_noise:err_corr_dim1_name=["time", "lat", "lon"];) Tj T* ET
 Q
 Q
 Q
@@ -7472,10 +7472,10 @@ q
 1 j
 .666667 .8 .6 RG
 .5 w
-n 0 222.189 m 515.2441 222.189 l S
+n 0 234.189 m 515.2441 234.189 l S
 n 0 0 m 515.2441 0 l S
-n 0 0 m 0 222.189 l S
-n 515.2441 0 m 515.2441 222.189 l S
+n 0 0 m 0 234.189 l S
+n 515.2441 0 m 515.2441 234.189 l S
 Q
 Q
 Q
@@ -7498,18 +7498,18 @@ endstream
 endobj
 274 0 obj
 <<
-/Length 3240
+/Length 3171
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 40.01575 345.4394 cm
+1 0 0 1 40.01575 357.4394 cm
 q
 .933333 1 .8 rg
-n 0 441.6 515.2441 -441.6 re f*
+n 0 429.6 515.2441 -429.6 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 6 423.6 Tm  T* ET
+BT 1 0 0 1 6 411.6 Tm  T* ET
 q
 1 0 0 1 8 390.8 cm
 q
@@ -7518,7 +7518,7 @@ q
 1 0 0 1 4.4 .4 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F3 10 Tf 12 TL (    u_noise:err_corr_dim1_name=["time", "lat", "lon"];) Tj T* (    u_noise:err_corr_dim1_form="random";) Tj T* (  float err_corr_calibration_time\(time, time\);) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (    u_noise:err_corr_dim1_form="random";) Tj T* (  float err_corr_calibration_time\(time, time\);) Tj T* ET
 Q
 Q
 Q
@@ -7528,7 +7528,7 @@ q
 1 0 0 1 8 364.8 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Draft v0.2:) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (v0.2:) Tj T* ET
 Q
 Q
 q
@@ -7556,15 +7556,15 @@ q
 1 j
 .666667 .8 .6 RG
 .5 w
-n 0 441.6 m 515.2441 441.6 l S
+n 0 429.6 m 515.2441 429.6 l S
 n 0 0 m 515.2441 0 l S
-n 0 0 m 0 441.6 l S
-n 515.2441 0 m 515.2441 441.6 l S
+n 0 0 m 0 429.6 l S
+n 515.2441 0 m 515.2441 429.6 l S
 Q
 Q
 Q
 q
-1 0 0 1 40.01575 339.4394 cm
+1 0 0 1 40.01575 351.4394 cm
 Q
 q
 1 0 0 1 34.01575 807.2126 cm
@@ -7923,114 +7923,114 @@ xref
 0000036163 00000 n 
 0000036334 00000 n 
 0000036504 00000 n 
-0000036673 00000 n 
-0000036844 00000 n 
-0000037113 00000 n 
-0000037284 00000 n 
-0000037455 00000 n 
-0000037626 00000 n 
-0000037796 00000 n 
-0000037966 00000 n 
-0000038136 00000 n 
-0000038405 00000 n 
-0000038575 00000 n 
-0000038804 00000 n 
-0000038914 00000 n 
-0000039170 00000 n 
-0000039248 00000 n 
-0000039425 00000 n 
-0000039578 00000 n 
-0000039695 00000 n 
-0000039812 00000 n 
-0000039984 00000 n 
-0000040094 00000 n 
-0000040247 00000 n 
-0000040376 00000 n 
-0000040507 00000 n 
-0000040632 00000 n 
-0000040810 00000 n 
-0000040925 00000 n 
-0000041055 00000 n 
-0000041185 00000 n 
-0000041301 00000 n 
-0000041483 00000 n 
-0000041620 00000 n 
-0000041799 00000 n 
-0000041925 00000 n 
-0000042060 00000 n 
-0000042204 00000 n 
-0000042330 00000 n 
-0000042472 00000 n 
-0000042614 00000 n 
-0000042744 00000 n 
-0000042888 00000 n 
-0000043066 00000 n 
-0000043206 00000 n 
-0000043376 00000 n 
-0000043534 00000 n 
-0000043670 00000 n 
-0000043866 00000 n 
-0000043997 00000 n 
-0000044145 00000 n 
-0000044273 00000 n 
-0000044408 00000 n 
-0000044671 00000 n 
-0000045682 00000 n 
-0000045808 00000 n 
-0000054602 00000 n 
-0000054728 00000 n 
-0000062593 00000 n 
-0000072942 00000 n 
-0000079761 00000 n 
-0000088895 00000 n 
-0000097519 00000 n 
-0000105592 00000 n 
-0000111524 00000 n 
-0000117222 00000 n 
-0000126636 00000 n 
-0000132397 00000 n 
-0000137629 00000 n 
-0000145248 00000 n 
-0000153377 00000 n 
-0000161399 00000 n 
-0000167822 00000 n 
-0000174032 00000 n 
-0000181060 00000 n 
-0000190819 00000 n 
-0000198090 00000 n 
-0000208629 00000 n 
-0000216958 00000 n 
-0000220251 00000 n 
-0000220575 00000 n 
-0000220610 00000 n 
-0000220645 00000 n 
-0000220680 00000 n 
-0000220715 00000 n 
-0000220750 00000 n 
-0000220785 00000 n 
-0000220820 00000 n 
-0000220855 00000 n 
-0000220890 00000 n 
-0000220925 00000 n 
-0000220960 00000 n 
-0000220995 00000 n 
-0000221030 00000 n 
-0000221066 00000 n 
-0000221102 00000 n 
-0000221138 00000 n 
-0000221174 00000 n 
-0000221210 00000 n 
-0000221246 00000 n 
-0000221282 00000 n 
-0000221318 00000 n 
-0000221354 00000 n 
-0000221390 00000 n 
-0000221426 00000 n 
-0000221462 00000 n 
+0000036674 00000 n 
+0000036845 00000 n 
+0000037114 00000 n 
+0000037285 00000 n 
+0000037456 00000 n 
+0000037627 00000 n 
+0000037797 00000 n 
+0000037967 00000 n 
+0000038137 00000 n 
+0000038406 00000 n 
+0000038576 00000 n 
+0000038805 00000 n 
+0000038915 00000 n 
+0000039171 00000 n 
+0000039249 00000 n 
+0000039426 00000 n 
+0000039579 00000 n 
+0000039696 00000 n 
+0000039813 00000 n 
+0000039985 00000 n 
+0000040095 00000 n 
+0000040248 00000 n 
+0000040377 00000 n 
+0000040508 00000 n 
+0000040633 00000 n 
+0000040811 00000 n 
+0000040926 00000 n 
+0000041056 00000 n 
+0000041186 00000 n 
+0000041302 00000 n 
+0000041484 00000 n 
+0000041621 00000 n 
+0000041800 00000 n 
+0000041926 00000 n 
+0000042061 00000 n 
+0000042205 00000 n 
+0000042331 00000 n 
+0000042473 00000 n 
+0000042615 00000 n 
+0000042745 00000 n 
+0000042889 00000 n 
+0000043067 00000 n 
+0000043207 00000 n 
+0000043377 00000 n 
+0000043535 00000 n 
+0000043671 00000 n 
+0000043867 00000 n 
+0000043998 00000 n 
+0000044146 00000 n 
+0000044274 00000 n 
+0000044409 00000 n 
+0000044672 00000 n 
+0000045680 00000 n 
+0000045806 00000 n 
+0000054600 00000 n 
+0000054726 00000 n 
+0000062589 00000 n 
+0000072938 00000 n 
+0000079757 00000 n 
+0000088891 00000 n 
+0000097515 00000 n 
+0000105588 00000 n 
+0000111520 00000 n 
+0000117218 00000 n 
+0000126632 00000 n 
+0000132393 00000 n 
+0000137625 00000 n 
+0000145244 00000 n 
+0000153373 00000 n 
+0000161395 00000 n 
+0000167818 00000 n 
+0000174028 00000 n 
+0000181056 00000 n 
+0000190815 00000 n 
+0000198086 00000 n 
+0000208612 00000 n 
+0000216973 00000 n 
+0000220197 00000 n 
+0000220521 00000 n 
+0000220556 00000 n 
+0000220591 00000 n 
+0000220626 00000 n 
+0000220661 00000 n 
+0000220696 00000 n 
+0000220731 00000 n 
+0000220766 00000 n 
+0000220801 00000 n 
+0000220836 00000 n 
+0000220871 00000 n 
+0000220906 00000 n 
+0000220941 00000 n 
+0000220976 00000 n 
+0000221012 00000 n 
+0000221048 00000 n 
+0000221084 00000 n 
+0000221120 00000 n 
+0000221156 00000 n 
+0000221192 00000 n 
+0000221228 00000 n 
+0000221264 00000 n 
+0000221300 00000 n 
+0000221336 00000 n 
+0000221372 00000 n 
+0000221408 00000 n 
 trailer
 <<
 /ID 
-[<f78b7e82f34fa1fa0cd4725a567caa15><f78b7e82f34fa1fa0cd4725a567caa15>]
+[<1e330669c3ce098bf2e17b821e34abc5><1e330669c3ce098bf2e17b821e34abc5>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 210 0 R
@@ -8038,5 +8038,5 @@ trailer
 /Size 302
 >>
 startxref
-221498
+221444
 %%EOF
