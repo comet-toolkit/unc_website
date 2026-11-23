@@ -18,6 +18,17 @@ Contributors
 
 This version of the specification was developed in collaboration with the `Climate and Forecast (CF) conventions`_ community, as part of a proposal to include these conventions within CF (see :ref:`relationship-to-cf`).
 
+.. The citation is web-only, so the PDF stays identical to the copy archived on Zenodo.
+
+.. only:: html
+
+    How to Cite
+    -----------
+
+    This version of the specification is archived on Zenodo, with DOI `10.5281/zenodo.24467473 <https://doi.org/10.5281/zenodo.24467473>`__. Please cite it as:
+
+        Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
+
 Introduction
 ============
 

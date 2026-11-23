@@ -36,6 +36,13 @@ The latest version (v0.2) was developed in collaboration with the `Climate and F
         For more information about CoMet Toolkit
 
 
+Citing UNC
+----------
+
+The latest version of the UNC Specification (v0.2) is archived on Zenodo, with DOI `10.5281/zenodo.24467473 <https://doi.org/10.5281/zenodo.24467473>`__. Please cite it as:
+
+    Hunt, S., Hassell, D., Embury, O., & De Vis, P. (2026). Uncertainty Metadata Naming Conventions (UNC) Specification (v0.2). Zenodo. https://doi.org/10.5281/zenodo.24467473
+
 Acknowledgements
 ----------------
 
